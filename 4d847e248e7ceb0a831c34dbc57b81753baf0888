@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a6c66fe6_19c75d0f",
+        "filename": "plugin.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1024777
+      },
+      "writtenOn": "2018-05-29T21:55:14Z",
+      "side": 1,
+      "message": "2 spaces, I think.",
+      "revId": "4d847e248e7ceb0a831c34dbc57b81753baf0888",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6d8e285c_55cef416",
+        "filename": "plugin.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1024777
+      },
+      "writtenOn": "2018-05-29T21:55:14Z",
+      "side": 1,
+      "message": "Mm, I guess it\u0027s either \"register a component\", or \"implement the plugin\".",
+      "revId": "4d847e248e7ceb0a831c34dbc57b81753baf0888",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d989eb02_35d084b1",
+        "filename": "yarn.lock",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1024777
+      },
+      "writtenOn": "2018-05-29T21:55:14Z",
+      "side": 1,
+      "message": "🤯😭",
+      "revId": "4d847e248e7ceb0a831c34dbc57b81753baf0888",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
