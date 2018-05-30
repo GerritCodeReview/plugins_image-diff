@@ -140,6 +140,24 @@
       "revId": "4d847e248e7ceb0a831c34dbc57b81753baf0888",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "086a7c95_9f72e3d6",
+        "filename": "yarn.lock",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-05-30T19:32:09Z",
+      "side": 1,
+      "message": "Yup -- I don\u0027t like it much either, but based on the official docs it\u0027s important for it to be included.\n\nhttps://yarnpkg.com/lang/en/docs/yarn-lock/",
+      "parentUuid": "f7fdc76a_340417cd",
+      "revId": "4d847e248e7ceb0a831c34dbc57b81753baf0888",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
