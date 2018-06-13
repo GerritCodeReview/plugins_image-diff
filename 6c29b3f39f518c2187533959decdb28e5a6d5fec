@@ -1,0 +1,107 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "74835dc5_f9b8bb4c",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-13T21:00:37Z",
+      "side": 1,
+      "message": "As of right now, this isn\u0027t a Polymer element -- just an empty DOM module.\n\nYou also need a script file (gr-image-diff-tool.js) that declares the Polymer element, and for that script to be referenced here.",
+      "revId": "6c29b3f39f518c2187533959decdb28e5a6d5fec",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7de7386e_764acd48",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-13T21:00:37Z",
+      "side": 1,
+      "message": "Each level of nesting should be indented two, and only two, spaces.",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 15
+      },
+      "revId": "6c29b3f39f518c2187533959decdb28e5a6d5fec",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "268fcca0_0a0e7be8",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-13T21:00:37Z",
+      "side": 1,
+      "message": "Remove this trailing whitespace.",
+      "range": {
+        "startLine": 22,
+        "startChar": 13,
+        "endLine": 22,
+        "endChar": 14
+      },
+      "revId": "6c29b3f39f518c2187533959decdb28e5a6d5fec",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "01d9d80f_33092fce",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-13T21:00:37Z",
+      "side": 1,
+      "message": "Remove this trailing whitespace.",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 1
+      },
+      "revId": "6c29b3f39f518c2187533959decdb28e5a6d5fec",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f94a4ff6_cd5c176e",
+        "filename": "plugin.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-13T21:00:37Z",
+      "side": 1,
+      "message": "You should import the new element here.\n\n  \u003clink rel\u003d\"import\" href\u003d\"./gr-image-diff-tool/gr-image-diff-tool.html\"\u003e",
+      "revId": "6c29b3f39f518c2187533959decdb28e5a6d5fec",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
