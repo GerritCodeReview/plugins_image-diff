@@ -2,6 +2,121 @@
   "comments": [
     {
       "key": {
+        "uuid": "30e2fb63_7344a130",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-06-20T23:14:23Z",
+      "side": 1,
+      "message": "You can remove this if you\u0027re not using it.",
+      "range": {
+        "startLine": 16,
+        "startChar": 2,
+        "endLine": 19,
+        "endChar": 4
+      },
+      "revId": "4281fb6a356ad98fe61e65f3bfdf4e33304f3352",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "28b3896e_e0f0cfe2",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-06-20T23:14:23Z",
+      "side": 1,
+      "message": "Should be the same name as your Polymer element ID.",
+      "range": {
+        "startLine": 21,
+        "startChar": 9,
+        "endLine": 21,
+        "endChar": 30
+      },
+      "revId": "4281fb6a356ad98fe61e65f3bfdf4e33304f3352",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7d78892a_8667b53b",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-06-20T23:14:23Z",
+      "side": 1,
+      "message": "It seems you removed this data binding from the html file, therefore you can remove this from properties as well.",
+      "range": {
+        "startLine": 28,
+        "startChar": 6,
+        "endLine": 31,
+        "endChar": 8
+      },
+      "revId": "4281fb6a356ad98fe61e65f3bfdf4e33304f3352",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2f5e7dee_676cf0d7",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-06-20T23:14:23Z",
+      "side": 1,
+      "message": "You can remove this function if you are not using it.",
+      "range": {
+        "startLine": 38,
+        "startChar": 4,
+        "endLine": 41,
+        "endChar": 6
+      },
+      "revId": "4281fb6a356ad98fe61e65f3bfdf4e33304f3352",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7fe5f14c_46414cfb",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-06-20T23:14:23Z",
+      "side": 1,
+      "message": "this.revisionImage[\u0027body\u0027] will provide you with a string already",
+      "range": {
+        "startLine": 43,
+        "startChar": 29,
+        "endLine": 43,
+        "endChar": 55
+      },
+      "revId": "4281fb6a356ad98fe61e65f3bfdf4e33304f3352",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "e06415fb_23fe8743",
         "filename": "gr-image-diff-tool/gr-image-diff-tool.js",
         "patchSetId": 1
@@ -13,6 +128,47 @@
       "writtenOn": "2018-06-20T22:30:05Z",
       "side": 1,
       "message": "Jack, why is this not properly generating the image src attribute?",
+      "revId": "4281fb6a356ad98fe61e65f3bfdf4e33304f3352",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ba395cfd_666e8ba4",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-06-20T23:14:23Z",
+      "side": 1,
+      "message": "It seems you are slicing some part off of the body. You don\u0027t need to do that.",
+      "parentUuid": "e06415fb_23fe8743",
+      "revId": "4281fb6a356ad98fe61e65f3bfdf4e33304f3352",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b3c17d25_dd1549da",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-06-20T23:14:23Z",
+      "side": 1,
+      "message": "You can remove this function if you are not using it.",
+      "range": {
+        "startLine": 48,
+        "startChar": 4,
+        "endLine": 51,
+        "endChar": 6
+      },
       "revId": "4281fb6a356ad98fe61e65f3bfdf4e33304f3352",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
