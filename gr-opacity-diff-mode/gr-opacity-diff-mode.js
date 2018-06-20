@@ -13,11 +13,24 @@
 // limitations under the License.
 (function() {
   'use strict';
-
   Polymer({
-    is: 'gr-image-diff-tool',
+    is: 'gr-opacity-diff-mode',
     properties: {
-      hi: String,
+      baseImage: Object,
+      revisionImage: Object,
+      revisionSrc: {
+        type: String,
+        computed: computeRevisionSrc(revisionSrc),
+      },
+    },
+    theOpacity() {
+      const valueOfOpacity = document.getElementById('opacitySlider').value;
+      document.getElementById('sliderOutput').innerHTML= valueOfOpacity;
+      document.getElementById('originalImageId').style.opacity= valueOfOpacity;
+    },
+    attached() {
+      this.revisionSrc ='data:' + this.revisionImage['type'] + ';base64, ' + this.revisionImage['body'];
+      return this.revisionSrc;
     },
   });
 })();
