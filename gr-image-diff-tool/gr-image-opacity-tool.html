@@ -14,16 +14,17 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
-<dom-module id="gr-image-diff-tool">
+<dom-module id="gr-image-opacity-tool">
   <template>
     <style>
       :host { display: block; }
       img { width: 500px; opacity: 1.0; display: block; margin-left: auto; margin-right: auto;}
     </style>
     <img src$='[[revisionSrc]]'/>
+    <img src$='[[baseImage]]' id='baseImageId'/>
     <label for='opacitySlider'>Opacity</label>
     <input type='range' id='opacitySlider' min='0.0' max="1.0" value='1.0' step='.01' on-input="theOpacity"/>
     <output for='opacitySlider' id='sliderOutput'>1.0</output>
   </template>
-  <script src="gr-image-diff-tool.js"></script>
+  <script src="gr-image-opacity-tool.js"></script>
 </dom-module>

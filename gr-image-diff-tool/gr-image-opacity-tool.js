@@ -13,41 +13,24 @@
 // limitations under the License.
 (function() {
   'use strict';
-  const paradoxes = [
-    'https://i.pinimg.com/originals/15/6e/82/156e82713957bf0c20c72465ce8e7b07.jpg',
-    'https://yt3.ggpht.com/a-/AJLlDp1_KcFdpwhYkIAHfT-P0vYv7JDKn_hlxhE2xw=s900-mo-c-c0xffffffff-rj-k-no',
-  ];
   Polymer({
-    is: 'infinite-domo-paradox',
+    is: 'gr-image-opacity-tool',
     properties: {
       baseImage: Object, 
       revisionImage: Object,
       revisionSrc:{
         type: String,
-      },
-      src: {
-        type: String,
-        value() { return paradoxes[Math.floor(Math.random() * paradoxes.length)]; },
+        computed: computeRevisionSrc(revisionSrc)
       },
     },
     theOpacity() {
       const valueOfOpacity = document.getElementById('opacitySlider').value;
       document.getElementById('sliderOutput').innerHTML= valueOfOpacity;
-      document.getElementById('theImage').style.opacity= valueOfOpacity;
-    },
-    computeRevisionSrc(revisionImage) {
-      alert(this.revisionImage);
-      return generateSrc(revisionImage['type'], revisionImage['body'])
+      document.getElementById('baseImageId').style.opacity= valueOfOpacity;
     },
     attached() {
-      let theString = String(this.revisionImage['body'])
-      const theStringFXD = theString.slice(0,28)
-      theString = theString.replace(theStringFXD, '');
-      this.revisionSrc ='data:' + this.revisionImage['type'] + ';base64, ' + theString;
-    },
-    generateSrc(type, body) {
-      console.log(type + ' ' + body);
-      return type + ' ' + body;
+      this.revisionSrc ='data:' + this.revisionImage['type'] + ';base64, ' + this.revisionImage['body'];
+      return this.revisionSrc;
     },
   });
 })();
