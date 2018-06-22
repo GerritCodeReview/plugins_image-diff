@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "275bd5ce_ab66541e",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-22T18:57:29Z",
+      "side": 0,
+      "message": "I don\u0027t think we should delete these files in this change. If you run...\n\n  git checkout origin/master gr-image-diff-tool/*\n\n... you should get them back.",
+      "revId": "f5ab645b077fdff15d0907da6cd7a06c88ee75ac",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
