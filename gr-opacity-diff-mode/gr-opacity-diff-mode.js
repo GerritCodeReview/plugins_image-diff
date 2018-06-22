@@ -14,19 +14,19 @@
 (function() {
   'use strict';
   Polymer({
-    is: 'gr-image-opacity-tool',
+    is: 'gr-opacity-diff-mode',
     properties: {
-      baseImage: Object, 
+      baseImage: Object,
       revisionImage: Object,
-      revisionSrc:{
+      revisionSrc: {
         type: String,
-        computed: computeRevisionSrc(revisionSrc)
+        computed: computeRevisionSrc(revisionSrc),
       },
     },
     theOpacity() {
       const valueOfOpacity = document.getElementById('opacitySlider').value;
       document.getElementById('sliderOutput').innerHTML= valueOfOpacity;
-      document.getElementById('baseImageId').style.opacity= valueOfOpacity;
+      document.getElementById('originalImageId').style.opacity= valueOfOpacity;
     },
     attached() {
       this.revisionSrc ='data:' + this.revisionImage['type'] + ';base64, ' + this.revisionImage['body'];
