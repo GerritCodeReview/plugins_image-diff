@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "762e6a13_bb5176b3",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-25T20:01:12Z",
+      "side": 1,
+      "message": "Just call this revisionImage.",
+      "range": {
+        "startLine": 31,
+        "startChar": 36,
+        "endLine": 31,
+        "endChar": 51
+      },
+      "revId": "f8af1ec0a49ee6b032bf3b8cf9979f53025a4378",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "09381cfb_7da78df9",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-25T20:01:12Z",
+      "side": 1,
+      "message": "This should be baseSrc, no?",
+      "range": {
+        "startLine": 32,
+        "startChar": 17,
+        "endLine": 32,
+        "endChar": 30
+      },
+      "revId": "f8af1ec0a49ee6b032bf3b8cf9979f53025a4378",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c26d944b_24640038",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-25T20:01:12Z",
+      "side": 1,
+      "message": "Just call this baseImage.",
+      "range": {
+        "startLine": 32,
+        "startChar": 38,
+        "endLine": 32,
+        "endChar": 53
+      },
+      "revId": "f8af1ec0a49ee6b032bf3b8cf9979f53025a4378",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4f56c65d_20da9aaa",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 5
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-25T20:01:12Z",
+      "side": 1,
+      "message": "Indent this four spaces.",
+      "range": {
+        "startLine": 31,
+        "startChar": 6,
+        "endLine": 31,
+        "endChar": 10
+      },
+      "revId": "f8af1ec0a49ee6b032bf3b8cf9979f53025a4378",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3c0d05d0_1e497cc5",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 5
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-25T20:01:12Z",
+      "side": 1,
+      "message": "Let\u0027s just call this \u0027opacity\u0027.",
+      "range": {
+        "startLine": 35,
+        "startChar": 12,
+        "endLine": 35,
+        "endChar": 26
+      },
+      "revId": "f8af1ec0a49ee6b032bf3b8cf9979f53025a4378",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "50f9cebe_3001c1c2",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode_test.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-25T20:01:12Z",
+      "side": 1,
+      "message": "This needs only two spaces of indent.",
+      "range": {
+        "startLine": 37,
+        "startChar": 6,
+        "endLine": 37,
+        "endChar": 8
+      },
+      "revId": "f8af1ec0a49ee6b032bf3b8cf9979f53025a4378",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
