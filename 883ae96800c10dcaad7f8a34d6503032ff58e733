@@ -184,6 +184,30 @@
     },
     {
       "key": {
+        "uuid": "cf3b39de_e9a36b8a",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode_test.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-26T18:28:06Z",
+      "side": 1,
+      "message": "Yes, we prefer using element.$ where possible -- it\u0027s faster.",
+      "parentUuid": "2b2c063f_b0315921",
+      "range": {
+        "startLine": 60,
+        "startChar": 6,
+        "endLine": 60,
+        "endChar": 43
+      },
+      "revId": "883ae96800c10dcaad7f8a34d6503032ff58e733",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "aad6718c_478ea54d",
         "filename": "test/index.html",
         "patchSetId": 2
@@ -213,6 +237,24 @@
       "side": 1,
       "message": "The test doesn\u0027t seem to run properly when this is uncommented.\nError: Cannot read property \u0027forEach\u0027 of undefined",
       "parentUuid": "aad6718c_478ea54d",
+      "revId": "883ae96800c10dcaad7f8a34d6503032ff58e733",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1d83bdec_d77f4af3",
+        "filename": "test/index.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-26T18:28:06Z",
+      "side": 1,
+      "message": "We have to run tests both in shady and shadow DOM. Are you saying your test fails, or that the exception is thrown at this line?",
+      "parentUuid": "3902cbb0_ee9a1b26",
       "revId": "883ae96800c10dcaad7f8a34d6503032ff58e733",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
