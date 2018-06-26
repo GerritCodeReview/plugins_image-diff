@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "57c23aa8_9d2f7055",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-26T20:29:31Z",
+      "side": 1,
+      "message": "This block could read much more logically.\n\n  if (data.error) { \n    reject(); \n    return();\n  } else {\n    this.$.imageDiff.setAttribute(\u0027src\u0027, data.getImageDataUrl());\n    resolve();\n  }",
+      "range": {
+        "startLine": 36,
+        "startChar": 12,
+        "endLine": 41,
+        "endChar": 22
+      },
+      "revId": "95667c4f29c31766a2b550aa2c8641b92ca43168",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "af797743_97876952",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode_test.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-26T20:29:31Z",
+      "side": 1,
+      "message": "Please hard-code desiredOutput.\n\n   \u0027data:image/png;base64,SGVsbG8\u003d\u0027",
+      "range": {
+        "startLine": 56,
+        "startChar": 6,
+        "endLine": 57,
+        "endChar": 51
+      },
+      "revId": "95667c4f29c31766a2b550aa2c8641b92ca43168",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d5380cc9_c6f69d32",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode_test.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-26T20:29:31Z",
+      "side": 1,
+      "message": "This is an asynchronous test, and has to be treated differently. \n\nhttps://www.polymer-project.org/1.0/docs/tools/tests#async",
+      "revId": "95667c4f29c31766a2b550aa2c8641b92ca43168",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
