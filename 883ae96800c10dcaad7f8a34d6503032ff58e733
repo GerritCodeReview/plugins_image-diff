@@ -208,6 +208,30 @@
     },
     {
       "key": {
+        "uuid": "17a9fdbc_7d9fb628",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode_test.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-06-26T18:32:07Z",
+      "side": 1,
+      "message": "Alright",
+      "parentUuid": "cf3b39de_e9a36b8a",
+      "range": {
+        "startLine": 60,
+        "startChar": 6,
+        "endLine": 60,
+        "endChar": 43
+      },
+      "revId": "883ae96800c10dcaad7f8a34d6503032ff58e733",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "aad6718c_478ea54d",
         "filename": "test/index.html",
         "patchSetId": 2
@@ -255,6 +279,24 @@
       "side": 1,
       "message": "We have to run tests both in shady and shadow DOM. Are you saying your test fails, or that the exception is thrown at this line?",
       "parentUuid": "3902cbb0_ee9a1b26",
+      "revId": "883ae96800c10dcaad7f8a34d6503032ff58e733",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bfc77eea_69ceca10",
+        "filename": "test/index.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-06-26T18:32:07Z",
+      "side": 1,
+      "message": "That exception is thrown at this line. From the error message, it seems suites is undefined, which is really strange.",
+      "parentUuid": "1d83bdec_d77f4af3",
       "revId": "883ae96800c10dcaad7f8a34d6503032ff58e733",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
