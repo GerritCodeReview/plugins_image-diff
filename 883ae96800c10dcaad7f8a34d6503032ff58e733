@@ -119,6 +119,24 @@
     },
     {
       "key": {
+        "uuid": "671390d7_af9dc5bb",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode_test.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-06-26T18:24:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8bb53499_8908b396",
+      "revId": "883ae96800c10dcaad7f8a34d6503032ff58e733",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "279d1a68_f5a48648",
         "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode_test.html",
         "patchSetId": 2
