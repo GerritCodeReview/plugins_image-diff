@@ -1,0 +1,101 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4109e35f_62268eec",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-26T18:03:23Z",
+      "side": 1,
+      "message": "Remove trailing whitespace, where it exists.\n\nYou can configure VSCode to do this automatically.",
+      "revId": "883ae96800c10dcaad7f8a34d6503032ff58e733",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "60a90fc6_d65471cc",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-26T18:03:23Z",
+      "side": 1,
+      "message": "Change this to var(--border-color, #ddd).\n\nWe use shared colors in PolyGerrit to allow for theming (the LHS variable), and #ddd is our general border color.",
+      "range": {
+        "startLine": 28,
+        "startChar": 26,
+        "endLine": 28,
+        "endChar": 30
+      },
+      "revId": "883ae96800c10dcaad7f8a34d6503032ff58e733",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b8d1d282_79818353",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode_test.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-26T18:03:23Z",
+      "side": 1,
+      "message": "What is this test supposed to do? I think we want to do more here than just check and see if this function returns a string.",
+      "revId": "883ae96800c10dcaad7f8a34d6503032ff58e733",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "279d1a68_f5a48648",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode_test.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-26T18:03:23Z",
+      "side": 1,
+      "message": "Can also be element.$.imageDiff.",
+      "range": {
+        "startLine": 60,
+        "startChar": 6,
+        "endLine": 60,
+        "endChar": 43
+      },
+      "revId": "883ae96800c10dcaad7f8a34d6503032ff58e733",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "aad6718c_478ea54d",
+        "filename": "test/index.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-26T18:03:23Z",
+      "side": 1,
+      "message": "Why is this commented out?",
+      "revId": "883ae96800c10dcaad7f8a34d6503032ff58e733",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
