@@ -16,8 +16,16 @@
 
   Polymer({
     is: 'gr-image-diff-tool',
+
     properties: {
-      hi: String,
+      loadResemble: Boolean,
+      loadOpacity: Boolean,
     },
+
+    attached() {
+      loadResemble = true;
+      loadOpacity = false;
+    },
+
   });
 })();
