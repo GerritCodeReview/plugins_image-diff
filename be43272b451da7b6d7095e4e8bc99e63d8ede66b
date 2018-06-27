@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "8ba5b4b4_5624f1f9",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.html",
+        "patchSetId": 7
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-06-27T01:42:37Z",
+      "side": 1,
+      "message": "I\u0027m thinking of doing that in a different commit. This commit is focused on implementing the gr-resemble-diff-mode files.",
+      "parentUuid": "87a8bbb6_9ab52505",
+      "revId": "be43272b451da7b6d7095e4e8bc99e63d8ede66b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "97a7832c_0b6361fc",
         "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode_test.html",
         "patchSetId": 7
@@ -30,6 +48,30 @@
       "writtenOn": "2018-06-27T00:53:50Z",
       "side": 1,
       "message": "What\u0027s going on here? You expect the test to fail?",
+      "range": {
+        "startLine": 76,
+        "startChar": 12,
+        "endLine": 78,
+        "endChar": 13
+      },
+      "revId": "be43272b451da7b6d7095e4e8bc99e63d8ede66b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "11a43b59_45a807c6",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode_test.html",
+        "patchSetId": 7
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-06-27T01:42:37Z",
+      "side": 1,
+      "message": "In this test case yes because the test base64 bodies are not actually base64 images so resemblejs will return an error in the data.",
+      "parentUuid": "97a7832c_0b6361fc",
       "range": {
         "startLine": 76,
         "startChar": 12,
