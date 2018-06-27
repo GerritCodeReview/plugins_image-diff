@@ -37,6 +37,46 @@
     },
     {
       "key": {
+        "uuid": "cd270ae4_a1d34f3a",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.js",
+        "patchSetId": 7
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-27T02:07:39Z",
+      "side": 1,
+      "message": "Replace this with\n\n        return this.compareImages(baseEncoded, revisionEncoded).then(src \u003d\u003e {\n          this.$.imageDiff.setAttribute(\u0027src\u0027, src);\n        });",
+      "range": {
+        "startLine": 33,
+        "startChar": 8,
+        "endLine": 42,
+        "endChar": 11
+      },
+      "revId": "be43272b451da7b6d7095e4e8bc99e63d8ede66b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "971746de_5b29455e",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.js",
+        "patchSetId": 7
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-27T02:07:39Z",
+      "side": 1,
+      "message": "Add a function here.\n\n  compareImages(baseEncoded, revisionEncoded) {\n    return new Promise((resolve, reject) \u003d\u003e\n        resemble(baseEncoded).compareTo(revisionEncoded).onComplete(data \u003d\u003e {\n          if (data.error) { reject(); }\n          resolve(data.getImageUrl());\n        }):\n    );\n  },",
+      "revId": "be43272b451da7b6d7095e4e8bc99e63d8ede66b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "97a7832c_0b6361fc",
         "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode_test.html",
         "patchSetId": 7
@@ -72,6 +112,30 @@
       "side": 1,
       "message": "In this test case yes because the test base64 bodies are not actually base64 images so resemblejs will return an error in the data.",
       "parentUuid": "97a7832c_0b6361fc",
+      "range": {
+        "startLine": 76,
+        "startChar": 12,
+        "endLine": 78,
+        "endChar": 13
+      },
+      "revId": "be43272b451da7b6d7095e4e8bc99e63d8ede66b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fe9b9025_ed787eb4",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode_test.html",
+        "patchSetId": 7
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-27T02:07:39Z",
+      "side": 1,
+      "message": "Ah.\n\nWhen writing unit tests, we really only want to test our own functionality. We can trust that the resemble library will function as advertised. We use stubs for short-circuiting functionality. http://sinonjs.org/releases/v2.3.0/stubs/\n\nIn this case, because we chain several function calls together with the resemble library, it might be easier for testability to abstract them all away in another function, and to stub that. I\u0027ll leave a comment on the js file explaining.\n\nThen, all we have to do is this:\n  \n  sinon.stub(element,\u0027compareImages\u0027)\n      .returns(Promise.resolve(YOUR_TEST_DATA_HERE);",
+      "parentUuid": "11a43b59_45a807c6",
       "range": {
         "startLine": 76,
         "startChar": 12,
