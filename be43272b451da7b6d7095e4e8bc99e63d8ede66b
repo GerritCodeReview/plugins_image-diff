@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "87a8bbb6_9ab52505",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.html",
+        "patchSetId": 7
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-27T00:53:50Z",
+      "side": 1,
+      "message": "We need to add \u003cgr-resemble-diff-mode\u003e in here.",
+      "revId": "be43272b451da7b6d7095e4e8bc99e63d8ede66b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "97a7832c_0b6361fc",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode_test.html",
+        "patchSetId": 7
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-27T00:53:50Z",
+      "side": 1,
+      "message": "What\u0027s going on here? You expect the test to fail?",
+      "range": {
+        "startLine": 76,
+        "startChar": 12,
+        "endLine": 78,
+        "endChar": 13
+      },
+      "revId": "be43272b451da7b6d7095e4e8bc99e63d8ede66b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
