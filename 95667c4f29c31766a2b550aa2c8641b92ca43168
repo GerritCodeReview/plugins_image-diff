@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "682a1f5f_dde0c2df",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-06-27T00:39:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bcf47857_454f1993",
+      "range": {
+        "startLine": 36,
+        "startChar": 12,
+        "endLine": 41,
+        "endChar": 22
+      },
+      "revId": "95667c4f29c31766a2b550aa2c8641b92ca43168",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "af797743_97876952",
         "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode_test.html",
         "patchSetId": 6
@@ -72,6 +96,30 @@
     },
     {
       "key": {
+        "uuid": "f319638c_2c6cd029",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode_test.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-06-27T00:39:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "af797743_97876952",
+      "range": {
+        "startLine": 56,
+        "startChar": 6,
+        "endLine": 57,
+        "endChar": 51
+      },
+      "revId": "95667c4f29c31766a2b550aa2c8641b92ca43168",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d5380cc9_c6f69d32",
         "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode_test.html",
         "patchSetId": 6
@@ -86,6 +134,24 @@
       "revId": "95667c4f29c31766a2b550aa2c8641b92ca43168",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "886321a2_19a4a94b",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode_test.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-06-27T00:39:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d5380cc9_c6f69d32",
+      "revId": "95667c4f29c31766a2b550aa2c8641b92ca43168",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
