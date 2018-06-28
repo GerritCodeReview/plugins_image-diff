@@ -1,0 +1,211 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fefcfa46_09288ed4",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 13
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-06-28T22:54:46Z",
+      "side": 1,
+      "message": "I think the default for opacity is 1.0 so you can remove this.",
+      "range": {
+        "startLine": 25,
+        "startChar": 8,
+        "endLine": 25,
+        "endChar": 21
+      },
+      "revId": "02f599f9c10b86921a0e9ea00008ea5c66c86fe3",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ba2560a8_473557a5",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 13
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-06-28T22:54:46Z",
+      "side": 1,
+      "message": "fix spacing",
+      "range": {
+        "startLine": 29,
+        "startChar": 6,
+        "endLine": 29,
+        "endChar": 8
+      },
+      "revId": "02f599f9c10b86921a0e9ea00008ea5c66c86fe3",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4d74d76d_905909b5",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 13
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-06-28T22:54:46Z",
+      "side": 1,
+      "message": "You can simply use baseImageEl instead of creating a new class just for this purpose.",
+      "range": {
+        "startLine": 30,
+        "startChar": 6,
+        "endLine": 30,
+        "endChar": 21
+      },
+      "revId": "02f599f9c10b86921a0e9ea00008ea5c66c86fe3",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2d8cbaeb_65ce1393",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 13
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-06-28T22:54:46Z",
+      "side": 1,
+      "message": "Remove these properties if you\u0027re not using them anymore, also be sure to remove them from the html as well.",
+      "range": {
+        "startLine": 22,
+        "startChar": 6,
+        "endLine": 23,
+        "endChar": 26
+      },
+      "revId": "02f599f9c10b86921a0e9ea00008ea5c66c86fe3",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ea26e9da_4b9d88cd",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 13
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-06-28T22:54:46Z",
+      "side": 1,
+      "message": "Change to this.$.revisionImageEl",
+      "range": {
+        "startLine": 29,
+        "startChar": 6,
+        "endLine": 29,
+        "endChar": 33
+      },
+      "revId": "02f599f9c10b86921a0e9ea00008ea5c66c86fe3",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6601f1a7_72af3ca7",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 13
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-06-28T22:54:46Z",
+      "side": 1,
+      "message": "Add 4 spaces in front",
+      "range": {
+        "startLine": 32,
+        "startChar": 6,
+        "endLine": 32,
+        "endChar": 7
+      },
+      "revId": "02f599f9c10b86921a0e9ea00008ea5c66c86fe3",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "baadea9f_89cfb1fe",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 13
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-06-28T22:54:46Z",
+      "side": 1,
+      "message": "Change to this.$.baseImageEl",
+      "range": {
+        "startLine": 33,
+        "startChar": 6,
+        "endLine": 33,
+        "endChar": 29
+      },
+      "revId": "02f599f9c10b86921a0e9ea00008ea5c66c86fe3",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e5a0fdf4_36a9d5c5",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode_test.html",
+        "patchSetId": 13
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-06-28T22:54:46Z",
+      "side": 1,
+      "message": "Fix spacing",
+      "range": {
+        "startLine": 43,
+        "startChar": 13,
+        "endLine": 43,
+        "endChar": 14
+      },
+      "revId": "02f599f9c10b86921a0e9ea00008ea5c66c86fe3",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "188a4210_1580670f",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode_test.html",
+        "patchSetId": 13
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-06-28T22:54:46Z",
+      "side": 1,
+      "message": "Change to number \u003d\u003e { YOUR_CODE_HERE }",
+      "range": {
+        "startLine": 48,
+        "startChar": 29,
+        "endLine": 48,
+        "endChar": 45
+      },
+      "revId": "02f599f9c10b86921a0e9ea00008ea5c66c86fe3",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
