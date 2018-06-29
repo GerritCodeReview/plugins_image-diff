@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a8891c44_7390f54a",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-29T19:07:00Z",
+      "side": 1,
+      "message": "We have to add the parameters here too.",
+      "range": {
+        "startLine": 35,
+        "startChar": 6,
+        "endLine": 35,
+        "endChar": 51
+      },
+      "revId": "e512a9e07b7758ff402a12ebc18e1de1de7b9c51",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
