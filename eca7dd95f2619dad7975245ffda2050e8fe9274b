@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "0ba0e885_8a3c8e74",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 14
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-29T17:52:11Z",
+      "side": 1,
+      "message": "Also, remove this period.",
+      "revId": "eca7dd95f2619dad7975245ffda2050e8fe9274b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "9461cd6d_50d28f68",
         "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
         "patchSetId": 14
