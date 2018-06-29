@@ -22,6 +22,30 @@
       "revId": "e512a9e07b7758ff402a12ebc18e1de1de7b9c51",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "98bf79ac_80767bd4",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-06-29T19:11:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a8891c44_7390f54a",
+      "range": {
+        "startLine": 35,
+        "startChar": 6,
+        "endLine": 35,
+        "endChar": 51
+      },
+      "revId": "e512a9e07b7758ff402a12ebc18e1de1de7b9c51",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
