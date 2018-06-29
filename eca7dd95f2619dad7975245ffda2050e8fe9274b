@@ -1,0 +1,78 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9461cd6d_50d28f68",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 14
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-29T15:45:58Z",
+      "side": 1,
+      "message": "Fix this indentation.",
+      "revId": "eca7dd95f2619dad7975245ffda2050e8fe9274b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c8b41b3b_1e21b477",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 14
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-29T15:45:58Z",
+      "side": 1,
+      "message": "const srcRevision \u003d this.computeSrcString(revisionImage);",
+      "range": {
+        "startLine": 27,
+        "startChar": 6,
+        "endLine": 28,
+        "endChar": 53
+      },
+      "revId": "eca7dd95f2619dad7975245ffda2050e8fe9274b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1c4aecd9_3d76f104",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 14
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-29T15:45:58Z",
+      "side": 1,
+      "message": "Like this...\n\n  computeSrcString(image) {\n    return \u0027data:\u0027 + image[\u0027type\u0027] + \u0027;base64, \u0027 + image[\u0027body\u0027];\n  }\n\n.. and then add another test for this function.",
+      "revId": "eca7dd95f2619dad7975245ffda2050e8fe9274b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ef98d3fd_cac22649",
+        "filename": "test/index.html",
+        "patchSetId": 14
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-29T15:45:58Z",
+      "side": 1,
+      "message": "Sort these alphabetically.",
+      "revId": "eca7dd95f2619dad7975245ffda2050e8fe9274b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
