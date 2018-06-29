@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "be289204_69007e13",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool_test.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-06-29T19:36:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "09064447_f24e1c77",
+      "range": {
+        "startLine": 57,
+        "startChar": 23,
+        "endLine": 57,
+        "endChar": 27
+      },
+      "revId": "ebc5493fcd7c61e0296d311445e662e1e29b93e2",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a087fd3a_bb877bc3",
         "filename": "gr-image-diff-tool/gr-image-diff-tool_test.html",
         "patchSetId": 3
@@ -36,6 +60,30 @@
       "writtenOn": "2018-06-29T19:12:44Z",
       "side": 1,
       "message": "Why do you need to call this function here? Setting the dropdown\u0027s value should trigger the function via an event automatically.",
+      "range": {
+        "startLine": 59,
+        "startChar": 6,
+        "endLine": 59,
+        "endChar": 29
+      },
+      "revId": "ebc5493fcd7c61e0296d311445e662e1e29b93e2",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e5506eed_a2ffd67d",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool_test.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-06-29T19:36:11Z",
+      "side": 1,
+      "message": "Somehow it does not automatically trigger the function",
+      "parentUuid": "a087fd3a_bb877bc3",
       "range": {
         "startLine": 59,
         "startChar": 6,
