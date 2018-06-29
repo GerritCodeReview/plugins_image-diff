@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "279a0352_975ebed3",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-29T15:45:03Z",
+      "side": 1,
+      "message": "Sort these alphabetically.",
+      "revId": "38f3e47989266af8055cfee346097d4e8ff7b29a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "35d68b6e_71bd27be",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-29T15:45:03Z",
+      "side": 1,
+      "message": "You can remove this function and set these with default values instead.",
+      "revId": "38f3e47989266af8055cfee346097d4e8ff7b29a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
