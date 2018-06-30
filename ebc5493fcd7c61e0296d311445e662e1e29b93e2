@@ -93,6 +93,30 @@
       "revId": "ebc5493fcd7c61e0296d311445e662e1e29b93e2",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b1515d04_45650c54",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool_test.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-06-30T01:18:40Z",
+      "side": 1,
+      "message": "We should troubleshoot that. Tests are much more useful when they test actual functionality.\n\nIt\u0027s possible you need a call to flushAsynchronousOperations() after setting the value.",
+      "parentUuid": "e5506eed_a2ffd67d",
+      "range": {
+        "startLine": 59,
+        "startChar": 6,
+        "endLine": 59,
+        "endChar": 29
+      },
+      "revId": "ebc5493fcd7c61e0296d311445e662e1e29b93e2",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
     }
   ]
 }
