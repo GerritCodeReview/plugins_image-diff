@@ -117,6 +117,30 @@
       "revId": "ebc5493fcd7c61e0296d311445e662e1e29b93e2",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bc766d15_c1ca4d04",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool_test.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1024777
+      },
+      "writtenOn": "2018-07-02T18:40:05Z",
+      "side": 1,
+      "message": "AFAIR change event is only fired if it\u0027s initiated by the user. MockInteractions don\u0027t support that, and changing the selected index/value doesn\u0027t count as \"user initiated\". Options are to either a) call the handler or b) emulate the event. \n\nI think since we have to work around this either way, calling a handler is an acceptable option.\n\nhttps://developer.mozilla.org/en-US/docs/Web/Events/change",
+      "parentUuid": "b1515d04_45650c54",
+      "range": {
+        "startLine": 59,
+        "startChar": 6,
+        "endLine": 59,
+        "endChar": 29
+      },
+      "revId": "ebc5493fcd7c61e0296d311445e662e1e29b93e2",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
