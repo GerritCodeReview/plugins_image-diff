@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "1e4efa29_add510a5",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 17
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1067380
+      },
+      "writtenOn": "2018-07-02T19:09:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "71e761e3_229d801b",
+      "revId": "e914327449aae249f6c5095d38e0da84dd4d084b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ab1b9e7a_ee053081",
         "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
         "patchSetId": 17
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "27106a0b_fe3f64fa",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 17
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1067380
+      },
+      "writtenOn": "2018-07-02T19:09:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ab1b9e7a_ee053081",
+      "revId": "e914327449aae249f6c5095d38e0da84dd4d084b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "17863ff2_71fe0878",
         "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
         "patchSetId": 17
@@ -50,6 +86,24 @@
       "revId": "e914327449aae249f6c5095d38e0da84dd4d084b",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a561283b_148bfa3a",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 17
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1067380
+      },
+      "writtenOn": "2018-07-02T19:09:03Z",
+      "side": 1,
+      "message": "There was no particular reason. I\u0027ve actually been meaning to take the baseSrc and revisionSrc out of my code since I don\u0027t use them. I just forgot to delete them.",
+      "parentUuid": "17863ff2_71fe0878",
+      "revId": "e914327449aae249f6c5095d38e0da84dd4d084b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     },
     {
       "key": {
@@ -73,6 +127,30 @@
       "revId": "e914327449aae249f6c5095d38e0da84dd4d084b",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "393b1f0c_107fe93c",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 17
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1067380
+      },
+      "writtenOn": "2018-07-02T19:09:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fe473f1a_3d3f6504",
+      "range": {
+        "startLine": 29,
+        "startChar": 8,
+        "endLine": 29,
+        "endChar": 35
+      },
+      "revId": "e914327449aae249f6c5095d38e0da84dd4d084b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
