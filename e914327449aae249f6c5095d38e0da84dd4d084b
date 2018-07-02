@@ -1,0 +1,78 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "71e761e3_229d801b",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 17
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1024777
+      },
+      "writtenOn": "2018-07-02T18:53:55Z",
+      "side": 1,
+      "message": "Please use double quotes (\") here instead of single quotes (\u0027)",
+      "revId": "e914327449aae249f6c5095d38e0da84dd4d084b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ab1b9e7a_ee053081",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 17
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1024777
+      },
+      "writtenOn": "2018-07-02T18:53:55Z",
+      "side": 1,
+      "message": "Nit: It would be a bit more readable if attributes would be put into separate lines like this;\n\n\u003cinput\n  foo\u003d\"bar\"\n  bar\u003d\"foo\"/\u003e",
+      "revId": "e914327449aae249f6c5095d38e0da84dd4d084b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "17863ff2_71fe0878",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 17
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1024777
+      },
+      "writtenOn": "2018-07-02T18:53:55Z",
+      "side": 1,
+      "message": "So, basically here\u0027s how this works:\n- when the element is inserted into DOM\n- compute the image src attribute for revision and base\n- set the values to attributes\n\nIt looks like images\u0027 src attributes are also bound via data binding to this.revisionSrc and this.baseSrc, so you probably could use observers to set those attributes as well. Is there any particular reason you do this only on attached? Probably worth a comment then.",
+      "revId": "e914327449aae249f6c5095d38e0da84dd4d084b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fe473f1a_3d3f6504",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 17
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1024777
+      },
+      "writtenOn": "2018-07-02T18:53:55Z",
+      "side": 1,
+      "message": "Would this.$.revisionImageEl work? I think that might be a bit cleaner.\nMaybe also for other instances of $$(\u0027#, if it does.",
+      "range": {
+        "startLine": 29,
+        "startChar": 8,
+        "endLine": 29,
+        "endChar": 35
+      },
+      "revId": "e914327449aae249f6c5095d38e0da84dd4d084b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
