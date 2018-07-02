@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "13a6fa98_2b61a40b",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 18
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-07-02T19:33:53Z",
+      "side": 1,
+      "message": "Remove these properties",
+      "range": {
+        "startLine": 37,
+        "startChar": 9,
+        "endLine": 37,
+        "endChar": 27
+      },
+      "revId": "6a9f98a0a6f573212b020196582bf3eee953a1e5",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "068cacd9_71f6f2bd",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 18
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-07-02T19:33:53Z",
+      "side": 1,
+      "message": "Remove trailing whitespaces",
+      "range": {
+        "startLine": 39,
+        "startChar": 10,
+        "endLine": 39,
+        "endChar": 11
+      },
+      "revId": "6a9f98a0a6f573212b020196582bf3eee953a1e5",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
