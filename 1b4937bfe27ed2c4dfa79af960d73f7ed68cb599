@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a117566_5406a0b7",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 21
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-06T18:00:35Z",
+      "side": 1,
+      "message": "Is there a reason we aren\u0027t using data binding for this value property?",
+      "range": {
+        "startLine": 45,
+        "startChar": 12,
+        "endLine": 45,
+        "endChar": 17
+      },
+      "revId": "1b4937bfe27ed2c4dfa79af960d73f7ed68cb599",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c21a76d2_4d041860",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 21
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-06T18:00:35Z",
+      "side": 1,
+      "message": "Indent this one more level.",
+      "range": {
+        "startLine": 41,
+        "startChar": 10,
+        "endLine": 47,
+        "endChar": 10
+      },
+      "revId": "1b4937bfe27ed2c4dfa79af960d73f7ed68cb599",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7febbbc2_74b3d3cd",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 21
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-06T18:00:35Z",
+      "side": 1,
+      "message": "Why are we checking specifically for undefined here? Why not just...\n\nif (revisionImage) {\n\n...?",
+      "range": {
+        "startLine": 25,
+        "startChar": 10,
+        "endLine": 25,
+        "endChar": 37
+      },
+      "revId": "1b4937bfe27ed2c4dfa79af960d73f7ed68cb599",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "72d14af5_247e21c4",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 21
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-06T18:00:35Z",
+      "side": 1,
+      "message": "Same here.",
+      "range": {
+        "startLine": 29,
+        "startChar": 5,
+        "endLine": 29,
+        "endChar": 36
+      },
+      "revId": "1b4937bfe27ed2c4dfa79af960d73f7ed68cb599",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
