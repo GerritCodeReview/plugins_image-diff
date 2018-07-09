@@ -1,0 +1,211 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9affcc0e_f3323c66",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 23
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-07-09T21:06:16Z",
+      "side": 1,
+      "message": "Fix spacing",
+      "range": {
+        "startLine": 25,
+        "startChar": 6,
+        "endLine": 25,
+        "endChar": 18
+      },
+      "revId": "0e33e63ac36de18d39d6ce309e3a78e809dbfc2d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cc670426_e027682a",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 23
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-07-09T21:06:16Z",
+      "side": 1,
+      "message": "You can remove this and put \"z-index: 1\" inside #imageRevision",
+      "range": {
+        "startLine": 28,
+        "startChar": 6,
+        "endLine": 32,
+        "endChar": 5
+      },
+      "revId": "0e33e63ac36de18d39d6ce309e3a78e809dbfc2d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cccc8110_0ca5cbf3",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 23
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-07-09T21:06:16Z",
+      "side": 1,
+      "message": "remove spacing",
+      "range": {
+        "startLine": 42,
+        "startChar": 0,
+        "endLine": 42,
+        "endChar": 8
+      },
+      "revId": "0e33e63ac36de18d39d6ce309e3a78e809dbfc2d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7c9aa4ee_d8bedf44",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 23
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-07-09T21:06:16Z",
+      "side": 1,
+      "message": "Remove this",
+      "range": {
+        "startLine": 44,
+        "startChar": 11,
+        "endLine": 44,
+        "endChar": 29
+      },
+      "revId": "0e33e63ac36de18d39d6ce309e3a78e809dbfc2d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a8d7b2d2_4889fb84",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 23
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-07-09T21:06:16Z",
+      "side": 1,
+      "message": "Fix spacing",
+      "range": {
+        "startLine": 47,
+        "startChar": 4,
+        "endLine": 47,
+        "endChar": 6
+      },
+      "revId": "0e33e63ac36de18d39d6ce309e3a78e809dbfc2d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "88107130_ccdd3a67",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 23
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-07-09T21:06:16Z",
+      "side": 1,
+      "message": "Remove white spaces",
+      "range": {
+        "startLine": 48,
+        "startChar": 12,
+        "endLine": 48,
+        "endChar": 13
+      },
+      "revId": "0e33e63ac36de18d39d6ce309e3a78e809dbfc2d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "32977cda_fecd60ec",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 23
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-07-09T21:06:16Z",
+      "side": 1,
+      "message": "Fix spacing",
+      "range": {
+        "startLine": 36,
+        "startChar": 43,
+        "endLine": 36,
+        "endChar": 44
+      },
+      "revId": "0e33e63ac36de18d39d6ce309e3a78e809dbfc2d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "23272073_0a2f5d0b",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 23
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-07-09T21:06:16Z",
+      "side": 1,
+      "message": "Remove logging",
+      "range": {
+        "startLine": 38,
+        "startChar": 6,
+        "endLine": 38,
+        "endChar": 58
+      },
+      "revId": "0e33e63ac36de18d39d6ce309e3a78e809dbfc2d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "67c3e4e7_73f3eee9",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode_test.html",
+        "patchSetId": 23
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-07-09T21:06:16Z",
+      "side": 1,
+      "message": "Add a space between the tests",
+      "range": {
+        "startLine": 54,
+        "startChar": 7,
+        "endLine": 54,
+        "endChar": 0
+      },
+      "revId": "0e33e63ac36de18d39d6ce309e3a78e809dbfc2d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
