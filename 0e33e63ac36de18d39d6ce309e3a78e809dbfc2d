@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "b54d98a6_e7676b2a",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 23
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-09T21:20:53Z",
+      "side": 1,
+      "message": "HTML should use double quotes. Check this throughout this file.",
+      "revId": "0e33e63ac36de18d39d6ce309e3a78e809dbfc2d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "9affcc0e_f3323c66",
         "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
         "patchSetId": 23
