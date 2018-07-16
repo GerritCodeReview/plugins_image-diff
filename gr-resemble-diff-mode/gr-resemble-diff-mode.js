@@ -20,13 +20,16 @@
     properties: {
       baseImage: Object,
       revisionImage: Object,
+      resembleControl: Object,
     },
 
     observers: [
-      '_handleImageDiff(baseImage, revisionImage)',
+      '_handleImageDiff(baseImage.*, revisionImage.*)',
     ],
 
-    _handleImageDiff(base, revision) {
+    _handleImageDiff(baseChangeRecord, revisionChangeRecord) {
+      const base = baseChangeRecord.base;
+      const revision = revisionChangeRecord.base;
       if (base && revision) {
         const baseEncoded = this.getDataUrl(base);
         const revisionEncoded = this.getDataUrl(revision);
@@ -38,18 +41,27 @@
 
     compareImages(baseEncoded, revisionEncoded) {
       return new Promise((resolve, reject) =>
-          resemble(baseEncoded).compareTo(revisionEncoded).onComplete(data => {
-            if (data.error) {
-              reject();
-            } else {
-              resolve(data.getImageDataUrl());
-            }
-          })
+        this.resembleControl = resemble(baseEncoded).compareTo(revisionEncoded).onComplete(data => {
+          if (data.error) {
+            reject();
+          } else {
+            resolve(data.getImageDataUrl());
+          }
+        })
       );
     },
 
     getDataUrl(image) {
       return 'data:' + image['type'] + ';base64,' + image['body'];
+    },
+
+    handleSameSize() {
+      alert('I work same size');
+      this.resembleControl.scaleToSameSize();
+    },
+
+    handleOriginalSize() {
+      this.resembleControl.useOriginalSize();
     },
   });
 })();
