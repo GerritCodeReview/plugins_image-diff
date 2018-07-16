@@ -20,6 +20,7 @@
     properties: {
       baseImage: Object,
       revisionImage: Object,
+<<<<<<< HEAD
       _ignoreColors: {
         type: Boolean,
         value: false,
@@ -29,12 +30,16 @@
         value: false,
         reflectToAttribute: true,
       },
+=======
+      resembleControl: Object,
+>>>>>>> Create functionality to switch resemble image size
     },
 
     observers: [
-      '_handleImageDiff(baseImage, revisionImage)',
+      '_handleImageDiff(baseImage.*, revisionImage.*)',
     ],
 
+<<<<<<< HEAD
     attached() {
       resemble.outputSettings({
         errorType: 'movement',
@@ -49,12 +54,37 @@
     _setImageDiffSrc(src) {
       delete this.$.imageDiff.src;
       this.$.imageDiff.src = src;
+=======
+    _handleImageDiff(baseChangeRecord, revisionChangeRecord) {
+      const base = baseChangeRecord.base;
+      const revision = revisionChangeRecord.base;
+      if (base && revision) {
+        const baseEncoded = this.getDataUrl(base);
+        const revisionEncoded = this.getDataUrl(revision);
+        return this.compareImages(baseEncoded, revisionEncoded).then(src => {
+          this.$.imageDiff.setAttribute('src', src);
+        });
+      }
+    },
+
+    compareImages(baseEncoded, revisionEncoded) {
+      return new Promise((resolve, reject) =>
+        this.resembleControl = resemble(baseEncoded).compareTo(revisionEncoded).onComplete(data => {
+          if (data.error) {
+            reject();
+          } else {
+            resolve(data.getImageDataUrl());
+          }
+        })
+      );
+>>>>>>> Create functionality to switch resemble image size
     },
 
     _getDataUrl(image) {
       return 'data:' + image['type'] + ';base64,' + image['body'];
     },
 
+<<<<<<< HEAD
     _maybeIgnoreColors(diffProcess, ignoreColors) {
       if (ignoreColors) {
         diffProcess.ignoreColors();
@@ -97,6 +127,15 @@
     _handleIgnoreColorsToggle() {
       this._ignoreColors = !this._ignoreColors;
       this.reload();
+=======
+    handleSameSize() {
+      alert('I work same size');
+      this.resembleControl.scaleToSameSize();
+    },
+
+    handleOriginalSize() {
+      this.resembleControl.useOriginalSize();
+>>>>>>> Create functionality to switch resemble image size
     },
   });
 })();
