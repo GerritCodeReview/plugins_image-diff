@@ -41,5 +41,18 @@
     computeSrcString(image) {
       return 'data:' + image['type'] + ';base64, ' + image['body'];
     },
+
+    handleSameSize() {
+      this.customStyle['--my-revison-width'] = this.baseImage._width + 'px';
+      this.customStyle['--my-revision-height'] = this.baseImage._height + 'px';
+      this.updateStyles();
+    },
+
+    handleOriginalSize() {
+      this.customStyle['--my-revison-width'] = this.revisionImage._width + 'px';
+      this.customStyle['--my-revision-height'] = this.revisionImage._height /
+        + 'px';
+      this.updateStyles();
+    },
   });
 })();

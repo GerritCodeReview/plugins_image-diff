@@ -62,5 +62,17 @@ limitations under the License.
       assert.equal(element.computeSrcString(element.revisionImage),
           expectedOutcome);
     });
+
+    test('change revision size to the same as base', () => {
+      element.baseImage = {
+        _width: 200,
+        _height: 300,
+      };
+      assert.notEqual(element.customStyle['--my-revision-width'], element.baseImage._width + 'px');
+      assert.notEqual(element.customStyle['--my-revision-height'], element.baseImage._height + 'px');
+      element.handleSameSize();
+      assert.equal(element.customStyle['--my-revision-width'], element.baseImage._width + 'px');
+      assert.equal(element.customStyle['--my-revision-height'], element.baseImage._height + 'px');
+    });
   });
 </script>
