@@ -41,5 +41,38 @@
     computeSrcString(image) {
       return 'data:' + image['type'] + ';base64, ' + image['body'];
     },
+
+    handleSameSize() {
+      const baseWidth = this.baseImage._width;
+      const baseHeight = this.baseImage._height;
+      const revisionWidth = this.revisionImage._width;
+      const revisionHeight = this.revisionImage._height;
+      const changeToBaseSize = this.calculatePerimeter(baseWidth, baseHeight, revisionWidth, revisionHeight);
+      if (changeToBaseSize == true) {
+        this.customStyle['--my-revision-width'] = baseWidth + 'px';
+        this.customStyle['--my-revision-height'] = baseHeight + 'px';
+        this.updateStyles();
+      } else {
+        this.customStyle['--my-base-width'] = revisionWidth + 'px';
+        this.customStyle['--my-base-height'] = revisionHeight + 'px';
+        this.updateStyles();
+      }
+    },
+
+    handleOriginalSize() {
+      this.customStyle['--my-revision-width'] = undefined;
+      this.customStyle['--my-revision-height'] = undefined;
+      this.customStyle['--my-base-width'] = undefined;
+      this.customStyle['--my-base-height'] = undefined;
+      this.updateStyles();
+    },
+
+    calculatePerimeter(BW, BH, RW, RH) {
+      if (((BW*2) + (BH*2)) >= ((RW*2) + (RH*2))) {
+        return true;
+      } else {
+        return false;
+      }
+    },
   });
 })();

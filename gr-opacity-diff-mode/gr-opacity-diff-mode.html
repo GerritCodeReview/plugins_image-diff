@@ -24,21 +24,39 @@ limitations under the License.
         display: block;
         margin:auto;
         position: absolute;
-        width: 500px;
       }
       #imageRevision {
         opacity: var(--my-opacity-value);
         z-index: 1;
+        width: var(--my-revision-width);
+        height: var(--my-revision-height);
       }
       #imageDiv {
         position: relative;
         margin: auto;
         width: 500px;
       }
+      #imageBase {
+        width: var(--my-base-width);
+        height: var(--my-base-height);
+      }
     </style>
     <div id="imageDiv">
       <img id="imageBase"/>
       <img id="imageRevision" data-opacity$="{{opacityValue}}"/>
+    </div>
+    <div>
+    <input
+    checked
+      id="switchSizes1"
+      name="radioBtn"
+      on-tap="handleOriginalSize"
+      type="radio"> Orginal Sizes <br>
+    <input
+      id="switchSizes2"
+      name="radioBtn"
+      on-tap="handleSameSize"
+      type="radio"> Same Size
     </div>
     <label for="opacitySlider">Opacity</label>
     <input
