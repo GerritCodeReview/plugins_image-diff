@@ -41,5 +41,31 @@
     computeSrcString(image) {
       return 'data:' + image['type'] + ';base64, ' + image['body'];
     },
+
+    handleSameSize() {
+      const baseWidth = this.baseImage._width;
+      const baseHeight = this.baseImage._height;
+      const revisionWidth = this.revisionImage._width;
+      const revisionHeight = this.revisionImage._height;
+      if (baseWidth >= revisionWidth || baseHeight >= revisionHeight) {
+        this.customStyle['--my-revision-width'] = baseWidth + 'px';
+        this.customStyle['--my-revision-height'] = baseHeight + 'px';
+        this.updateStyles();
+      } else {
+        this.customStyle['--my-base-width'] = revisionWidth + 'px';
+        this.customStyle['--my-base-height'] = revisionHeight + 'px';
+        this.updateStyles();
+      }
+    },
+
+    handleOriginalSize() {
+      this.customStyle['--my-revision-width'] = this.revisionImage._width
+        + 'px';
+      this.customStyle['--my-revision-height'] = this.revisionImage._height
+        + 'px';
+      this.customStyle['--my-base-width'] = this.baseImage._width + 'px';
+      this.customStyle['--my-base-height'] = this.baseImage._height + 'px';
+      this.updateStyles();
+    },
   });
 })();
