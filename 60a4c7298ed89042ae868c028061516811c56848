@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f506f1ad_649326be",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-07-18T22:11:44Z",
+      "side": 1,
+      "message": "Remove space",
+      "revId": "60a4c7298ed89042ae868c028061516811c56848",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b702bd09_ef65dc59",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-07-18T22:11:44Z",
+      "side": 1,
+      "message": "Won\u0027t this set the errorType to movement for all image diffs?",
+      "range": {
+        "startLine": 40,
+        "startChar": 6,
+        "endLine": 43,
+        "endChar": 9
+      },
+      "revId": "60a4c7298ed89042ae868c028061516811c56848",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1e56564c_366ae6d0",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-07-18T22:11:44Z",
+      "side": 1,
+      "message": "This might cause an error if the image types aren\u0027t supported by resemblejs",
+      "range": {
+        "startLine": 89,
+        "startChar": 38,
+        "endLine": 89,
+        "endChar": 60
+      },
+      "revId": "60a4c7298ed89042ae868c028061516811c56848",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
