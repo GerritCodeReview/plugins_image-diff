@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "91bfdf2d_e1caa33a",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-18T18:16:53Z",
+      "side": 1,
+      "message": "Right now, this scales the baseImage to the height of the revisionImage.\n\nLet\u0027s instead make it so that whichever image is smaller scales to whichever image is bigger. You should define two variables, \"width\" and \"height\", and set each to whichever dimension on baseImage or revisionImage is greater.",
+      "revId": "acbb637895b29f974695993a479658941d2b0e17",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2f558c32_5f3ba269",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-18T18:16:53Z",
+      "side": 1,
+      "message": "Sp.",
+      "range": {
+        "startLine": 46,
+        "startChar": 29,
+        "endLine": 46,
+        "endChar": 36
+      },
+      "revId": "acbb637895b29f974695993a479658941d2b0e17",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "19d884a9_3693f440",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-18T18:16:53Z",
+      "side": 1,
+      "message": "Sp.",
+      "range": {
+        "startLine": 52,
+        "startChar": 29,
+        "endLine": 52,
+        "endChar": 36
+      },
+      "revId": "acbb637895b29f974695993a479658941d2b0e17",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
