@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "efb68709_5471f2f7",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-18T22:45:04Z",
+      "side": 1,
+      "message": "What happens here if baseImage is taller than revisionImage, but also less wide?",
+      "range": {
+        "startLine": 49,
+        "startChar": 0,
+        "endLine": 59,
+        "endChar": 6
+      },
+      "revId": "6dce04d80022ee4fd762ff8ff33243f51f23767e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "728474e3_3b88d2f9",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-18T22:45:04Z",
+      "side": 1,
+      "message": "Can we just set these variables to undefined?",
+      "range": {
+        "startLine": 62,
+        "startChar": 6,
+        "endLine": 67,
+        "endChar": 75
+      },
+      "revId": "6dce04d80022ee4fd762ff8ff33243f51f23767e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
