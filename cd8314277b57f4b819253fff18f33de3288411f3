@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c06dfa7f_a3bfa5b0",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-07-18T22:33:02Z",
+      "side": 1,
+      "message": "Is there a reason why it\u0027s 450?",
+      "range": {
+        "startLine": 41,
+        "startChar": 29,
+        "endLine": 41,
+        "endChar": 32
+      },
+      "revId": "cd8314277b57f4b819253fff18f33de3288411f3",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
