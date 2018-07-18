@@ -22,6 +22,30 @@
       "revId": "cd8314277b57f4b819253fff18f33de3288411f3",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c38fedd6_dc8daed2",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-18T22:35:35Z",
+      "side": 1,
+      "message": "Not in particular. I noticed performance issues with it at 1200 (the default) -- still not great at 600, and 300 was too low. We can definitely revisit this later.",
+      "parentUuid": "c06dfa7f_a3bfa5b0",
+      "range": {
+        "startLine": 41,
+        "startChar": 29,
+        "endLine": 41,
+        "endChar": 32
+      },
+      "revId": "cd8314277b57f4b819253fff18f33de3288411f3",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
