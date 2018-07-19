@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "579c3199_c847b029",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 8
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-19T19:31:57Z",
+      "side": 1,
+      "message": "We can just use one toggle here instead of two radio buttons. I\u0027d use an input checkbox wrapped with a label.",
+      "range": {
+        "startLine": 49,
+        "startChar": 0,
+        "endLine": 60,
+        "endChar": 10
+      },
+      "revId": "43fe0dbe5ee52112fc7a36bdd71cdf681a8f87f2",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ef30cd5f_f1dd8bc0",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 8
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-19T19:31:57Z",
+      "side": 1,
+      "message": "We don\u0027t need four CSS variables here, we only need two. \"--img-height\" and \"--img-width\".",
+      "range": {
+        "startLine": 52,
+        "startChar": 6,
+        "endLine": 60,
+        "endChar": 7
+      },
+      "revId": "43fe0dbe5ee52112fc7a36bdd71cdf681a8f87f2",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "25ec1a25_df26a268",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 8
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-19T19:31:57Z",
+      "side": 1,
+      "message": "What does this code do? Please use better variable names and write some comments.\n\nIt doesn\u0027t make sense to me that a function called \"calculate\" returns true or false.",
+      "range": {
+        "startLine": 71,
+        "startChar": 0,
+        "endLine": 77,
+        "endChar": 6
+      },
+      "revId": "43fe0dbe5ee52112fc7a36bdd71cdf681a8f87f2",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
