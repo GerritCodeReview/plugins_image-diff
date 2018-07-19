@@ -48,6 +48,30 @@
     },
     {
       "key": {
+        "uuid": "3ff4de9f_beba8124",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 8
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1067380
+      },
+      "writtenOn": "2018-07-19T19:48:21Z",
+      "side": 1,
+      "message": "Can you explain what you mean by only needing two? I only assumed we needed four because either the base image or the revision image can change, and they both have a width and height. Depending on which image is bigger determines which 2 variables we will use.",
+      "parentUuid": "ef30cd5f_f1dd8bc0",
+      "range": {
+        "startLine": 52,
+        "startChar": 6,
+        "endLine": 60,
+        "endChar": 7
+      },
+      "revId": "43fe0dbe5ee52112fc7a36bdd71cdf681a8f87f2",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "25ec1a25_df26a268",
         "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
         "patchSetId": 8
@@ -59,6 +83,30 @@
       "writtenOn": "2018-07-19T19:31:57Z",
       "side": 1,
       "message": "What does this code do? Please use better variable names and write some comments.\n\nIt doesn\u0027t make sense to me that a function called \"calculate\" returns true or false.",
+      "range": {
+        "startLine": 71,
+        "startChar": 0,
+        "endLine": 77,
+        "endChar": 6
+      },
+      "revId": "43fe0dbe5ee52112fc7a36bdd71cdf681a8f87f2",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5f76200e_f9fabca4",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 8
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1067380
+      },
+      "writtenOn": "2018-07-19T19:48:21Z",
+      "side": 1,
+      "message": "I thought that using a ton of if-statments to figure out which image was bigger was too much. The easier way to figure that out is to get the perimeter of each image and change the size of the image with the smaller perimeter.",
+      "parentUuid": "25ec1a25_df26a268",
       "range": {
         "startLine": 71,
         "startChar": 0,
