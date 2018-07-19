@@ -41,5 +41,17 @@
     computeSrcString(image) {
       return 'data:' + image['type'] + ';base64, ' + image['body'];
     },
+
+    _handleSameSize() {
+      let width;
+      let height;
+      if (this.$.switchSizes.checked) {
+        width = Math.max(this.revisionImage._width, this.baseImage._width);
+        height = Math.max(this.revisionImage._height, this.baseImage._height);
+      }
+      this.customStyle['--my-image-width'] = width + 'px';
+      this.customStyle['--my-image-height'] = height + 'px';
+      this.updateStyles();
+    },
   });
 })();
