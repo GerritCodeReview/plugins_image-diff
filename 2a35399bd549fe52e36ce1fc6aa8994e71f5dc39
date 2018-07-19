@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a415bb7b_25ed99d1",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 13
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-19T21:59:02Z",
+      "side": 1,
+      "message": "Let\u0027s rename these variables to \u0027img-width\u0027 and \u0027img-height\u0027.",
+      "range": {
+        "startLine": 27,
+        "startChar": 19,
+        "endLine": 27,
+        "endChar": 35
+      },
+      "revId": "2a35399bd549fe52e36ce1fc6aa8994e71f5dc39",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bae32c4e_8fcfddb2",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 13
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-19T21:59:02Z",
+      "side": 1,
+      "message": "Let\u0027s rename this to \u0027scaleSizesToggle\u0027.",
+      "range": {
+        "startLine": 47,
+        "startChar": 14,
+        "endLine": 47,
+        "endChar": 25
+      },
+      "revId": "2a35399bd549fe52e36ce1fc6aa8994e71f5dc39",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cc268914_0806aaff",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 13
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-19T21:59:02Z",
+      "side": 1,
+      "message": "Let\u0027s rename this to \u0027_handleScaleSizesToggle\u0027.",
+      "range": {
+        "startLine": 49,
+        "startChar": 18,
+        "endLine": 49,
+        "endChar": 33
+      },
+      "revId": "2a35399bd549fe52e36ce1fc6aa8994e71f5dc39",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d64d823f_ea729c11",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 13
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-19T21:59:02Z",
+      "side": 1,
+      "message": "Sentence case this. \"Scale to same size\".",
+      "range": {
+        "startLine": 50,
+        "startChar": 8,
+        "endLine": 50,
+        "endChar": 26
+      },
+      "revId": "2a35399bd549fe52e36ce1fc6aa8994e71f5dc39",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f7e53d7a_c4b500ee",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 13
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-19T21:59:02Z",
+      "side": 1,
+      "message": "Whoops, I missed one thing. This should not set the value to \"undefinedpx\", so we need to check for undefined here.\n\n      this.customStyle[\u0027--my-image-width\u0027] \u003d width ? width + \u0027px\u0027 : null;\n      this.customStyle[\u0027--my-image-height\u0027] \u003d height ? height + \u0027px\u0027 : null;",
+      "range": {
+        "startLine": 52,
+        "startChar": 6,
+        "endLine": 53,
+        "endChar": 60
+      },
+      "revId": "2a35399bd549fe52e36ce1fc6aa8994e71f5dc39",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
