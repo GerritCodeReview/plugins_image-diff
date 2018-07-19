@@ -234,6 +234,30 @@
       "revId": "2a35399bd549fe52e36ce1fc6aa8994e71f5dc39",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "47cc3bb1_03896578",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 13
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-19T22:24:03Z",
+      "side": 1,
+      "message": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator",
+      "parentUuid": "0fd74983_23f5ae4e",
+      "range": {
+        "startLine": 52,
+        "startChar": 6,
+        "endLine": 53,
+        "endChar": 60
+      },
+      "revId": "2a35399bd549fe52e36ce1fc6aa8994e71f5dc39",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
     }
   ]
 }
