@@ -62,5 +62,59 @@ limitations under the License.
       assert.equal(element.computeSrcString(element.revisionImage),
           expectedOutcome);
     });
+
+    test('change smaller image to same size as the larger one', () => {
+      element.baseImage = {
+        _width: 200,
+        _height: 300,
+      };
+      element.revisionImage = {
+        _width: 100,
+        _height: 90,
+      };
+      assert.equal(element.customStyle['--my-image-width'], undefined);
+      assert.equal(element.customStyle['--my-image-height'], undefined);
+      element.$.switchSizes.checked = true;
+      element._handleSameSize();
+      flushAsynchronousOperations();
+      assert.equal(element.customStyle['--my-image-width'],
+          element.baseImage._width + 'px');
+      assert.equal(element.customStyle['--my-image-height'],
+          element.baseImage._height + 'px');
+
+      element.$.switchSizes.checked= false;
+      element._handleSameSize();
+      flushAsynchronousOperations();
+      element.revisionImage = {
+        _width: 400,
+        _height: 500,
+      };
+      assert.equal(element.customStyle['--my-image-width'], 'undefinedpx');
+      assert.equal(element.customStyle['--my-image-height'], 'undefinedpx');
+      element.$.switchSizes.checked = true;
+      element._handleSameSize();
+      flushAsynchronousOperations();
+      assert.equal(element.customStyle['--my-image-width'],
+          element.revisionImage._width + 'px');
+      assert.equal(element.customStyle['--my-image-height'],
+          element.revisionImage._height + 'px');
+
+      element.$.switchSizes.checked = false;
+      element._handleSameSize();
+      flushAsynchronousOperations();
+      element.revisionImage = {
+        _width: 140,
+        _height: 400,
+      };
+      assert.equal(element.customStyle['--my-image-width'], 'undefinedpx');
+      assert.equal(element.customStyle['--my-image-height'], 'undefinedpx');
+      element.$.switchSizes.checked = true;
+      element._handleSameSize();
+      flushAsynchronousOperations();
+      assert.equal(element.customStyle['--my-image-width'],
+          element.baseImage._width + 'px');
+      assert.equal(element.customStyle['--my-image-height'],
+          element.revisionImage._height + 'px');
+    });
   });
 </script>
