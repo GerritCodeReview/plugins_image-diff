@@ -15,40 +15,51 @@ limitations under the License.
 -->
 
 <dom-module id="gr-opacity-diff-mode">
-  <template>
-    <style>
-      :host {
-        display: block;
-      }
-      img {
-        display: block;
-        margin:auto;
-        position: absolute;
-        width: 500px;
-      }
-      #imageRevision {
-        opacity: var(--my-opacity-value);
-        z-index: 1;
-      }
-      #imageDiv {
-        position: relative;
-        margin: auto;
-        width: 500px;
-      }
-    </style>
-    <div id="imageDiv">
-      <img id="imageBase"/>
-      <img id="imageRevision" data-opacity$="{{opacityValue}}"/>
-    </div>
-    <label for="opacitySlider">Opacity</label>
-    <input
-      type="range"
-      id="opacitySlider"
-      min="0.0"
-      max="1.0"
-      value="1.0"
-      step=".01"
-      on-input="handleOpacityChange"/>
-  </template>
+    <template>
+        <style>
+          :host {
+            display: block;
+          }
+          img {
+            display: block;
+            margin:auto;
+            position: absolute;
+            width: var(--my-image-width);
+            height: var(--my-image-height);
+          }
+          #imageRevision {
+            opacity: var(--my-opacity-value);
+            z-index: 1;
+          }
+          #imageDiv {
+            position: relative;
+            margin: auto;
+            width: 500px;
+          }
+        </style>
+        <div id="imageDiv">
+          <img id="imageBase"/>
+          <img id="imageRevision" data-opacity$="{{opacityValue}}"/>
+        </div>
+        <div>
+          <label>
+            <input
+              id="switchSizes"
+              type="checkbox"
+              checked$="{{_scaleToSameSizeToggle}}"
+              on-tap="_handleSameSize">
+            Same Size
+          </label>
+        </div>
+        <label for="opacitySlider">Opacity</label>
+        <input
+          type="range"
+          id="opacitySlider"
+          min="0.0"
+          max="1.0"
+          value="1.0"
+          step=".01"
+          on-input="handleOpacityChange"/>
+      </template>
  <script src="gr-opacity-diff-mode.js"></script>
 </dom-module>
