@@ -258,6 +258,30 @@
       "revId": "2a35399bd549fe52e36ce1fc6aa8994e71f5dc39",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "209487d6_cd067755",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 13
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1067380
+      },
+      "writtenOn": "2018-07-19T22:39:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "47cc3bb1_03896578",
+      "range": {
+        "startLine": 52,
+        "startChar": 6,
+        "endLine": 53,
+        "endChar": 60
+      },
+      "revId": "2a35399bd549fe52e36ce1fc6aa8994e71f5dc39",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
