@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d5d903a4_f66239ea",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 14
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-20T17:33:34Z",
+      "side": 1,
+      "message": "Nitpick: alphabetically sort these.",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 28,
+        "endChar": 34
+      },
+      "revId": "b8729eda72f525561b8846addbc84de7f6ca4848",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3604b4df_aee72503",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 14
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-20T17:33:34Z",
+      "side": 1,
+      "message": "Nitpick: indent this one more level.",
+      "range": {
+        "startLine": 47,
+        "startChar": 10,
+        "endLine": 49,
+        "endChar": 42
+      },
+      "revId": "b8729eda72f525561b8846addbc84de7f6ca4848",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4fcc3e7d_ce960e30",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode_test.html",
+        "patchSetId": 14
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-20T17:33:34Z",
+      "side": 1,
+      "message": "In these tests, for the right hand side value (the \u0027expected\u0027 value), it\u0027s best to do as little calculation as possible. This, for example, should just be:\n\n      assert.equal(element.customStyle[\u0027--img-width\u0027], \u0027200px\u0027);\n\nSame for the rest of the tests.\n\nIt\u0027d also be nice for you to break this into a few tests with each case. You can create a suite here inside the first suite, and have tests within it. That way, if tests that test image scaling fail, we know what part of the code to look at first. \n\nThat\u0027d look like:\n\n    suite(\u0027size scaling\u0027, () \u003d\u003e {\n      test(\u0027baseImage larger\u0027, () \u003d\u003e {\n        element.baseImage \u003d {\n          _width: 200,\n          _height: 300,\n        };\n        element.revisionImage \u003d {\n          _width: 100,\n          _height: 90,\n        };\n        // Rest of test here.\n      });\n\n      test(\u0027revisionImage larger\u0027, () \u003d\u003e {\n        element.baseImage \u003d {\n          _width: 200,\n          _height: 300,\n        };\n        element.revisionImage \u003d {\n          _width: 400,\n          _height: 500,\n        };\n        // Rest of test here.\n      });\n\n      // Any other cases should be here.",
+      "range": {
+        "startLine": 80,
+        "startChar": 6,
+        "endLine": 81,
+        "endChar": 43
+      },
+      "revId": "b8729eda72f525561b8846addbc84de7f6ca4848",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
