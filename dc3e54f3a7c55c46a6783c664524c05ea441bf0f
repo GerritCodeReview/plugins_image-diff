@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2811390a_919e6427",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-23T20:08:49Z",
+      "side": 1,
+      "message": "This can be removed.",
+      "range": {
+        "startLine": 54,
+        "startChar": 7,
+        "endLine": 57,
+        "endChar": 7
+      },
+      "revId": "dc3e54f3a7c55c46a6783c664524c05ea441bf0f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "35a6f171_842c7d6d",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-23T20:08:49Z",
+      "side": 1,
+      "message": "This is still not a great function name -- there are lots of extra words we don\u0027t need. Read this [1] and give it another try.\n\n[1] https://medium.com/coding-skills/clean-code-101-meaningful-names-and-functions-bf450456d90c",
+      "range": {
+        "startLine": 63,
+        "startChar": 4,
+        "endLine": 63,
+        "endChar": 34
+      },
+      "revId": "dc3e54f3a7c55c46a6783c664524c05ea441bf0f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c52e21c1_af1cee4c",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-23T20:08:49Z",
+      "side": 1,
+      "message": "We actually don\u0027t need to care about width here, only height. That should simplify this function quite a bit.",
+      "revId": "dc3e54f3a7c55c46a6783c664524c05ea441bf0f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
