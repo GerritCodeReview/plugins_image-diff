@@ -22,22 +22,22 @@ limitations under the License.
       }
       img {
         display: block;
-        margin:auto;
-        position: absolute;
         height: var(--img-height);
+        margin: auto;
+        position: absolute;
         width: var(--img-width);
       }
       #imageRevision {
         opacity: var(--my-opacity-value);
         z-index: 1;
       }
-      #imageDiv {
-        position: relative;
-        margin: auto;
-        width: 500px;
+      #imageDivContainer {
+        display: flex;
+        height: var(--div-height);
+        justify-content: space-around;
       }
     </style>
-    <div id="imageDiv">
+    <div id="imageDivContainer">
       <img id="imageBase"/>
       <img id="imageRevision" data-opacity$="{{opacityValue}}"/>
     </div>

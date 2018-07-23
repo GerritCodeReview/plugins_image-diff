@@ -26,10 +26,12 @@
       if (this.revisionImage) {
         const srcRevision = this.computeSrcString(this.revisionImage);
         this.$.imageRevision.setAttribute('src', srcRevision);
+        this.resizeDiffContainerHeight();
       }
       if (this.baseImage) {
         const srcBase = this.computeSrcString(this.baseImage);
         this.$.imageBase.setAttribute('src', srcBase);
+        this.resizeDiffContainerHeight();
       }
     },
 
@@ -45,12 +47,30 @@
     handleScaleSizesToggle() {
       let width;
       let height;
-      if (this.$.scaleSizesToggle.checked) {
+      if (this.$.scaleSizesToggle.checked &&
+          this.baseImage && this.revisionImage) {
         width = Math.max(this.revisionImage._width, this.baseImage._width);
         height = Math.max(this.revisionImage._height, this.baseImage._height);
       }
       this.customStyle['--img-width'] = width ? width + 'px' : null;
       this.customStyle['--img-height'] = height ? height + 'px' : null;
+      this.updateStyles();
+    },
+
+    resizeDiffContainerHeight() {
+      let heightDiv;
+      if (this.baseImage == undefined) {
+        heightDiv = this.revisionImage._height;
+      } else if (this.revisionImage == undefined) {
+        heightDiv = this.baseImage._height;
+      } else if ((this.baseImage == undefined) &&
+        (this.revisionImage == undefined)) {
+        heightDiv = undefined;
+      } else {
+        heightDiv = Math.max(this.revisionImage._height,
+            this.baseImage._height);
+      }
+      this.customStyle['--div-height'] = heightDiv + 'px';
       this.updateStyles();
     },
   });
