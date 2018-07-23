@@ -26,10 +26,12 @@
       if (this.revisionImage) {
         const srcRevision = this.computeSrcString(this.revisionImage);
         this.$.imageRevision.setAttribute('src', srcRevision);
+        this.handleTheDivSize();
       }
       if (this.baseImage) {
         const srcBase = this.computeSrcString(this.baseImage);
         this.$.imageBase.setAttribute('src', srcBase);
+        this.handleTheDivSize();
       }
     },
 
@@ -46,11 +48,41 @@
       let width;
       let height;
       if (this.$.scaleSizesToggle.checked) {
-        width = Math.max(this.revisionImage._width, this.baseImage._width);
-        height = Math.max(this.revisionImage._height, this.baseImage._height);
+        if ((this.baseImage == undefined) ||
+          (this.revisionImage == undefined)) {
+          width = undefined;
+          height = undefined;
+        } else {
+          width = Math.max(this.revisionImage._width, this.baseImage._width);
+          height = Math.max(this.revisionImage._height, this.baseImage._height);
+        }
       }
       this.customStyle['--img-width'] = width ? width + 'px' : null;
       this.customStyle['--img-height'] = height ? height + 'px' : null;
+      this.updateStyles();
+    },
+
+    handleTheDivSize() {
+      let widthDiv;
+      let heightDiv;
+      if (this.baseImage == undefined) {
+        widthDiv = this.revisionImage._width;
+        heightDiv = this.revisionImage._height;
+      } else if (this.revisionImage == undefined) {
+        widthDiv = this.baseImage._width;
+        heightDiv = this.baseImage._height;
+      } else if ((this.baseImage == undefined) &&
+        (this.revisionImage == undefined)) {
+        widthDiv = undefined;
+        heightDiv = undefined;
+      } else {
+        widthDiv = Math.max(this.revisionImage._width,
+            this.baseImage._width);
+        heightDiv = Math.max(this.revisionImage._height,
+            this.baseImage._height);
+      }
+      this.customStyle['--div-width'] = widthDiv + 'px';
+      this.customStyle['--div-height'] = heightDiv + 'px';
       this.updateStyles();
     },
   });
