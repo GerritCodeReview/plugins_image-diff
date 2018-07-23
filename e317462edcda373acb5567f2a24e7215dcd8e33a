@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "aeb26f92_77b3faa4",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-23T19:34:20Z",
+      "side": 1,
+      "message": "Spelling error.",
+      "range": {
+        "startLine": 7,
+        "startChar": 11,
+        "endLine": 7,
+        "endChar": 15
+      },
+      "revId": "e317462edcda373acb5567f2a24e7215dcd8e33a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "afb89c34_1929a575",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-23T19:34:20Z",
+      "side": 1,
+      "message": "Please add more information in the commit message about what this bug is.",
+      "range": {
+        "startLine": 7,
+        "startChar": 20,
+        "endLine": 7,
+        "endChar": 43
+      },
+      "revId": "e317462edcda373acb5567f2a24e7215dcd8e33a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "df917d23_951fd484",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-23T19:34:20Z",
+      "side": 1,
+      "message": "This can be done much more efficiently.\n\n  if (this.$.scaleSizesToggle.checked \u0026\u0026 this.baseImage \u0026\u0026 this.revisionImage) {\n    // Do stuff\n  }",
+      "range": {
+        "startLine": 50,
+        "startChar": 6,
+        "endLine": 59,
+        "endChar": 7
+      },
+      "revId": "e317462edcda373acb5567f2a24e7215dcd8e33a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5d1272ff_52ced247",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-23T19:34:20Z",
+      "side": 1,
+      "message": "This function name is not very descriptive. What is it supposed to do?",
+      "range": {
+        "startLine": 65,
+        "startChar": 4,
+        "endLine": 65,
+        "endChar": 20
+      },
+      "revId": "e317462edcda373acb5567f2a24e7215dcd8e33a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9c17cb48_38f331a7",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode_test.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-23T19:34:20Z",
+      "side": 1,
+      "message": "This doesn\u0027t make sense to me. What do you mean, handle the div size?",
+      "range": {
+        "startLine": 121,
+        "startChar": 10,
+        "endLine": 121,
+        "endChar": 44
+      },
+      "revId": "e317462edcda373acb5567f2a24e7215dcd8e33a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
