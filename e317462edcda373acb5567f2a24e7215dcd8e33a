@@ -48,6 +48,54 @@
     },
     {
       "key": {
+        "uuid": "ac7bc2d4_27047d93",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1067380
+      },
+      "writtenOn": "2018-07-23T19:46:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "aeb26f92_77b3faa4",
+      "range": {
+        "startLine": 7,
+        "startChar": 11,
+        "endLine": 7,
+        "endChar": 15
+      },
+      "revId": "e317462edcda373acb5567f2a24e7215dcd8e33a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fc0575d8_2bdec143",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1067380
+      },
+      "writtenOn": "2018-07-23T19:46:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "afb89c34_1929a575",
+      "range": {
+        "startLine": 7,
+        "startChar": 20,
+        "endLine": 7,
+        "endChar": 43
+      },
+      "revId": "e317462edcda373acb5567f2a24e7215dcd8e33a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "df917d23_951fd484",
         "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
         "patchSetId": 1
@@ -68,6 +116,30 @@
       "revId": "e317462edcda373acb5567f2a24e7215dcd8e33a",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "efb94eb7_213d7472",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1067380
+      },
+      "writtenOn": "2018-07-23T19:46:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "df917d23_951fd484",
+      "range": {
+        "startLine": 50,
+        "startChar": 6,
+        "endLine": 59,
+        "endChar": 7
+      },
+      "revId": "e317462edcda373acb5567f2a24e7215dcd8e33a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     },
     {
       "key": {
@@ -94,6 +166,30 @@
     },
     {
       "key": {
+        "uuid": "72dea0b8_44739b7d",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1067380
+      },
+      "writtenOn": "2018-07-23T19:46:10Z",
+      "side": 1,
+      "message": "It fixes the div size where the baseImage and revision images are compared. It is to make sure the div is completely stretched out and there is no scroll bar.",
+      "parentUuid": "5d1272ff_52ced247",
+      "range": {
+        "startLine": 65,
+        "startChar": 4,
+        "endLine": 65,
+        "endChar": 20
+      },
+      "revId": "e317462edcda373acb5567f2a24e7215dcd8e33a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "9c17cb48_38f331a7",
         "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode_test.html",
         "patchSetId": 1
@@ -105,6 +201,30 @@
       "writtenOn": "2018-07-23T19:34:20Z",
       "side": 1,
       "message": "This doesn\u0027t make sense to me. What do you mean, handle the div size?",
+      "range": {
+        "startLine": 121,
+        "startChar": 10,
+        "endLine": 121,
+        "endChar": 44
+      },
+      "revId": "e317462edcda373acb5567f2a24e7215dcd8e33a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d6b061ea_18a0e253",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode_test.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 1067380
+      },
+      "writtenOn": "2018-07-23T19:46:10Z",
+      "side": 1,
+      "message": "This is to just make sure there is no scroll bar.",
+      "parentUuid": "9c17cb48_38f331a7",
       "range": {
         "startLine": 121,
         "startChar": 10,
