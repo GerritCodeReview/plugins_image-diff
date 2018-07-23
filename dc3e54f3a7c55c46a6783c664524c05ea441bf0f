@@ -146,6 +146,24 @@
       "revId": "dc3e54f3a7c55c46a6783c664524c05ea441bf0f",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a8a903d1_7804a194",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-23T21:38:37Z",
+      "side": 1,
+      "message": "We don\u0027t need to care because we have no other content to the left or right of the diff.",
+      "parentUuid": "f190949f_aa95a47b",
+      "revId": "dc3e54f3a7c55c46a6783c664524c05ea441bf0f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
     }
   ]
 }
