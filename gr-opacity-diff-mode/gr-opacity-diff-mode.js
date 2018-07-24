@@ -27,6 +27,7 @@
         const srcRevision = this.computeSrcString(this.revisionImage);
         this.$.imageRevision.setAttribute('src', srcRevision);
         this.resizeDiffContainerHeight();
+        this.handleOpacityChange();
       }
       if (this.baseImage) {
         const srcBase = this.computeSrcString(this.baseImage);
