@@ -26,7 +26,24 @@ limitations under the License.
         margin-top: .5em;
         padding: 1em var(--default-horizontal-margin);
       }
+      #header {
+        border-bottom: 1px solid var(--border-color, #ddd);
+        display: inline-flex;
+        padding: 0.5em 0em;
+        width: 100%;
+      }
+      h3 {
+        padding: 0em 0.5em;
+      }
     </style>
+
+    <div id="header">
+      <h3>Image Diff</h3>
+      <select id="dropdown">
+        <option value="resemble">Resemble Mode</option>
+        <option value="opacity">Opacity Mode</option>
+      </select>
+    </div>
 
     <template is="dom-if" if="[[_showResembleMode]]" restamp="true">
       <gr-resemble-diff-mode
@@ -39,11 +56,6 @@ limitations under the License.
           base-image="[[baseImage]]"
           revision-image="[[revisionImage]]"></gr-opacity-diff-mode>
     </template>
-
-    <select id="dropdown" on-change="handleSelect">
-      <option value="resemble">Resemble Mode</option>
-      <option value="opacity">Opacity Mode</option>
-    </select>
   </template>
   <script src="gr-image-diff-tool.js"></script>
 </dom-module>
