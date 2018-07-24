@@ -21,6 +21,7 @@ limitations under the License.
         display: block;
       }
       img {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
         display: block;
         height: var(--img-height);
         margin: auto;
@@ -31,34 +32,50 @@ limitations under the License.
         opacity: var(--my-opacity-value);
         z-index: 1;
       }
-      #imageDivContainer {
+      #imageDiffContainer {
         display: flex;
         height: var(--div-height);
         justify-content: space-around;
       }
+      #controlsContainer {
+        display: flex;
+        justify-content:space-around;
+      }
+      #controlsBox {
+        background-color: whitesmoke;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+        display:flex;
+        justify-content:space-between;
+        padding: 10px;
+        width: 500px;
+      }
     </style>
-    <div id="imageDivContainer">
+    <div id="imageDiffContainer">
       <img id="imageBase"/>
       <img data-opacity$="{{opacityValue}}" id="imageRevision"/>
     </div>
-    <div>
-      <label>
-        <input
-            id="scaleSizesToggle"
-            on-tap="handleScaleSizesToggle"
-            type="checkbox">
-        Scale to same size
-      </label>
+    <div id="controlsContainer">
+      <div id="controlsBox">
+        <label>
+          <input
+              id="scaleSizesToggle"
+              on-tap="handleScaleSizesToggle"
+              type="checkbox">
+            Scale to same size
+        </label>
+        <label>
+            Opacity
+          <input
+            id="opacitySlider"
+            max="1.0"
+            min="0.0"
+            on-input="handleOpacityChange"
+            step=".01"
+            type="range"
+            value="1.0"/>
+        </label>
+      </div>
     </div>
-    <label for="opacitySlider">Opacity</label>
-    <input
-      id="opacitySlider"
-      max="1.0"
-      min="0.0"
-      on-input="handleOpacityChange"
-      step=".01"
-      type="range"
-      value="1.0"/>
   </template>
  <script src="gr-opacity-diff-mode.js"></script>
 </dom-module>
