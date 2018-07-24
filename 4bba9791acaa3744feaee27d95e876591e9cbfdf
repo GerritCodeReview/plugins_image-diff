@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c0d11e9e_2b398ab2",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-24T17:17:55Z",
+      "side": 1,
+      "message": "We can do this much more quickly:\n\n  const maxHeight \u003d Math.max(\n      this.baseImage ? this.baseImage._height : 0,\n      this.revisionImage ? this.revisionImage._height : 0);\n  this.customStyle[\u0027--div-height\u0027] \u003d maxHeight + \u0027px\u0027;",
+      "range": {
+        "startLine": 61,
+        "startChar": 0,
+        "endLine": 72,
+        "endChar": 7
+      },
+      "revId": "4bba9791acaa3744feaee27d95e876591e9cbfdf",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
