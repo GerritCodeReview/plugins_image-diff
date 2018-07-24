@@ -32,7 +32,7 @@
     },
 
     observers: [
-      '_handleImageDiff(baseImage, revisionImage)',
+      '_handleImageDiff(baseImage.*, revisionImage.*)',
     ],
 
     attached() {
