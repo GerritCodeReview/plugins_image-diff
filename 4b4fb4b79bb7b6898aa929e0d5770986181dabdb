@@ -1,0 +1,141 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ddbe9f57_317e2517",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-25T20:56:18Z",
+      "side": 1,
+      "message": "Add \"font-family: var(--font-family);\" here.",
+      "revId": "4b4fb4b79bb7b6898aa929e0d5770986181dabdb",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "78aa8ca6_abb8de51",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-25T20:56:18Z",
+      "side": 1,
+      "message": "Delete this line",
+      "revId": "4b4fb4b79bb7b6898aa929e0d5770986181dabdb",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ca9ba4d8_862dceaa",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-25T20:56:18Z",
+      "side": 1,
+      "message": "Delete this line",
+      "revId": "4b4fb4b79bb7b6898aa929e0d5770986181dabdb",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "838cf46e_f9e10ea5",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-25T20:56:18Z",
+      "side": 1,
+      "message": "Let\u0027s make this \"padding: .5em;\"",
+      "range": {
+        "startLine": 33,
+        "startChar": 8,
+        "endLine": 33,
+        "endChar": 27
+      },
+      "revId": "4b4fb4b79bb7b6898aa929e0d5770986181dabdb",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "77a4056f_294e8f6d",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-25T20:56:18Z",
+      "side": 1,
+      "message": "Just \"0\" is fine.",
+      "range": {
+        "startLine": 37,
+        "startChar": 17,
+        "endLine": 37,
+        "endChar": 20
+      },
+      "revId": "4b4fb4b79bb7b6898aa929e0d5770986181dabdb",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e81cc070_94b55b58",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-25T20:56:18Z",
+      "side": 1,
+      "message": "Add \"margin-left: 1em;\"",
+      "revId": "4b4fb4b79bb7b6898aa929e0d5770986181dabdb",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8342d636_4dc60159",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-25T20:56:18Z",
+      "side": 1,
+      "message": "Let\u0027s just call this \"Diff view\"",
+      "range": {
+        "startLine": 49,
+        "startChar": 10,
+        "endLine": 49,
+        "endChar": 15
+      },
+      "revId": "4b4fb4b79bb7b6898aa929e0d5770986181dabdb",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
