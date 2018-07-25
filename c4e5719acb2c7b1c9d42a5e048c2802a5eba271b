@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2f0a0e5a_77106abe",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-25T18:24:02Z",
+      "side": 1,
+      "message": "As far as I remember, we want these left-aligned with the image. Did you send a screenshot of them centered to Arnab?",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 26
+      },
+      "revId": "c4e5719acb2c7b1c9d42a5e048c2802a5eba271b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "86627744_5561000f",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-25T18:24:02Z",
+      "side": 1,
+      "message": "What\u0027s the purpose of this change?",
+      "revId": "c4e5719acb2c7b1c9d42a5e048c2802a5eba271b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
