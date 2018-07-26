@@ -18,25 +18,37 @@
     is: 'gr-image-diff-tool',
 
     properties: {
-      _showResembleMode: {
-        type: Boolean,
-        value: true,
-      },
-      _showOpacityMode: {
-        type: Boolean,
-        value: false,
+      _showResembleMode: Boolean,
+      _showOpacityMode: Boolean,
+      _observeMode: {
+        type: String,
+        observer: '_handleSelect',
       },
     },
 
-    handleSelect() {
-      const mode = this.$.dropdown.value;
-      if (mode === 'resemble') {
-        this._showResembleMode = true;
-        this._showOpacityMode = false;
-      } else if (mode === 'opacity') {
-        this._showOpacityMode = true;
-        this._showResembleMode = false;
-      }
+    attached() {
+      const diff_mode = window.localStorage.getItem('image-diff-mode');
+      diff_mode === 'opacity' ?
+          this._displayOpacityMode() : this._displayResembleMode();
+    },
+
+    _handleSelect(mode) {
+      mode === 'opacity' ?
+          this._displayOpacityMode() : this._displayResembleMode();
+    },
+
+    _displayResembleMode() {
+      this.$.dropdown.options[0].selected = 'selected';
+      this._showResembleMode = true;
+      this._showOpacityMode = false;
+      window.localStorage.setItem('image-diff-mode', 'resemble');
+    },
+
+    _displayOpacityMode() {
+      this.$.dropdown.options[1].selected = 'selected';
+      this._showResembleMode = false;
+      this._showOpacityMode = true;
+      window.localStorage.setItem('image-diff-mode', 'opacity');
     },
   });
 })();
