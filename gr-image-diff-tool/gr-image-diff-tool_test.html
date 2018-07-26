@@ -44,8 +44,7 @@ limitations under the License.
     });
 
     test('test opacity mode', () => {
-      element.$.dropdown.value = 'opacity';
-      element.handleSelect();
+      element._observeMode = 'opacity';
       assert.isTrue(element._showOpacityMode);
       assert.isFalse(element._showResembleMode);
       flushAsynchronousOperations();
@@ -55,8 +54,7 @@ limitations under the License.
     });
 
     test('test resemble mode', () => {
-      element.$.dropdown.value = 'resemble';
-      element.handleSelect();
+      element._observeMode = 'resemble';
       assert.isTrue(element._showResembleMode);
       assert.isFalse(element._showOpacityMode);
       flushAsynchronousOperations();
