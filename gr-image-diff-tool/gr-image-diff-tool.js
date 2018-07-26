@@ -18,25 +18,45 @@
     is: 'gr-image-diff-tool',
 
     properties: {
-      _showResembleMode: {
-        type: Boolean,
-        value: true,
-      },
-      _showOpacityMode: {
-        type: Boolean,
-        value: false,
+      _showResembleMode: Boolean,
+      _showOpacityMode: Boolean,
+      _observeMode: {
+        type: String,
+        observer: '_handleSelect',
       },
     },
 
-    handleSelect() {
-      const mode = this.$.dropdown.value;
-      if (mode === 'resemble') {
-        this._showResembleMode = true;
-        this._showOpacityMode = false;
-      } else if (mode === 'opacity') {
-        this._showOpacityMode = true;
-        this._showResembleMode = false;
-      }
+    attached() {
+      const diff_mode = this._getLocalStorage();
+      diff_mode === 'opacity' ?
+          this._displayOpacityMode() : this._displayResembleMode();
+    },
+
+    _getLocalStorage() {
+      return window.localStorage.getItem('image-diff-mode');
+    },
+
+    _setLocalStorage(mode) {
+      window.localStorage.setItem('image-diff-mode', mode);
+    },
+
+    _handleSelect(mode) {
+      mode === 'opacity' ?
+          this._displayOpacityMode() : this._displayResembleMode();
+    },
+
+    _displayResembleMode() {
+      this._observeMode = 'resemble';
+      this._showResembleMode = true;
+      this._showOpacityMode = false;
+      this._setLocalStorage('resemble');
+    },
+
+    _displayOpacityMode() {
+      this._observeMode = 'opacity';
+      this._showResembleMode = false;
+      this._showOpacityMode = true;
+      this._setLocalStorage('opacity');
     },
   });
 })();
