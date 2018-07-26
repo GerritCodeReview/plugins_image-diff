@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e2ae2466_8b4683c8",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-26T22:56:36Z",
+      "side": 1,
+      "message": "Have we experimented with using databinding to set the value of this \u003cselect\u003e?",
+      "revId": "4ef592caed443858c9d4119e06de99d73523454d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
