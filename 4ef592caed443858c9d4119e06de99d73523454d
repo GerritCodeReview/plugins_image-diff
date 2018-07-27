@@ -16,6 +16,24 @@
       "revId": "4ef592caed443858c9d4119e06de99d73523454d",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a1d9c5d7_2c688967",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-07-27T23:06:49Z",
+      "side": 1,
+      "message": "We have not but how can we use databinding?",
+      "parentUuid": "e2ae2466_8b4683c8",
+      "revId": "4ef592caed443858c9d4119e06de99d73523454d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
     }
   ]
 }
