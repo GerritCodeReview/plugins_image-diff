@@ -34,6 +34,24 @@
       "revId": "4ef592caed443858c9d4119e06de99d73523454d",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "16abb07a_f8a5c2f5",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-30T19:21:36Z",
+      "side": 1,
+      "message": "https://github.com/Polymer/polymer/issues/1975#issuecomment-116827604",
+      "parentUuid": "a1d9c5d7_2c688967",
+      "revId": "4ef592caed443858c9d4119e06de99d73523454d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
     }
   ]
 }
