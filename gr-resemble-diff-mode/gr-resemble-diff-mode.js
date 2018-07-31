@@ -24,6 +24,10 @@
         type: Boolean,
         value: false,
       },
+      _transparent: {
+        type: Boolean,
+        value: false,
+      },
       loading: {
         type: Boolean,
         value: false,
@@ -38,7 +42,8 @@
     attached() {
       window.resemble.outputSettings({
         errorType: 'movement',
-        largeImageThreshold: 450,
+        largeImageThreshold: 0,
+        transparency: 1,
       });
     },
 
@@ -56,11 +61,7 @@
     },
 
     _maybeIgnoreColors(diffProcess, ignoreColors) {
-      if (ignoreColors) {
-        diffProcess.ignoreColors();
-      } else {
-        diffProcess.ignoreNothing();
-      }
+      ignoreColors ? diffProcess.ignoreColors() : diffProcess.ignoreNothing();
       return diffProcess;
     },
 
@@ -95,8 +96,20 @@
     },
 
     _handleIgnoreColorsToggle() {
-      this._ignoreColors = !this._ignoreColors;
-      this.reload();
+      this.debounce('_handleIgnoreColorsToggle', () => {
+        this._ignoreColors = !this._ignoreColors;
+        this.reload();
+      }, 1);
+    },
+
+    _handleTransparentToggle() {
+      this.debounce('_handleTransparentToggle', () => {
+        this._transparent = !this._transparent;
+        window.resemble.outputSettings({
+          transparency: this._transparent ? 0.3 : 1,
+        });
+        this.reload();
+      }, 1);
     },
   });
 })();
