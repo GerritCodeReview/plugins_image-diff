@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bbbb224e_f7d1b736",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-31T18:59:28Z",
+      "side": 1,
+      "message": "Can we just set \u0027_observeMode\u0027 here instead?",
+      "revId": "0a90ffb28737ef92979535bc02bcebce93b61dcb",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3272961f_355e250a",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-31T18:59:28Z",
+      "side": 1,
+      "message": "Can we just set \u0027_observeMode\u0027 here instead? The databinding should take care of it.",
+      "revId": "0a90ffb28737ef92979535bc02bcebce93b61dcb",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "101c89fc_cbfccc3a",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool_test.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-31T18:59:28Z",
+      "side": 1,
+      "message": "We should add a test here to make sure that toggling the mode persists to localstorage.",
+      "revId": "0a90ffb28737ef92979535bc02bcebce93b61dcb",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
