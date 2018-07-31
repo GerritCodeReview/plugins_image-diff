@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "84ef2100_5d40495a",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-31T19:00:54Z",
+      "side": 1,
+      "message": "This needs to be window.resemble.",
+      "range": {
+        "startLine": 108,
+        "startChar": 8,
+        "endLine": 108,
+        "endChar": 16
+      },
+      "revId": "a9b24893080e5e890532fa89e5b00ae5faae746c",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "10348700_2b7f264a",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-31T19:00:54Z",
+      "side": 1,
+      "message": "Why do we need to debounce these? Please leave a comment.",
+      "range": {
+        "startLine": 98,
+        "startChar": 0,
+        "endLine": 113,
+        "endChar": 6
+      },
+      "revId": "a9b24893080e5e890532fa89e5b00ae5faae746c",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
