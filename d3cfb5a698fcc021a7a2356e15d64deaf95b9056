@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "ad0cdeeb_b4c6c993",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-07-31T22:55:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cad19cd5_e5e17449",
+      "range": {
+        "startLine": 70,
+        "startChar": 6,
+        "endLine": 70,
+        "endChar": 17
+      },
+      "revId": "d3cfb5a698fcc021a7a2356e15d64deaf95b9056",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9334da38_2dd7d130",
         "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.js",
         "patchSetId": 2
@@ -36,6 +60,24 @@
       "writtenOn": "2018-07-31T22:43:11Z",
       "side": 1,
       "message": "This entire function can just be:\n\n  const w \u003d window.open(\u0027about:blank\u0027, \u0027_blank\u0027);\n  w.document.body.innerHTML \u003d this.$.imageDiff.outerHTML;",
+      "revId": "d3cfb5a698fcc021a7a2356e15d64deaf95b9056",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a830f842_876bfdb1",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 154,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-07-31T22:55:39Z",
+      "side": 1,
+      "message": "If we do that there will be a white border around the image in the new tab.",
+      "parentUuid": "9334da38_2dd7d130",
       "revId": "d3cfb5a698fcc021a7a2356e15d64deaf95b9056",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
