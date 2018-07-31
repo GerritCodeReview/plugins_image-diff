@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "7a47a341_1cf97d87",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-07-31T19:50:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dc0888c5_8ebd182e",
+      "range": {
+        "startLine": 101,
+        "startChar": 21,
+        "endLine": 101,
+        "endChar": 46
+      },
+      "revId": "8355976337fb112046e1a6c5655f1ea8830d3f52",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "229260f0_30fe33ff",
         "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.js",
         "patchSetId": 3
@@ -45,6 +69,30 @@
       "revId": "8355976337fb112046e1a6c5655f1ea8830d3f52",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e2b08916_5b87e2bb",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-07-31T19:50:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "229260f0_30fe33ff",
+      "range": {
+        "startLine": 108,
+        "startChar": 21,
+        "endLine": 108,
+        "endChar": 45
+      },
+      "revId": "8355976337fb112046e1a6c5655f1ea8830d3f52",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
