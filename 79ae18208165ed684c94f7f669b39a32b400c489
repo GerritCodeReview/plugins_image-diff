@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3b87b453_4c4ea136",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 133,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-31T22:16:40Z",
+      "side": 1,
+      "message": "We may want this to be higher. How did you arrive at 5?",
+      "range": {
+        "startLine": 133,
+        "startChar": 9,
+        "endLine": 133,
+        "endChar": 10
+      },
+      "revId": "79ae18208165ed684c94f7f669b39a32b400c489",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
