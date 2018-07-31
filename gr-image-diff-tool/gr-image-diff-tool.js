@@ -18,14 +18,28 @@
     is: 'gr-image-diff-tool',
 
     properties: {
+      baseImage: Object,
+      revisionImage: Object,
+      hidden: {
+        type: Boolean,
+        value: false,
+        reflectToAttribute: true,
+      },
       _showResembleMode: {
         type: Boolean,
         value: true,
       },
       _showOpacityMode: {
         type: Boolean,
-        value: false,
+        value: true,
       },
+    },
+
+    attached() {
+      if (!this.baseImage || !this.revisionImage) {
+        // No need to show the diff tool if there are no
+        this.hidden = true;
+      }
     },
 
     handleSelect() {
