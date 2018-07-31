@@ -20,6 +20,11 @@
     properties: {
       baseImage: Object,
       revisionImage: Object,
+      _colorValue: {
+        type: String,
+        observer: '_handleColorChange',
+        value: '#00ffff',
+      },
       _ignoreColors: {
         type: Boolean,
         value: false,
@@ -113,5 +118,29 @@
         this.reload();
       }, 1);
     },
+
+    _handleColorChange() {
+      this.debounce('color-change', () => {
+        const rgb = this._hexToRGB(this._colorValue);
+        window.resemble.outputSettings({
+          errorColor: {
+            red: rgb.r,
+            green: rgb.g,
+            blue: rgb.b,
+          },
+        });
+        this.reload();
+      }, 5);
+    },
+
+    _hexToRGB(hex) {
+      const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+      return result ? {
+        r: parseInt(result[1], 16),
+        g: parseInt(result[2], 16),
+        b: parseInt(result[3], 16),
+      } : null;
+    },
+
   });
 })();
