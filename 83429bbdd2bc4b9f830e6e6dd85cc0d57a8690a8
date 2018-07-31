@@ -16,6 +16,24 @@
       "revId": "83429bbdd2bc4b9f830e6e6dd85cc0d57a8690a8",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b476a1ab_1d9a0d86",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-31T21:24:02Z",
+      "side": 1,
+      "message": "It works via \"reflectToAttribute\". https://www.polymer-project.org/1.0/docs/devguide/properties\n\nDoes this make sense?",
+      "parentUuid": "9311d4a3_deeade49",
+      "revId": "83429bbdd2bc4b9f830e6e6dd85cc0d57a8690a8",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
