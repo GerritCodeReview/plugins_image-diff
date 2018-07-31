@@ -81,6 +81,24 @@
       "revId": "d3cfb5a698fcc021a7a2356e15d64deaf95b9056",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "44a09aec_b92cc865",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 154,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-07-31T23:10:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a830f842_876bfdb1",
+      "revId": "d3cfb5a698fcc021a7a2356e15d64deaf95b9056",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
