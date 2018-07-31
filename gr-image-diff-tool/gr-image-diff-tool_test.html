@@ -40,7 +40,12 @@ limitations under the License.
     let element;
 
     setup(() => {
+      stub('gr-image-diff-tool', {
+        // Stub attached to allow for parameterization within tests.
+        attached() {},
+      });
       element = fixture('basicFixture');
+      flushAsynchronousOperations();
     });
 
     test('test opacity mode', () => {
