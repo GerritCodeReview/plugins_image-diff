@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9311d4a3_deeade49",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-07-31T21:22:53Z",
+      "side": 1,
+      "message": "Does the function that hides the image diff not exist here?",
+      "revId": "83429bbdd2bc4b9f830e6e6dd85cc0d57a8690a8",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
