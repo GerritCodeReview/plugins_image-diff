@@ -72,6 +72,24 @@
     },
     {
       "key": {
+        "uuid": "641a82b1_5ff06aef",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-31T22:20:07Z",
+      "side": 1,
+      "message": "This reflects to the hidden attribute of the overall element: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden",
+      "parentUuid": "fb8a588b_fcd8314f",
+      "revId": "83429bbdd2bc4b9f830e6e6dd85cc0d57a8690a8",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "f850c452_35d4082f",
         "filename": "gr-image-diff-tool/gr-image-diff-tool_test.html",
         "patchSetId": 3
@@ -83,6 +101,24 @@
       "writtenOn": "2018-07-31T22:00:11Z",
       "side": 1,
       "message": "What does this do when it is outside of tests?",
+      "revId": "83429bbdd2bc4b9f830e6e6dd85cc0d57a8690a8",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3e96e85f_5e209266",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool_test.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-31T22:20:07Z",
+      "side": 1,
+      "message": "It does the same thing, just in setup. So, it flushes all of the asynchronous Polymer methods.\n\nIn this case, it results in a call to attached() -- this is actually no longer necessary, but was in PS 1.",
+      "parentUuid": "f850c452_35d4082f",
       "revId": "83429bbdd2bc4b9f830e6e6dd85cc0d57a8690a8",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
