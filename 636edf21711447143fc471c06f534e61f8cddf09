@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "82158fd3_26c73e73",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-31T20:50:05Z",
+      "side": 1,
+      "message": "I think these should be called \"_getMode\" and \"_setMode\", that\u0027s a bit more descriptive.",
+      "range": {
+        "startLine": 35,
+        "startChar": 4,
+        "endLine": 35,
+        "endChar": 20
+      },
+      "revId": "636edf21711447143fc471c06f534e61f8cddf09",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "208b6d05_9a4977ae",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-31T20:50:05Z",
+      "side": 1,
+      "message": "We should refactor these into constants at the top of the file -- sorry for not noticing this earlier. That\u0027d look like:\n\n  const DiffModes \u003d {\n    OPACITY: \u0027opacity\u0027,\n    RESEMBLE: \u0027resemble\u0027,\n  };\n\n...and then in the code, instead of \u0027opacity\u0027, do DiffModes.OPACITY.\n\nThe benefit of this is that if we ever need to change the name of one or all of the modes, we only have to change it in one place.",
+      "range": {
+        "startLine": 44,
+        "startChar": 15,
+        "endLine": 44,
+        "endChar": 24
+      },
+      "revId": "636edf21711447143fc471c06f534e61f8cddf09",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
