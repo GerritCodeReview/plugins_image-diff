@@ -1,0 +1,153 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f93efcdf_9c10f76a",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-31T18:55:48Z",
+      "side": 1,
+      "message": "This should be the explicit hex color value Arnab gave you.",
+      "range": {
+        "startLine": 45,
+        "startChar": 26,
+        "endLine": 45,
+        "endChar": 36
+      },
+      "revId": "42158c9fff7b6fdb58482239f442184b48880bd4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "076a7640_148b30af",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-31T18:55:48Z",
+      "side": 1,
+      "message": "Change this to 1em.",
+      "range": {
+        "startLine": 49,
+        "startChar": 8,
+        "endLine": 49,
+        "endChar": 22
+      },
+      "revId": "42158c9fff7b6fdb58482239f442184b48880bd4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5b298908_e348b309",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-31T18:55:48Z",
+      "side": 1,
+      "message": "Why is this width set statically?",
+      "range": {
+        "startLine": 50,
+        "startChar": 8,
+        "endLine": 50,
+        "endChar": 21
+      },
+      "revId": "42158c9fff7b6fdb58482239f442184b48880bd4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1f1ed9b1_97c876dd",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-31T18:55:48Z",
+      "side": 1,
+      "message": "This CSS is improperly formatted. You need spaces after your semicolons. Make sure you pay attention to the details!",
+      "range": {
+        "startLine": 40,
+        "startChar": 0,
+        "endLine": 51,
+        "endChar": 7
+      },
+      "revId": "42158c9fff7b6fdb58482239f442184b48880bd4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e7832006_490379f8",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-31T18:55:48Z",
+      "side": 1,
+      "message": "It looks to me like the slider isn\u0027t vertically aligned with the text. Please fix this.",
+      "revId": "42158c9fff7b6fdb58482239f442184b48880bd4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c9b1e06d_93cec44d",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-31T18:55:48Z",
+      "side": 1,
+      "message": "Indent one more level.",
+      "range": {
+        "startLine": 69,
+        "startChar": 12,
+        "endLine": 75,
+        "endChar": 25
+      },
+      "revId": "42158c9fff7b6fdb58482239f442184b48880bd4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e2c0e2f8_85fb02ef",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-31T18:55:48Z",
+      "side": 1,
+      "message": "Why is this here?",
+      "revId": "42158c9fff7b6fdb58482239f442184b48880bd4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
