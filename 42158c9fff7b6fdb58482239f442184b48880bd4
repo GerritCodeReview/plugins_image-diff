@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "646e1927_d5d2a13a",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1067380
+      },
+      "writtenOn": "2018-07-31T19:21:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f93efcdf_9c10f76a",
+      "range": {
+        "startLine": 45,
+        "startChar": 26,
+        "endLine": 45,
+        "endChar": 36
+      },
+      "revId": "42158c9fff7b6fdb58482239f442184b48880bd4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "076a7640_148b30af",
         "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
         "patchSetId": 6
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "86f7e7c4_4a4fb30d",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1067380
+      },
+      "writtenOn": "2018-07-31T19:21:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "076a7640_148b30af",
+      "range": {
+        "startLine": 49,
+        "startChar": 8,
+        "endLine": 49,
+        "endChar": 22
+      },
+      "revId": "42158c9fff7b6fdb58482239f442184b48880bd4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5b298908_e348b309",
         "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
         "patchSetId": 6
@@ -59,6 +107,30 @@
       "writtenOn": "2018-07-31T18:55:48Z",
       "side": 1,
       "message": "Why is this width set statically?",
+      "range": {
+        "startLine": 50,
+        "startChar": 8,
+        "endLine": 50,
+        "endChar": 21
+      },
+      "revId": "42158c9fff7b6fdb58482239f442184b48880bd4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fbeab438_dac06b15",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1067380
+      },
+      "writtenOn": "2018-07-31T19:21:02Z",
+      "side": 1,
+      "message": "Arnab said that a standard would work better than to have the controls box change size based on the image. I just set it to a random width that didn\u0027t make the controls too spaced out/too close together.",
+      "parentUuid": "5b298908_e348b309",
       "range": {
         "startLine": 50,
         "startChar": 8,
@@ -94,6 +166,30 @@
     },
     {
       "key": {
+        "uuid": "da013810_cff2f4bc",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1067380
+      },
+      "writtenOn": "2018-07-31T19:21:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1f1ed9b1_97c876dd",
+      "range": {
+        "startLine": 40,
+        "startChar": 0,
+        "endLine": 51,
+        "endChar": 7
+      },
+      "revId": "42158c9fff7b6fdb58482239f442184b48880bd4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e7832006_490379f8",
         "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
         "patchSetId": 6
@@ -105,6 +201,24 @@
       "writtenOn": "2018-07-31T18:55:48Z",
       "side": 1,
       "message": "It looks to me like the slider isn\u0027t vertically aligned with the text. Please fix this.",
+      "revId": "42158c9fff7b6fdb58482239f442184b48880bd4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "75adc687_e5acd79c",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1067380
+      },
+      "writtenOn": "2018-07-31T19:21:02Z",
+      "side": 1,
+      "message": "I\u0027ll fix it. Just a quick question, when we set up a label this way, is the text always suppose to be aligned with whatever you are labeling? I only indented here for clarity, and set it up just like the \"Scale to same Size Toggle\". Could you tell me why we set these up different? Or is the \"Scale to same size\" set up incorrectly as well?",
+      "parentUuid": "e7832006_490379f8",
       "revId": "42158c9fff7b6fdb58482239f442184b48880bd4",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
@@ -134,6 +248,30 @@
     },
     {
       "key": {
+        "uuid": "0eab5c86_426b96e9",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1067380
+      },
+      "writtenOn": "2018-07-31T19:21:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c9b1e06d_93cec44d",
+      "range": {
+        "startLine": 69,
+        "startChar": 12,
+        "endLine": 75,
+        "endChar": 25
+      },
+      "revId": "42158c9fff7b6fdb58482239f442184b48880bd4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e2c0e2f8_85fb02ef",
         "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
         "patchSetId": 6
@@ -145,6 +283,24 @@
       "writtenOn": "2018-07-31T18:55:48Z",
       "side": 1,
       "message": "Why is this here?",
+      "revId": "42158c9fff7b6fdb58482239f442184b48880bd4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "21f13ebc_1f5148ff",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1067380
+      },
+      "writtenOn": "2018-07-31T19:21:02Z",
+      "side": 1,
+      "message": "The simplest way to make the opacity value start out at 0.5 was to change the value of the slider in HTML then make sure the function \"handleOpacityChange\" was called initially to set the opacity value to 0.5",
+      "parentUuid": "e2c0e2f8_85fb02ef",
       "revId": "42158c9fff7b6fdb58482239f442184b48880bd4",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
