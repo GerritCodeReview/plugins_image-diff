@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "1e2124d9_7fbf298a",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-07-31T23:52:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "69dde658_041e571a",
+      "revId": "86f6433e63efda1505ac96dac6ca01f6471bf5d7",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "df2c624c_7ff8f96e",
         "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.html",
         "patchSetId": 1
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "d2370b64_53ae1b98",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-07-31T23:52:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "df2c624c_7ff8f96e",
+      "revId": "86f6433e63efda1505ac96dac6ca01f6471bf5d7",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dabea176_1fcdad40",
         "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.html",
         "patchSetId": 1
@@ -50,6 +86,24 @@
       "revId": "86f6433e63efda1505ac96dac6ca01f6471bf5d7",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "81e12932_cd77463b",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-07-31T23:52:51Z",
+      "side": 1,
+      "message": "The centering is being done in the gr-image-diff-tool.html\nhttps://gerrit-review.googlesource.com/c/plugins/image-diff/+/191036",
+      "parentUuid": "dabea176_1fcdad40",
+      "revId": "86f6433e63efda1505ac96dac6ca01f6471bf5d7",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
