@@ -225,6 +225,24 @@
     },
     {
       "key": {
+        "uuid": "dd330a67_2a9f96cc",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-07-31T20:05:32Z",
+      "side": 1,
+      "message": "In general, we prefer things to be vertically aligned as opposed to slightly offset. It\u0027s a coincidence that the other input lines up pretty well.",
+      "parentUuid": "75adc687_e5acd79c",
+      "revId": "42158c9fff7b6fdb58482239f442184b48880bd4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "c9b1e06d_93cec44d",
         "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
         "patchSetId": 6
