@@ -24,9 +24,6 @@ limitations under the License.
       h2 {
         display: none;
       }
-      #imageDiff {
-        border: 1px solid var(--border-color, #ddd);
-      }
       :host([loading]) #imageDiff {
         display: none;
       }
@@ -34,41 +31,66 @@ limitations under the License.
         display: inline;
         padding: 1em 0;
       }
-      .diffContainer {
-        display: flex;
-        justify-content: space-around;
+      #modeContainer {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+        display: block;
+        margin: 1em 0em;
+        width: 50em;
+      }
+      #diffContainer {
         width: 100%;
+        display: block;
+      }
+      #uiContainer {
+        border-top: 1px solid var(--border-color, #ddd);
+        display: flex;
+        justify-content: space-between;
+        white-space: nowrap;
+        background-color: whitesmoke;
+        padding: 1em;
+        width: 100%;
+        align-items: center;
+      }
+      #imageDiff {
+        display: block;
+        height: auto;
+        margin: auto;
+        max-width: 50em;
       }
     </style>
-    <div class="diffContainer">
-      <h2>Loading...</h2>
-      <img id="imageDiff">
+    <div id="modeContainer">
+      <div id="diffContainer">
+        <h2>Loading...</h2>
+        <img id="imageDiff">
+      </div>
+      <div id="uiContainer">
+        <div>[[_difference]]% changed</div>
+        <label>
+          <input
+              id="ignoreColorsToggle"
+              type="checkbox"
+              checked$="[[_ignoreColors]]"
+              on-tap="_handleIgnoreColorsToggle">
+          Ignore colors
+        </label>
+        <label>
+          <input
+              id="transparentToggle"
+              type="checkbox"
+              checked$="[[_transparent]]"
+              on-tap="_handleTransparentToggle">
+          Transparent
+        </label>
+        <input
+            type="color"
+            value="{{_colorValue::change}}">
+        <button
+            id="fullscreen"
+            on-tap="_handleFullScreen">
+          View full screen
+        </button>
+      </div>
     </div>
-    <div>[[_difference]]% changed</div>
-    <label>
-      <input
-          id="ignoreColorsToggle"
-          type="checkbox"
-          checked$="[[_ignoreColors]]"
-          on-tap="_handleIgnoreColorsToggle">
-      Ignore colors
-    </label>
-    <label>
-      <input
-          id="transparentToggle"
-          type="checkbox"
-          checked$="[[_transparent]]"
-          on-tap="_handleTransparentToggle">
-      Transparent
-    </label>
-    <input
-        type="color"
-        value="{{_colorValue::change}}">
-    <button
-        id="fullscreen"
-        on-tap="_handleFullScreen">
-      View full screen
-    </button>
   </template>
   <script src="gr-resemble-diff-mode.js"></script>
 </dom-module>
