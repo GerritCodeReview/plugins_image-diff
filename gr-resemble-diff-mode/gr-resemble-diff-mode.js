@@ -151,5 +151,24 @@
       } : null;
     },
 
+    _handleFullScreen() {
+      const w = window.open('about:blank', '_blank');
+      const html = w.document.documentElement;
+      const body = w.document.body;
+
+      html.style.margin = 0;
+      html.style.padding = 0;
+      body.style.margin = 0;
+      body.style.padding = 0;
+
+      const img = w.document.createElement('img');
+      img.src = this.$.imageDiff.src;
+      img.alt = 'image diff';
+      img.style.maxWidth = '100%';
+      img.addEventListener('click', () => {
+        img.style.maxWidth = img.style.maxWidth === '100%' ? '' : '100%';
+      });
+      body.appendChild(img);
+    },
   });
 })();
