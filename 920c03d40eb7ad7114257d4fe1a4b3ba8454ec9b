@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cd5cf72d_1fe6f445",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-08-01T19:16:00Z",
+      "side": 1,
+      "message": "One last thing -- let\u0027s add .5em of padding to these two UI controls too, to increase their click target.",
+      "range": {
+        "startLine": 85,
+        "startChar": 8,
+        "endLine": 100,
+        "endChar": 16
+      },
+      "revId": "920c03d40eb7ad7114257d4fe1a4b3ba8454ec9b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
