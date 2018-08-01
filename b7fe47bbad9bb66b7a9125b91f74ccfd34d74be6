@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "01b1386c_bd86c60b",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-08-01T19:54:23Z",
+      "side": 0,
+      "message": "We want to leave native outlines, for accessibility reasons.\n\nhttps://a11yproject.com/posts/never-remove-css-outlines/",
+      "revId": "b7fe47bbad9bb66b7a9125b91f74ccfd34d74be6",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
