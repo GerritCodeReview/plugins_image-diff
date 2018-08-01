@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3de6ed7a_c2fa63e3",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-08-01T04:28:09Z",
+      "side": 1,
+      "message": "Let\u0027s give this input a border-radius of 2px, as well as the same background color as the controls container.",
+      "revId": "b2a5e2c889027c0a2bf64073c444195d050c614a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "11ee72e0_67dcb395",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-08-01T04:28:09Z",
+      "side": 1,
+      "message": "Let\u0027s give this button padding on all sides of .5em (to increase the click target size) and a border radius of 2px, as well as the same background color as the controls container.",
+      "revId": "b2a5e2c889027c0a2bf64073c444195d050c614a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
