@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "4fcfcba5_1de5d599",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-08-01T21:34:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "370c307e_c9f8a7dd",
+      "range": {
+        "startLine": 7,
+        "startChar": 55,
+        "endLine": 7,
+        "endChar": 62
+      },
+      "revId": "ea382643e147aa7e72bd888a22f00001260007a1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dde37e60_1c022903",
         "filename": "/COMMIT_MSG",
         "patchSetId": 2
@@ -56,6 +80,24 @@
       "revId": "ea382643e147aa7e72bd888a22f00001260007a1",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "22338450_536a5c30",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode_test.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-08-01T21:34:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7ced9e75_e1f99100",
+      "revId": "ea382643e147aa7e72bd888a22f00001260007a1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
