@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c85cc5fa_ed80174c",
+        "filename": "gr-image-diff-tool/gr-image-diff-tool.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-08-01T20:08:13Z",
+      "side": 1,
+      "message": "Already have below",
+      "range": {
+        "startLine": 25,
+        "startChar": 8,
+        "endLine": 25,
+        "endChar": 40
+      },
+      "revId": "6409cffaf9b8f20745fc4e1442e2a0f78f4e1e3f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b3c0b5d7_a62c204f",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-08-01T20:08:13Z",
+      "side": 1,
+      "message": "#fafafa is gray50, we want gray100 (#f5f5f5)",
+      "range": {
+        "startLine": 63,
+        "startChar": 63,
+        "endLine": 63,
+        "endChar": 70
+      },
+      "revId": "6409cffaf9b8f20745fc4e1442e2a0f78f4e1e3f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
