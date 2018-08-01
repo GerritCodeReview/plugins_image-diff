@@ -79,6 +79,15 @@ limitations under the License.
       assert.isTrue(dummyProcess.ignoreColors.called);
     });
 
+    test('_setOutputSetting', () => {
+      sandbox.stub(element, '_hexToRGB')
+          .returns({r: 0, g: 0, b: 0});
+      element._setOutputSetting();
+      flushAsynchronousOperations();
+
+      assert.isTrue(element._hexToRGB.called);
+    });
+
     test('_handleIgnoreColorsToggle', () => {
       sandbox.stub(element, 'reload');
       element._ignoreColors = false;
@@ -105,13 +114,10 @@ limitations under the License.
 
     test('_handleColorChange', () => {
       sandbox.stub(element, 'reload');
-      sandbox.stub(element, '_hexToRGB')
-          .returns({r: 0, g: 0, b: 0});
       element._colorValue = '';
       element.flushDebouncer('color-change');
       flushAsynchronousOperations();
 
-      assert.isTrue(element._hexToRGB.called);
       assert.isTrue(element.reload.called);
     });
 
