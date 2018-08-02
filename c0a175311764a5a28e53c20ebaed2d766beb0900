@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a3c8ec00_433b992b",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode_test.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-08-02T00:12:55Z",
+      "side": 1,
+      "message": "I think this test should ensure that window.resemble.outputSettings was called with the correct value when _setOutputSetting is called.",
+      "range": {
+        "startLine": 82,
+        "startChar": 0,
+        "endLine": 89,
+        "endChar": 7
+      },
+      "revId": "c0a175311764a5a28e53c20ebaed2d766beb0900",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
