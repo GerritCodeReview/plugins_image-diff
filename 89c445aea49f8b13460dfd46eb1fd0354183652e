@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c13a27de_a43ed19b",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode_test.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 1029297
+      },
+      "writtenOn": "2018-08-02T19:43:19Z",
+      "side": 1,
+      "message": "I still don\u0027t think this test is what we want.\n\nWe should stub window.resemble.outputSettings, set some settings internal to the element, call _createDiffProcess, and ensure that window.resemble.outputSettings is called with the correct values.",
+      "range": {
+        "startLine": 82,
+        "startChar": 0,
+        "endLine": 94,
+        "endChar": 7
+      },
+      "revId": "89c445aea49f8b13460dfd46eb1fd0354183652e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
