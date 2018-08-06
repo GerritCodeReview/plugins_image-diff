@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4585a9f3_b2293735",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-08-06T22:37:38Z",
+      "side": 1,
+      "message": "Isn\u0027t the overall bg #fafafa already?",
+      "range": {
+        "startLine": 24,
+        "startChar": 8,
+        "endLine": 24,
+        "endChar": 72
+      },
+      "revId": "1c62e457e0b81f68b0c2eda77dff22cde37b3094",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
