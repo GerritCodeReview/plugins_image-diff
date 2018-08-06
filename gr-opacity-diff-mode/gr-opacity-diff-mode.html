@@ -33,7 +33,7 @@ limitations under the License.
       }
       #imageRevision {
         opacity: var(--my-opacity-value);
-        z-index: 1;
+        z-index: 0.5;
       }
       #imageDiffContainer {
         height: var(--div-height);
@@ -67,8 +67,8 @@ limitations under the License.
     </style>
     <div class="wrapper">
       <div id="imageDiffContainer">
-        <img id="imageBase"/>
-        <img data-opacity$="{{opacityValue}}" id="imageRevision"/>
+        <img on-load="_onImageLoad" id="imageBase"/>
+        <img on-load="_onImageLoad" data-opacity$="{{opacityValue}}" id="imageRevision"/>
       </div>
       <div id="controlsContainer">
         <div id="controlsBox">
