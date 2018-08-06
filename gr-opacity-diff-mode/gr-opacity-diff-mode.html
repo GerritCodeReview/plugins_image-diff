@@ -33,7 +33,7 @@ limitations under the License.
       }
       #imageRevision {
         opacity: var(--my-opacity-value);
-        z-index: 1;
+        z-index: 0.5;
       }
       #imageDiffContainer {
         height: var(--div-height);
@@ -52,14 +52,12 @@ limitations under the License.
         width: 100%;
       }
       label {
+        align-items: center;
+        display: flex;
         padding: 1em .5em;
       }
       input {
-        padding: 1em 0;
-      }
-      .cell {
-        align-items: center;
-        display: flex;
+        margin: .5em;
       }
       #opacitySlider {
         width: 10em;
@@ -67,32 +65,32 @@ limitations under the License.
     </style>
     <div class="wrapper">
       <div id="imageDiffContainer">
-        <img id="imageBase"/>
-        <img data-opacity$="{{opacityValue}}" id="imageRevision"/>
+        <img on-load="_onImageLoad" id="imageBase"/>
+        <img on-load="_onImageLoad" data-opacity$="{{opacityValue}}" id="imageRevision"/>
       </div>
       <div id="controlsContainer">
         <div id="controlsBox">
           <div class="cell">
-            <input
-                id="scaleSizesToggle"
-                on-tap="handleScaleSizesToggle"
-                type="checkbox">
-            <label for="scaleSizesToggle">
+            <label>
+              <input
+                  id="scaleSizesToggle"
+                  on-tap="handleScaleSizesToggle"
+                  type="checkbox">
               Scale to same size
             </label>
           </div>
           <div class="cell">
-            <label for="opacitySlider">
+            <label>
               Revision image opacity
+              <input
+                  id="opacitySlider"
+                  max="1.0"
+                  min="0.0"
+                  on-input="handleOpacityChange"
+                  step=".01"
+                  type="range"
+                  value="0.5"/>
             </label>
-            <input
-                id="opacitySlider"
-                max="1.0"
-                min="0.0"
-                on-input="handleOpacityChange"
-                step=".01"
-                type="range"
-                value="0.5"/>
           </div>
         </div>
       </div>
