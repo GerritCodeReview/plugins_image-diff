@@ -25,6 +25,29 @@
     },
     {
       "key": {
+        "uuid": "d9d5e998_b6a294f8",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-08-06T23:02:26Z",
+      "side": 1,
+      "message": "It seems if you remove this class, the labels will become on the same level",
+      "range": {
+        "startLine": 72,
+        "startChar": 10,
+        "endLine": 72,
+        "endChar": 28
+      },
+      "revId": "11ad19d16d33dca66f269680eb6c3f5ea3f716c7",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "a3b25d8c_e55412ef",
         "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
         "patchSetId": 5
