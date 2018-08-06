@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bc7f2f65_788ccb29",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-08-06T22:38:02Z",
+      "side": 1,
+      "message": "We can remove this because it\u0027s handled in the gr-image-diff-tool.js",
+      "range": {
+        "startLine": 47,
+        "startChar": 6,
+        "endLine": 47,
+        "endChar": 51
+      },
+      "revId": "28f1030df0d24b920786b6487574565c2945b3c1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
