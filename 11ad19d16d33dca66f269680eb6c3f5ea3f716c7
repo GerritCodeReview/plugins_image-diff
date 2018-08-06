@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fc569607_64b32f66",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-08-06T22:51:36Z",
+      "side": 1,
+      "message": "The labels are not on the same level as each other",
+      "range": {
+        "startLine": 58,
+        "startChar": 6,
+        "endLine": 60,
+        "endChar": 7
+      },
+      "revId": "11ad19d16d33dca66f269680eb6c3f5ea3f716c7",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a3b25d8c_e55412ef",
+        "filename": "gr-opacity-diff-mode/gr-opacity-diff-mode.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-08-06T22:51:36Z",
+      "side": 1,
+      "message": "Spacing",
+      "range": {
+        "startLine": 98,
+        "startChar": 0,
+        "endLine": 98,
+        "endChar": 1
+      },
+      "revId": "11ad19d16d33dca66f269680eb6c3f5ea3f716c7",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
