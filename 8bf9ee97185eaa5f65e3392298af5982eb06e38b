@@ -16,6 +16,24 @@
       "revId": "8bf9ee97185eaa5f65e3392298af5982eb06e38b",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "16afc134_92cc035f",
+        "filename": "gr-opacity-diff-mode/example.png",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1067379
+      },
+      "writtenOn": "2018-08-07T21:35:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c1ff5bfd_3ff9ed29",
+      "revId": "8bf9ee97185eaa5f65e3392298af5982eb06e38b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
