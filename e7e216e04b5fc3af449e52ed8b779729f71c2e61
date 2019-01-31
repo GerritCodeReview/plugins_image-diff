@@ -22,6 +22,30 @@
       "revId": "e7e216e04b5fc3af449e52ed8b779729f71c2e61",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ff558fd6_3a4db6a6",
+        "filename": "gr-resemble-diff-mode/gr-resemble-diff-mode.html",
+        "patchSetId": 17
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1029953
+      },
+      "writtenOn": "2019-01-31T14:05:20Z",
+      "side": 1,
+      "message": "This file will be created by https://gerrit-review.googlesource.com/c/plugins/image-diff/+/205530/17/BUILD#28 (this will be accessible through the ui so you can do /plugin/image-diff/static/image-diff-assets.html .\n\nI tryed pointing to resemblejs-assets.html but it is not accessible through the ui and also it dosen\u0027t seem to put the resemble script in it (which is why im using image-diff-assets.html as it does in that file)",
+      "parentUuid": "e0a4550d_df2478b0",
+      "range": {
+        "startLine": 17,
+        "startChar": 25,
+        "endLine": 17,
+        "endChar": 50
+      },
+      "revId": "e7e216e04b5fc3af449e52ed8b779729f71c2e61",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
     }
   ]
 }
