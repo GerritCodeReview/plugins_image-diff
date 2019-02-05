@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "059f410f_36a4a320",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 18
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1013302
+      },
+      "writtenOn": "2019-02-05T10:42:02Z",
+      "side": 1,
+      "message": "Can you write more about why you are doing this in the way you did? I don\u0027t know that much about plugin development yet, so it would be great, if you could put pointers to docs that you followed and other plugins that you have copied from.\n\nAlso it would be great to have documented in what way you have tested this end to end.",
+      "revId": "8ac962a41cbd1544a503d4e5587119a58e15a40b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "799671f4_55a1fe2e",
+        "filename": "java/com/googlesource/gerrit/plugins/imagediff/ImageDiffModule.java",
+        "patchSetId": 18
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1013302
+      },
+      "writtenOn": "2019-02-05T10:42:02Z",
+      "side": 1,
+      "message": "wrong package\n\nThat also means that either this is not required or you did not test it end to end.",
+      "range": {
+        "startLine": 15,
+        "startChar": 40,
+        "endLine": 15,
+        "endChar": 50
+      },
+      "revId": "8ac962a41cbd1544a503d4e5587119a58e15a40b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
