@@ -39,6 +39,30 @@
       "revId": "8ac962a41cbd1544a503d4e5587119a58e15a40b",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0ceefc71_fb98676f",
+        "filename": "java/com/googlesource/gerrit/plugins/imagediff/ImageDiffModule.java",
+        "patchSetId": 18
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1029953
+      },
+      "writtenOn": "2019-02-05T10:54:03Z",
+      "side": 1,
+      "message": "Ah thanks for catching this (though I did test locally and this did work)",
+      "parentUuid": "799671f4_55a1fe2e",
+      "range": {
+        "startLine": 15,
+        "startChar": 40,
+        "endLine": 15,
+        "endChar": 50
+      },
+      "revId": "8ac962a41cbd1544a503d4e5587119a58e15a40b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
