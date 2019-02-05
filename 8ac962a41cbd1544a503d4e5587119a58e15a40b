@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "68b6f191_7b299e61",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 18
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1029953
+      },
+      "writtenOn": "2019-02-05T10:56:32Z",
+      "side": 1,
+      "message": "Thanks, done.",
+      "parentUuid": "059f410f_36a4a320",
+      "revId": "8ac962a41cbd1544a503d4e5587119a58e15a40b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "799671f4_55a1fe2e",
         "filename": "java/com/googlesource/gerrit/plugins/imagediff/ImageDiffModule.java",
         "patchSetId": 18
