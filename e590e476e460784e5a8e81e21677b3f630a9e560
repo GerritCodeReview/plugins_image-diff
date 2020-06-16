@@ -135,6 +135,30 @@
     },
     {
       "key": {
+        "uuid": "c1b0dc3b_c29071a2",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2020-06-16T19:08:49Z",
+      "side": 1,
+      "message": "\u003e sadly it is, at least the `polymer-bridges` needs to be removed otherwise the yarn install may fail due to the relative path issue\n\nI cannot reproduce the problem. I don\u0027t remove polymer-bridges and it works as expected with this series: \n\n  $ cd ~/projects/gerrit\n  $ bazel build plugins/image-diff\n  INFO: Analyzed target //plugins/image-diff:image-diff (357 packages loaded, 17375 targets configured).\nINFO: Found 1 target...\nINFO: From Bundling JavaScript plugins/image-diff/plugin-bundle.js [rollup]:\nplugins/image-diff/plugin.js → bazel-out/k8-fastbuild/bin/plugins/image-diff/plugin-bundle.js...\ncreated bazel-out/k8-fastbuild/bin/plugins/image-diff/plugin-bundle.js in 174ms\nTarget //plugins/image-diff:image-diff up-to-date:\n  bazel-bin/plugins/image-diff/image-diff.js\n  bazel-bin/plugins/image-diff/image-diff.html\nINFO: Elapsed time: 30.563s, Critical Path: 4.43s\nINFO: 5 processes: 3 linux-sandbox, 2 worker.\nINFO: Build completed successfully, 9 total actions",
+      "parentUuid": "1f4d3a1a_4c2809bb",
+      "range": {
+        "startLine": 13,
+        "startChar": 134,
+        "endLine": 13,
+        "endChar": 210
+      },
+      "revId": "e590e476e460784e5a8e81e21677b3f630a9e560",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "da62bb26_4ff5a37c",
         "filename": "README.md",
         "patchSetId": 3
