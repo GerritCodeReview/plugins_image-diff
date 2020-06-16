@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fc8e5f20_2bfb5b23",
+        "filename": "package.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1085901
+      },
+      "writtenOn": "2020-06-16T10:50:42Z",
+      "side": 1,
+      "message": "It seems, this dependency can be removed, because you have it in WORKSPACE.",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 30
+      },
+      "revId": "1b297dbfd5bdeb64da0a31b3b530d0bd2e11989f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e9d9a0a4_a8eca450",
+        "filename": "package.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1085901
+      },
+      "writtenOn": "2020-06-16T10:50:42Z",
+      "side": 1,
+      "message": "I think, these dependencies also can be removed.",
+      "range": {
+        "startLine": 14,
+        "startChar": 8,
+        "endLine": 26,
+        "endChar": 27
+      },
+      "revId": "1b297dbfd5bdeb64da0a31b3b530d0bd2e11989f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
