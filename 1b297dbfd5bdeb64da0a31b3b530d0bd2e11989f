@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "f5b54edc_3f9ceaea",
+        "filename": "package.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1086906
+      },
+      "writtenOn": "2020-06-16T14:52:54Z",
+      "side": 1,
+      "message": "i wish :( the wct tests are still using relative path to import the resemblejs and other assets like webcomponents etc, so to run `npm run wct-test`, you still need those available locally :(",
+      "parentUuid": "fc8e5f20_2bfb5b23",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 30
+      },
+      "revId": "1b297dbfd5bdeb64da0a31b3b530d0bd2e11989f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e9d9a0a4_a8eca450",
         "filename": "package.json",
         "patchSetId": 2
@@ -45,6 +69,30 @@
       "revId": "1b297dbfd5bdeb64da0a31b3b530d0bd2e11989f",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b0362f3d_a43a40f2",
+        "filename": "package.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1086906
+      },
+      "writtenOn": "2020-06-16T14:52:54Z",
+      "side": 1,
+      "message": "same :(",
+      "parentUuid": "e9d9a0a4_a8eca450",
+      "range": {
+        "startLine": 14,
+        "startChar": 8,
+        "endLine": 26,
+        "endChar": 27
+      },
+      "revId": "1b297dbfd5bdeb64da0a31b3b530d0bd2e11989f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
