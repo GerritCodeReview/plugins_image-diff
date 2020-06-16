@@ -7,27 +7,11 @@ Currently, the plugin features two modes: Highlight Mode and Onion Skin.
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
+### Build
 
-[Yarn](https://yarnpkg.com/en/) - Node package manager
-
-### Installing
-
-Use Homebrew to install yarn on macOS:
-
-```
-brew install yarn
-```
-
-Reference [here](https://yarnpkg.com/en/docs/install#mac-stable) for instruction on how to install on other systems.
-
-Clone the repo and run
-
-```
-yarn install
-```
-
-to install the dependencies.
+1. Clone the package into `plugins` folder of `gerrit` repo
+2. Override `plugins/package.json` with `package.json`, you can remove all `depDependencies` as they are not not needed for the build (remove `polymer-bridges` since that relies on relative path to gerrit repo)
+4. Run `bazel build image-diff`
 
 ## Highlight Mode
 
