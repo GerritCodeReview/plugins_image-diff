@@ -1,0 +1,153 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fe17ae6a_567ca485",
+        "filename": "BUILD",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2020-06-16T15:08:41Z",
+      "side": 1,
+      "message": "Unneded new line?",
+      "revId": "e590e476e460784e5a8e81e21677b3f630a9e560",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "47ce5c79_3f7743f3",
+        "filename": "BUILD",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2020-06-16T15:08:41Z",
+      "side": 1,
+      "message": "Is it really needed? We havn\u0027t added this line for other plugins, that were migrated to Polymer 3.",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 62
+      },
+      "revId": "e590e476e460784e5a8e81e21677b3f630a9e560",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6c838157_79f0dc8e",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2020-06-16T15:08:41Z",
+      "side": 1,
+      "message": "Alternatively, mention that the existing directory can be linked to gerrit/plugins directory. So that we have in the end:\n\n  gerrit/plugins/image-diff",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 59
+      },
+      "revId": "e590e476e460784e5a8e81e21677b3f630a9e560",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "189d1529_b487557a",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2020-06-16T15:08:41Z",
+      "side": 1,
+      "message": "This shoudn\u0027t be strictly required?",
+      "range": {
+        "startLine": 13,
+        "startChar": 134,
+        "endLine": 13,
+        "endChar": 210
+      },
+      "revId": "e590e476e460784e5a8e81e21677b3f630a9e560",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c6f8dd3e_fb266e8a",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2020-06-16T15:08:41Z",
+      "side": 1,
+      "message": "Remove second not.",
+      "range": {
+        "startLine": 13,
+        "startChar": 109,
+        "endLine": 13,
+        "endChar": 113
+      },
+      "revId": "e590e476e460784e5a8e81e21677b3f630a9e560",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "da62bb26_4ff5a37c",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2020-06-16T15:08:41Z",
+      "side": 1,
+      "message": "Should this rather be:\n\n  bazel build plugins/image-diff\n\nI would expect that we could still build from gerrit directory, like before this change, right?",
+      "range": {
+        "startLine": 14,
+        "startChar": 8,
+        "endLine": 14,
+        "endChar": 30
+      },
+      "revId": "e590e476e460784e5a8e81e21677b3f630a9e560",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cf582120_ac78a20c",
+        "filename": "rollup.config.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2020-06-16T15:08:41Z",
+      "side": 1,
+      "message": "I added something similar in gerrit core: [1] to expose rollup-plugin-terser plugin from gerrit core for plugins. That was a prerequisite to remove dependency on rules_closure and use rollup-bundle with terser-plugin for minification. if the plugin will use its own rollupöconfig.js they would be also able to use terser plugin right?\n\n* [1] https://gerrit-review.googlesource.com/c/gerrit/+/270345",
+      "revId": "e590e476e460784e5a8e81e21677b3f630a9e560",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
