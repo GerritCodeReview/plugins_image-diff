@@ -159,6 +159,30 @@
     },
     {
       "key": {
+        "uuid": "4b1aba96_ff8996a3",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1086906
+      },
+      "writtenOn": "2020-06-17T07:10:22Z",
+      "side": 1,
+      "message": "that\u0027s strange, at my local, it will fail to build due to the invalid path: `file:../../polymer_bridges/`",
+      "parentUuid": "c1b0dc3b_c29071a2",
+      "range": {
+        "startLine": 13,
+        "startChar": 134,
+        "endLine": 13,
+        "endChar": 210
+      },
+      "revId": "e590e476e460784e5a8e81e21677b3f630a9e560",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "da62bb26_4ff5a37c",
         "filename": "README.md",
         "patchSetId": 3
