@@ -183,6 +183,30 @@
     },
     {
       "key": {
+        "uuid": "2e4c3a10_7cae7506",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1086906
+      },
+      "writtenOn": "2020-06-19T09:24:15Z",
+      "side": 1,
+      "message": "this should not be a problem after the `--prod` change. Actually it will ignore the devDependencies automatically if you have your NODE_ENV as production. \n\nJust for a safety check, can you check on your generated image-diff.js to see if you have the `resemble` part in it, it should in the beginning of the file (pretty easy to identify as it should be the biggest blob in the file) Thanks!",
+      "parentUuid": "4b1aba96_ff8996a3",
+      "range": {
+        "startLine": 13,
+        "startChar": 134,
+        "endLine": 13,
+        "endChar": 210
+      },
+      "revId": "e590e476e460784e5a8e81e21677b3f630a9e560",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "da62bb26_4ff5a37c",
         "filename": "README.md",
         "patchSetId": 3
