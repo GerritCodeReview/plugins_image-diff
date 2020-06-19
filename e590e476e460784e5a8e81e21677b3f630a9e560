@@ -230,6 +230,30 @@
     },
     {
       "key": {
+        "uuid": "1a851ac5_70fcf7f7",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2020-06-19T09:36:39Z",
+      "side": 1,
+      "message": "Yes, I can check it later today. Still the instruction to mess around with gerrit submodules should be removed.",
+      "parentUuid": "da62bb26_4ff5a37c",
+      "range": {
+        "startLine": 14,
+        "startChar": 8,
+        "endLine": 14,
+        "endChar": 30
+      },
+      "revId": "e590e476e460784e5a8e81e21677b3f630a9e560",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "cf582120_ac78a20c",
         "filename": "rollup.config.js",
         "patchSetId": 3
