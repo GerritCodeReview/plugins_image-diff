@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b85ff9e3_070efb7a",
+        "filename": "README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2020-06-22T09:15:15Z",
+      "side": 1,
+      "message": "The plugin build build in tree mode is always done from gerrit root directory, so that the command should be:\n\n $ bazel build plugins/image-diff\n\nBut I guess the above command would also work, but it is inconsistent with other plugins build instructions.",
+      "range": {
+        "startLine": 14,
+        "startChar": 3,
+        "endLine": 14,
+        "endChar": 31
+      },
+      "revId": "e4850a1047cb939de012924d9b2dd228a798522b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
