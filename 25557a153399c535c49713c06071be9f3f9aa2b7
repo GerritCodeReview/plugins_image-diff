@@ -22,6 +22,30 @@
       "revId": "25557a153399c535c49713c06071be9f3f9aa2b7",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "96f5dd37_5a3ead81",
+        "filename": "BUILD",
+        "patchSetId": 7
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2020-06-22T21:04:28Z",
+      "side": 0,
+      "message": "I removed externs parameter in polygerrit_plugin rule in this CL: [1], where I replaced rules_closure minification with terser_minifed rule.\n\n[1] https://gerrit-review.googlesource.com/c/gerrit/+/272772",
+      "parentUuid": "ece8b730_8b632d35",
+      "range": {
+        "startLine": 10,
+        "startChar": 4,
+        "endLine": 10,
+        "endChar": 29
+      },
+      "revId": "25557a153399c535c49713c06071be9f3f9aa2b7",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
     }
   ]
 }
