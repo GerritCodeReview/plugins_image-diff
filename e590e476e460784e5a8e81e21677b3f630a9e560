@@ -254,6 +254,30 @@
     },
     {
       "key": {
+        "uuid": "87151d0e_4c72b4cf",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2020-06-22T07:28:51Z",
+      "side": 1,
+      "message": "Confirmed. I see `resemble` part in plugin artifact.",
+      "parentUuid": "1a851ac5_70fcf7f7",
+      "range": {
+        "startLine": 14,
+        "startChar": 8,
+        "endLine": 14,
+        "endChar": 30
+      },
+      "revId": "e590e476e460784e5a8e81e21677b3f630a9e560",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "cf582120_ac78a20c",
         "filename": "rollup.config.js",
         "patchSetId": 3
