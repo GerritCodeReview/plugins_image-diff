@@ -278,6 +278,30 @@
     },
     {
       "key": {
+        "uuid": "6f48c82c_e91ce9b9",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1086906
+      },
+      "writtenOn": "2020-06-22T08:01:18Z",
+      "side": 1,
+      "message": "Perfect. I will update the README and address the rest of your comments then :) thanks!",
+      "parentUuid": "87151d0e_4c72b4cf",
+      "range": {
+        "startLine": 14,
+        "startChar": 8,
+        "endLine": 14,
+        "endChar": 30
+      },
+      "revId": "e590e476e460784e5a8e81e21677b3f630a9e560",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "cf582120_ac78a20c",
         "filename": "rollup.config.js",
         "patchSetId": 3
