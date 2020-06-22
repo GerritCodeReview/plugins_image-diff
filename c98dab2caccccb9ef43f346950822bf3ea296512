@@ -22,6 +22,30 @@
       "revId": "c98dab2caccccb9ef43f346950822bf3ea296512",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "01a2df85_0c6e3c02",
+        "filename": "rollup.config.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1086906
+      },
+      "writtenOn": "2020-06-22T09:03:00Z",
+      "side": 1,
+      "message": "sounds reasonable. Will remove it for now then.",
+      "parentUuid": "03c0b99f_9c73c769",
+      "range": {
+        "startLine": 39,
+        "startChar": 6,
+        "endLine": 39,
+        "endChar": 14
+      },
+      "revId": "c98dab2caccccb9ef43f346950822bf3ea296512",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
