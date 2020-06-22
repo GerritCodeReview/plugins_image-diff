@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "03c0b99f_9c73c769",
+        "filename": "rollup.config.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2020-06-22T08:35:21Z",
+      "side": 1,
+      "message": "Thanks for adding the terser plugin already now, but that would mean, that minification step taking place twice:\n\n* 1. by terser plugin\n* 2. by rules_closure in regular polygerrit_plugin:\n\n    polygerrit_plugin(\n        name \u003d \"image-diff\",\n        app \u003d \"plugin-bundle.js\",\n    )\n\nI mean, that should probably work, but may be we shouldn\u0027t do it.\n\nTo make removal of rules_closure less disruptive, we coud probably new introduce skip_minification \u003d True attribute to polygerrit_plugin rule, and once all PG plugins are minifying the JS by themself, using rollup_bundle\u0027s terser plugin, we would be safe to remove rules_closure withmy series. WDYT?",
+      "range": {
+        "startLine": 39,
+        "startChar": 6,
+        "endLine": 39,
+        "endChar": 14
+      },
+      "revId": "c98dab2caccccb9ef43f346950822bf3ea296512",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
