@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "7130823f_ccbb7ea9",
+        "filename": "BUILD",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1086906
+      },
+      "writtenOn": "2020-06-22T08:13:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fe17ae6a_567ca485",
+      "revId": "e590e476e460784e5a8e81e21677b3f630a9e560",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "47ce5c79_3f7743f3",
         "filename": "BUILD",
         "patchSetId": 3
@@ -42,6 +60,30 @@
     },
     {
       "key": {
+        "uuid": "c8cf768d_7f4f03c1",
+        "filename": "BUILD",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1086906
+      },
+      "writtenOn": "2020-06-22T08:13:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "47ce5c79_3f7743f3",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 62
+      },
+      "revId": "e590e476e460784e5a8e81e21677b3f630a9e560",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6c838157_79f0dc8e",
         "filename": "README.md",
         "patchSetId": 3
@@ -62,6 +104,30 @@
       "revId": "e590e476e460784e5a8e81e21677b3f630a9e560",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ff2b3179_d35223e7",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1086906
+      },
+      "writtenOn": "2020-06-22T08:13:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6c838157_79f0dc8e",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 59
+      },
+      "revId": "e590e476e460784e5a8e81e21677b3f630a9e560",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     },
     {
       "key": {
@@ -207,6 +273,54 @@
     },
     {
       "key": {
+        "uuid": "0a967b17_3968613b",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1086906
+      },
+      "writtenOn": "2020-06-22T08:13:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c6f8dd3e_fb266e8a",
+      "range": {
+        "startLine": 13,
+        "startChar": 109,
+        "endLine": 13,
+        "endChar": 113
+      },
+      "revId": "e590e476e460784e5a8e81e21677b3f630a9e560",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f496f7c2_28e31200",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1086906
+      },
+      "writtenOn": "2020-06-22T08:13:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2e4c3a10_7cae7506",
+      "range": {
+        "startLine": 13,
+        "startChar": 134,
+        "endLine": 13,
+        "endChar": 210
+      },
+      "revId": "e590e476e460784e5a8e81e21677b3f630a9e560",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da62bb26_4ff5a37c",
         "filename": "README.md",
         "patchSetId": 3
@@ -316,6 +430,24 @@
       "revId": "e590e476e460784e5a8e81e21677b3f630a9e560",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5a618029_768d475e",
+        "filename": "rollup.config.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1086906
+      },
+      "writtenOn": "2020-06-22T08:13:08Z",
+      "side": 1,
+      "message": "it should be, added in the config.",
+      "parentUuid": "cf582120_ac78a20c",
+      "revId": "e590e476e460784e5a8e81e21677b3f630a9e560",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
