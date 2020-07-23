@@ -16,6 +16,23 @@
       "revId": "ef0f8414b241979d5aea9d82325a7cfb2897ee2a",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2f0d59ec_5668f3d3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1086906
+      },
+      "writtenOn": "2020-07-23T12:33:46Z",
+      "side": 1,
+      "message": "verified by running `bazel build image-diff` locally",
+      "revId": "ef0f8414b241979d5aea9d82325a7cfb2897ee2a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
