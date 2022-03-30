@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "15fba54b_3eb6e687",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1013302
+      },
+      "writtenOn": "2022-03-30T08:21:11Z",
+      "side": 1,
+      "message": "Verified by building with Bazel and Blaze and using Dev Helper to load the newly built plugin bundle js files.",
+      "revId": "25dbcb1a884c279ed0d14b44ff788617782466b6",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
