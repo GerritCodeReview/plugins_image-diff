@@ -16,6 +16,24 @@
       "message": "That should be:\n\n ln --symbolic --force image-diff/package.json plugins/package.json\n \nBut I can\u0027t amend the change due to a permission issue (I will raise it on Discord)",
       "revId": "1aa1ff9a7f634699293556860f1d38cc9a1e5a7f",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "18bc0209_e5c42a91",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1010788
+      },
+      "writtenOn": "2023-07-07T15:16:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f9c1f315_8ceab688",
+      "revId": "1aa1ff9a7f634699293556860f1d38cc9a1e5a7f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
