@@ -9,15 +9,25 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Build
 
-1. Clone the package into `plugins` folder of `gerrit` repo or link the plugin folder to `gerrit/plugins` folder
-2. Override `plugins/package.json` with `external_package.json`, you can remove all `depDependencies` as they are not needed for the build (needed for running wct tests)
-3. Run `bazel build plugins/image-diff`
+The build requires to be done from an existing Gerrit tree. All commands below are relative to the root of a copy of Gerrit.
+
+1. Clone the `image-diff` repository into the `plugins` folder of the `gerrit` repo,
+   or link the `image-diff` plugin folder to `gerrit/plugins` folder.
+2. Override Gerrit `plugins/package.json` with the plugin package.json:
+```
+ln --symbolic --force image-diff/package.json plugins/package.json
+```
+
+You can remove all `depDependencies` from `plugins/package.json` as they are not needed for the build (they are only needed for running wct tests).
+
+3. run `bazel build plugins/image-diff`
 
 ## Highlight Mode
 
 ![Highlight example](assets/highlight-example.png)
 
-This mode uses the [Resemble.JS](https://github.com/HuddleEng/Resemble.js?files=1) (1.2.1) library in its development
+This mode uses the [Resemble.JS](https://github.com/HuddleEng/Resemble.js?files=1) library.
+
 The following features are included in this mode:
 
 * Percentage of difference between the images
@@ -51,6 +61,6 @@ Reference [here](https://gerrit.googlesource.com/gerrit/+/master/polygerrit-ui/)
 
 ## Authors
 
-* [Jack Zheng](https://github.com/JZ987)
+* Jack Zheng
 * Raeggin Williams
 * Kasper Nilsson
