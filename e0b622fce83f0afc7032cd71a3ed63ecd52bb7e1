@@ -16,6 +16,23 @@
       "message": "I have tried it locally against a production Gerrit and that seems to do the job.\n\nThe changelog is rather small as well:\n\n3.2.5\n\nEugenio Emmolo (2):\n* [2b292e6] Replace Function constructor with globalThis and use polyfill if missing\n* [6a753fd] Remove eslint-disable-line comment\n\nJames Cryer (3):\n* [66b01ea] Updated Jest\n* [5165602] Updated and linted\n* [c59877d] 3.2.5\n\n4.0.0\n\nAlex Chuiko (1):\n* [1f5b64b] Add custom tolerance options support added the ability to override the tolerance for default ignore modes\n\nJames Cryer (3):\n* [218dc7e] removed out of date details\n* [a283db5] Update dependencies\n* [e218e69] 4.0.0\n\nKris Williams (1):\n* [35e294d] fix: problem installing on node.js \u003e 12\n\n\nThat last log entry is the one marking canvas as optional and thus saves us from having to build against cairo and whatever system libraries it might depend on.",
       "revId": "e0b622fce83f0afc7032cd71a3ed63ecd52bb7e1",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b6b357d7_3297041d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1029953
+      },
+      "writtenOn": "2023-07-07T16:49:42Z",
+      "side": 1,
+      "message": "This update matches https://github.com/GerritCodeReview/gerrit/blob/stable-3.5/polygerrit-ui/app/package.json#L44.\n\nNote on master I upgraded that to 5 to support newer nodes (canvas).",
+      "revId": "e0b622fce83f0afc7032cd71a3ed63ecd52bb7e1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
