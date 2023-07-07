@@ -59,6 +59,12 @@ Or run `npm run wct-test` to run all your tests.
 
 Reference [here](https://gerrit.googlesource.com/gerrit/+/master/polygerrit-ui/) on how to set up your Gerrit testsite and [here](https://gerrit-documentation.storage.googleapis.com/Documentation/2.15.3/pg-plugin-dev.html#loading) for PolyGerrit plugin development.
 
+To update dependencies amend `package.json` then from the root of the Gerrit repository execute yarn to refresh the `yarn.lock` lock file:
+```
+bazel run @yarn//:yarn install -- --cwd plugins/image-diff install
+git add package.json yarn.lock
+```
+
 ## Authors
 
 * Jack Zheng
