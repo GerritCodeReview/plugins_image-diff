@@ -8,7 +8,7 @@
         "wct-test": "npm i && npx bower i && npx polymer test -l chrome"
     },
     "dependencies": {
-        "resemblejs": "^3.2.4"
+        "resemblejs": "^4.0.0"
     },
     "devDependencies": {
         "@polymer/iron-test-helpers": "^3.0.1",
