@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "122e242c_a39caa7a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010788
+      },
+      "writtenOn": "2023-07-10T20:03:45Z",
+      "side": 1,
+      "message": "I have found out how to regenerate the package-lock.json on my machine :)",
+      "revId": "4213deeaba3cd76207f85748299b2d32f28b2f2a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
