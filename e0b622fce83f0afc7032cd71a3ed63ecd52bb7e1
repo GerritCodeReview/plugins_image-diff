@@ -33,6 +33,24 @@
       "message": "This update matches https://github.com/GerritCodeReview/gerrit/blob/stable-3.5/polygerrit-ui/app/package.json#L44.\n\nNote on master I upgraded that to 5 to support newer nodes (canvas).",
       "revId": "e0b622fce83f0afc7032cd71a3ed63ecd52bb7e1",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d6f3a65a_4253794d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010788
+      },
+      "writtenOn": "2023-07-10T19:40:15Z",
+      "side": 1,
+      "message": "Nice!\n\nThe thing I don\u0027t understand is why the yarn.lock did not get updated previously even though Gerrit WORKSPACE refers to it (then the build instruction do not ask to symlink it so I don\u0027t know what is installed).\n\nThe package-lock.json is not used by Gerrit / Bazel as far as I understand. I think it was only there as a convenience for local development which surely should instead use yarn.lock.",
+      "parentUuid": "b6b357d7_3297041d",
+      "revId": "e0b622fce83f0afc7032cd71a3ed63ecd52bb7e1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
