@@ -51,6 +51,23 @@
       "parentUuid": "b6b357d7_3297041d",
       "revId": "e0b622fce83f0afc7032cd71a3ed63ecd52bb7e1",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3a9b9d33_e2386381",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010788
+      },
+      "writtenOn": "2023-07-10T19:58:26Z",
+      "side": 1,
+      "message": "I wasn\u0027t happy with the deletion of the package-lock.json file since people will certainly `npm install`. I eventually found out how to regenerate the package-lock.json which I did with https://gerrit-review.googlesource.com/c/plugins/image-diff/+/379096 Regenerate package-lock.json\n\nAnd I will rebase on top of it.",
+      "revId": "e0b622fce83f0afc7032cd71a3ed63ecd52bb7e1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
