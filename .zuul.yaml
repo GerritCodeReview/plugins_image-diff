@@ -1,0 +1,14 @@
+- job:
+    name: plugins-image-diff-build
+    parent: gerrit-plugin-build
+    vars:
+      bazelisk_artifacts:
+        - "bazel-bin/plugins/{{ gerrit_plugin }}/{{ gerrit_plugin }}.js"
+      bazelisk_test_targets: ""
+
+- project:
+    description: |
+      Build the plugin in check.
+    check:
+      jobs:
+        - plugins-image-diff-build
