@@ -1,13 +1,9 @@
 {
   "checks": {
     "zuul-check:plugins_image-diff": {
-      "state": "FAILED",
-      "message": "Change failed",
-      "url": "https://ci.gerritcodereview.com/t/gerrit/buildset/0afbe0900fec4269bf0a4bbcb8f633b3",
-      "started": "2024-06-25T19:50:28Z",
-      "finished": "2024-06-25T20:05:24Z",
+      "state": "NOT_STARTED",
       "created": "2024-06-25T19:50:28Z",
-      "updated": "2024-06-25T20:05:24Z"
+      "updated": "2024-06-25T20:08:26Z"
     }
   }
 }
