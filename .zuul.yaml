@@ -5,6 +5,7 @@
       bazelisk_artifacts:
         - "bazel-bin/plugins/{{ gerrit_plugin }}/{{ gerrit_plugin }}.js"
       bazelisk_test_targets: ""
+    pre-run: playbooks/setup-package.yaml
 
 - project:
     description: |
@@ -12,3 +13,9 @@
     check:
       jobs:
         - plugins-image-diff-build
+    post:
+      jobs:
+        - plugins-image-diff-build
+        - gerrit-plugin-publish:
+            dependencies:
+              - plugins-image-diff-build
