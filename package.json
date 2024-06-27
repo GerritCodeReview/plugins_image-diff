@@ -19,8 +19,7 @@
         "eslint-config-google": "^0.13.0",
         "eslint-plugin-html": "^6.0.0",
         "eslint-plugin-import": "^2.20.1",
-        "eslint-plugin-jsdoc": "^19.2.0",
-        "polymer-bridges": "file:../../polymer-bridges/"
+        "eslint-plugin-jsdoc": "^19.2.0"
     },
     "license": "Apache-2.0",
     "private": true
