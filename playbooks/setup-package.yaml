@@ -1,0 +1,6 @@
+- name: Symlink package.json
+  shell: |
+    ln --symbolic --force plugins/image-diff/external_package.json plugins/package.json
+  args:
+    executable: /bin/bash
+    chdir: '{{ zuul.projects["gerrit.googlesource.com/plugins/image-diff"].src_dir }}'
