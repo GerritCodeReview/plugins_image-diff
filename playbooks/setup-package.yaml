@@ -1,0 +1,8 @@
+- hosts: all
+  tasks:
+    - name: symlink
+      shell: |
+        ln -s -f plugins/image-diff/package.json plugins/package.json
+      args:
+        executable: /bin/bash
+        chdir: '{{ ansible_user_dir }}/{{ zuul.projects["gerrit.googlesource.com/gerrit"].src_dir }}'
