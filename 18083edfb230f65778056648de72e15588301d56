@@ -46,6 +46,30 @@
       },
       "revId": "18083edfb230f65778056648de72e15588301d56",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2ca8faad_c58357b7",
+        "filename": "package.json",
+        "patchSetId": 17
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1119195
+      },
+      "writtenOn": "2024-06-28T10:09:21Z",
+      "side": 0,
+      "message": "I see, the commit message was confusing me.\n\nPlease update the commit message to explain\n- why this copying business is needed\n- that the tests are not used\n- that the bridges are not used in the production code",
+      "parentUuid": "aae4cba0_36b53b0a",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 56
+      },
+      "revId": "18083edfb230f65778056648de72e15588301d56",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
