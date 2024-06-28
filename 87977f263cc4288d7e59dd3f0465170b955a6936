@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fde26741_6cfbbd3b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 17
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010788
+      },
+      "writtenOn": "2024-06-28T09:23:55Z",
+      "side": 1,
+      "message": "I have dig into it yesterday, the `image-diff` plugin is apparently the only one producing solely a `.js`. I7c9de28e5100c1480d6021416013535b09843165 introduces a `external_package.json` which is the one that should be copied (and is actually a symlink to `package.json` with I570a121e1af3801fc789b5eb73d95fc93be75920 ).\n\n*At least I would align with what is done in `gerrit-ci-scripts` and copy `external_package.json` instead.*\n\nSome issues I have found and various thoughts:\n\nimage-diff has polymer-bridges as a relative link: `file:../../polymer-bridges/`, so when the package.json is copied to Gerrit core `/plugins`, the link is no more correct. Potential fixes are:\n* read the dependencies of the plugin package.json and generate the `/plugins/package.json` myself.\n* make the `external_package.json` in image-diff to be a regular file and have it list solely the dependency (resemblejs).\n\nThen upon building the plugin `package-lock.json` and/or `yarn.lock` is/are not copied in Gerrit `/plugins` directory. The build thus ends up installing whatever matches `^4.0.0` and whatever dependency is available at the time.  That makes the build not reproducible and opens up for arbitrary code to enter. Well at least as I understand it.  So maybe there should be `external_yarn.lock` that locks the dependencies (and not the devdependencies) which would be copied as well. And maybe that should be \"magically\" handled by the Gerrit core Bazel rule to build a polygerrit plugin?\n\nInterestingly ResembleJS is included in Gerrit core ( https://gerrit-review.googlesource.com/c/gerrit/+/212892 ) which was made for `image-diff`. So I imagine we should no more bother specifying the dependency in the plugin given it is provided by Gerrit core?  Or maybe the `image-diff` plugin can be abandoned given Gerrit core had some related code introduced in 2021 and behind `UiFeature__new_image_diff_ui` experiment (see series by Hermann Loose at https://gerrit-review.googlesource.com/q/owner:hermannloose@google.com ).",
+      "revId": "87977f263cc4288d7e59dd3f0465170b955a6936",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
