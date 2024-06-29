@@ -16,6 +16,3 @@
     post:
       jobs:
         - plugins-image-diff-build
-        - gerrit-plugin-publish:
-            dependencies:
-              - plugins-image-diff-build
