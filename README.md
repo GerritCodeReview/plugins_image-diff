@@ -15,7 +15,7 @@ The build requires to be done from an existing Gerrit tree. All commands below a
    or link the `image-diff` plugin folder to `gerrit/plugins` folder.
 2. Override Gerrit `plugins/package.json` with the plugin package.json:
 ```
-ln --symbolic --force image-diff/package.json plugins/package.json
+ln -s -f image-diff/package.json plugins/package.json
 ```
 
 You can remove all `depDependencies` from `plugins/package.json` as they are not needed for the build (they are only needed for running wct tests).

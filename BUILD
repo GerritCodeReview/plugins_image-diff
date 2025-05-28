@@ -12,12 +12,15 @@ rollup_bundle(
     srcs = glob([
         "**/*.js",
     ]) + ["@plugins_npm//:node_modules"],
+    args = [
+        "--bundleConfigAsCjs=true",
+    ],
     config_file = "rollup.config.js",
     entry_point = "plugin.js",
     format = "iife",
     rollup_bin = "//tools/node_tools:rollup-bin",
     sourcemap = "hidden",
     deps = [
-        "@tools_npm//rollup-plugin-node-resolve",
+        "@tools_npm//@rollup/plugin-node-resolve",
     ],
 )
