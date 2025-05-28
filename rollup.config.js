@@ -31,9 +31,7 @@ export default {  // eslint-disable-line
     format: 'iife',
     compact: true,
   },
-  plugins: [resolve({
-    customResolveOptions: {
-      moduleDirectory: 'external/plugins_npm/node_modules',
-    },
+  plugins: [nodeResolve({
+    modulePaths: [path.join(process.cwd(), 'external/plugins_npm/node_modules')]
   })],
 };
