@@ -21,7 +21,8 @@ function requirePlugin(id) {
   const pluginPath = require.resolve(id, {paths: [__dirname, rollupBinDir]});
   return require(pluginPath);
 }
-const resolve = requirePlugin('rollup-plugin-node-resolve');
+
+const {nodeResolve} = requirePlugin('@rollup/plugin-node-resolve');
 
 export default {  // eslint-disable-line
   treeshake: false,
@@ -31,9 +32,7 @@ export default {  // eslint-disable-line
     format: 'iife',
     compact: true,
   },
-  plugins: [resolve({
-    customResolveOptions: {
-      moduleDirectory: 'external/plugins_npm/node_modules',
-    },
+  plugins: [nodeResolve({
+    modulePaths: [path.join(process.cwd(), 'external/plugins_npm/node_modules')]
   })],
 };
