@@ -16,6 +16,24 @@
       "message": "It builds now. But i\u0027m getting `TypeError: undefined is not an object (evaluating \u0027window.resemble.outputSettings\u0027)` in the console now.",
       "revId": "3615b43e961c63e89316fe8b3a2cb3122566aca7",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "828a1d1b_2b9d3ec2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1029953
+      },
+      "writtenOn": "2025-05-28T12:49:24Z",
+      "side": 1,
+      "message": "Ok fixed that. Although now the image-viewer isn\u0027t showing even with that fixed",
+      "parentUuid": "56c746e4_d8969919",
+      "revId": "3615b43e961c63e89316fe8b3a2cb3122566aca7",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
