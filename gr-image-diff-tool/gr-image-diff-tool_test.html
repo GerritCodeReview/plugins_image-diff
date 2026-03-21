@@ -32,39 +32,39 @@ limitations under the License.
 <script type="module">
   import '../test/common-test-setup.js';
   import "./gr-image-diff-tool.js";
-  suite('gr-image-diff-tool tests', () => {
+  suite('gr-image-diff-tool tests', async () => {
     let element;
     let sandbox;
 
-    setup(() => {
+    setup(async () => {
       sandbox = sinon.sandbox.create();
       element = fixture('basicFixture');
-      flushAsynchronousOperations();
+      await element.updateComplete;
     });
 
-    teardown(() => { sandbox.restore(); });
+    teardown(async () => { sandbox.restore(); });
 
-    test('test opacity mode', () => {
+    test('test opacity mode', async () => {
       element._observeMode = 'opacity';
       assert.isTrue(element._showOpacityMode);
       assert.isFalse(element._showResembleMode);
-      flushAsynchronousOperations();
+      await element.updateComplete;
 
       assert.ok(element.shadowRoot.querySelector('gr-opacity-diff-mode'));
       assert.equal(element.shadowRoot.querySelector('gr-resemble-diff-mode'), null);
     });
 
-    test('test resemble mode', () => {
+    test('test resemble mode', async () => {
       element._observeMode = 'resemble';
       assert.isTrue(element._showResembleMode);
       assert.isFalse(element._showOpacityMode);
-      flushAsynchronousOperations();
+      await element.updateComplete;
 
       assert.ok(element.shadowRoot.querySelector('gr-resemble-diff-mode'));
       assert.equal(element.shadowRoot.querySelector('gr-opacity-diff-mode'), null);
     });
 
-    test('localStorage persists', () => {
+    test('localStorage persists', async () => {
       sandbox.stub(element, '_setMode');
       sandbox.stub(element, '_getMode');
       element.connectedCallback();
