@@ -14,96 +14,167 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import {htmlTemplate} from './gr-opacity-diff-mode_html.js';
 
-class OpacityDiffMode extends Polymer.Element {
+import {html, css, LitElement} from 'lit';
+
+class OpacityDiffMode extends LitElement {
   static get is() {
     return 'gr-opacity-diff-mode';
   }
 
-  static get template() {
-    return htmlTemplate;
+  static get styles() {
+    return [
+      css`
+        :host {
+          display: block;
+        }
+        .wrapper {
+          box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+          margin: 1em 0;
+        }
+        img {
+          display: block;
+          height: var(--img-height);
+          margin: auto;
+          position: absolute;
+          width: var(--img-width);
+        }
+        #imageRevision {
+          opacity: var(--my-opacity-value);
+          z-index: 0.5;
+        }
+        #imageDiffContainer {
+          height: var(--div-height);
+          margin: auto;
+          width: var(--div-width);
+        }
+        #controlsContainer {
+          border-top: 1px solid var(--border-color, #ddd);
+          display: flex;
+        }
+        #controlsBox {
+          display: flex;
+          justify-content: space-between;
+          margin: 0 .5em;
+          min-width: 32em;
+          width: 100%;
+        }
+        label {
+          align-items: center;
+          display: flex;
+          padding: 1em .5em;
+        }
+        input {
+          margin: .5em;
+        }
+        #opacitySlider {
+          width: 10em;
+        }
+      `
+    ];
+  }
+
+  render() {
+    return html`
+      <div class="wrapper" style="
+          --my-opacity-value: ${this.opacityValue};
+          --img-width: ${this._scaledWidth ? this._scaledWidth + 'px' : 'initial'};
+          --img-height: ${this._scaledHeight ? this._scaledHeight + 'px' : 'initial'};
+          --div-width: ${this._maxWidth ? this._maxWidth + 'px' : 'initial'};
+          --div-height: ${this._maxHeight ? this._maxHeight + 'px' : 'initial'};
+      ">
+        <div id="imageDiffContainer">
+          <img
+              @load=${this._onImageLoad}
+              id="imageBase"
+              src=${this.computeSrcString(this.baseImage)} />
+          <img
+              @load=${this._onImageLoad}
+              data-opacity=${this.opacityValue}
+              id="imageRevision"
+              src=${this.computeSrcString(this.revisionImage)} />
+        </div>
+        <div id="controlsContainer">
+          <div id="controlsBox">
+            <label>
+              <input
+                  id="scaleSizesToggle"
+                  @click=${this.handleScaleSizesToggle}
+                  type="checkbox">
+              Scale to same size
+            </label>
+            <label>
+              Revision image opacity
+              <input
+                  id="opacitySlider"
+                  max="1.0"
+                  min="0.0"
+                  @input=${this.handleOpacityChange}
+                  step=".01"
+                  type="range"
+                  .value=${this.opacityValue || '0.5'}/>
+            </label>
+          </div>
+        </div>
+      </div>
+    `;
   }
 
   static get properties() {
     return {
-      baseImage: Object,
-      revisionImage: Object,
-      opacityValue: Number,
-      _maxHeight: {
-        type: Number,
-        value: 0,
-      },
-      _maxWidth: {
-        type: Number,
-        value: 0,
-      },
+      baseImage: {type: Object},
+      revisionImage: {type: Object},
+      opacityValue: {type: Number},
+      _maxHeight: {type: Number},
+      _maxWidth: {type: Number},
+      _scaledWidth: {type: Number},
+      _scaledHeight: {type: Number},
     };
   }
 
-  static get observers() {
-    return [
-      '_handleImageChange(baseImage, revisionImage)',
-      '_handleHeightChange(_maxHeight)',
-      '_handleWidthChange(_maxWidth)',
-    ];
+  constructor() {
+    super();
+    this._maxHeight = 0;
+    this._maxWidth = 0;
+    this.opacityValue = 0.5;
+  }
+
+  updated(changedProperties) {
+    if (changedProperties.has('baseImage') || changedProperties.has('revisionImage')) {
+      this._handleImageChange();
+    }
   }
 
   _onImageLoad(e) {
-    this._maxHeight = Math.max(
-        this._maxHeight,
-        Polymer.dom(e).rootTarget.naturalHeight
-    );
-    this._maxWidth = Math.max(
-        this._maxWidth,
-        Polymer.dom(e).rootTarget.naturalWidth
-    );
+    const target = e.target;
+    this._maxHeight = Math.max(this._maxHeight, target.naturalHeight);
+    this._maxWidth = Math.max(this._maxWidth, target.naturalWidth);
   }
 
-  _handleImageChange(baseImage, revisionImage) {
-    if ([baseImage, revisionImage].includes(undefined)) return;
-    this.$.imageRevision.setAttribute(
-        'src',
-        this.computeSrcString(revisionImage)
-    );
-    this.$.imageBase.setAttribute('src', this.computeSrcString(baseImage));
+  _handleImageChange() {
+    if (this.baseImage === undefined || this.revisionImage === undefined) return;
     this.handleOpacityChange();
   }
 
-  handleOpacityChange() {
-    this.updateStyles({'--my-opacity-value': this.$.opacitySlider.value});
+  handleOpacityChange(e) {
+    const value = e ? e.target.value : this.opacityValue;
+    this.opacityValue = Number(value);
   }
 
   computeSrcString(image) {
+    if (!image) return '';
     return 'data:' + image['type'] + ';base64, ' + image['body'];
   }
 
-  handleScaleSizesToggle() {
-    let width;
-    let height;
-    if (this.$.scaleSizesToggle.checked) {
-      width = this._maxWidth;
-      height = this._maxHeight;
+  handleScaleSizesToggle(e) {
+    const isChecked = e ? e.target.checked : false;
+    if (isChecked) {
+      this._scaledWidth = this._maxWidth;
+      this._scaledHeight = this._maxHeight;
+    } else {
+      this._scaledWidth = null;
+      this._scaledHeight = null;
     }
-
-    this.updateStyles({
-      '--img-width': width ? width + 'px' : null,
-      '--img-height': height ? height + 'px' : null,
-    });
-  }
-
-  _handleHeightChange(height) {
-    if (!height) {
-      return;
-    }
-    this.updateStyles({'--div-height': `${height}px`});
-  }
-
-  _handleWidthChange(width) {
-    if (!width) {
-      return;
-    }
-    this.updateStyles({'--div-width': `${width}px`});
   }
 }
 

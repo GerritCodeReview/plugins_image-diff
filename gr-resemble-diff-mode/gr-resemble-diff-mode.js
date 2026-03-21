@@ -14,53 +14,153 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import {htmlTemplate} from './gr-resemble-diff-mode_html.js';
+
+import {html, css, LitElement} from 'lit';
 
 const DEFAULT_SETTING = {
   errorType: 'flat',
   largeImageThreshold: 1200,
 };
 
-class ResembleDiffMode extends Polymer.Element {
+class ResembleDiffMode extends LitElement {
   static get is() {
     return 'gr-resemble-diff-mode';
   }
 
-  static get template() {
-    return htmlTemplate;
+  static get styles() {
+    return [
+      css`
+        :host {
+          display: block;
+        }
+        h2 {
+          display: none;
+        }
+        :host([loading]) #imageDiff {
+          display: none;
+        }
+        :host([loading]) h2 {
+          display: inline;
+          padding: 1em 0;
+        }
+        .toggle {
+          padding: .5em;
+        }
+        #controlsContainer {
+          align-items: center;
+          border-top: 1px solid var(--border-color, #ddd);
+          display: flex;
+          justify-content: space-between;
+          padding: 1em;
+          white-space: nowrap;
+          width: 100%;
+        }
+        #diffContainer {
+          display: block;
+          width: 100%;
+        }
+        #color {
+          border: 1px solid var(--border-color, #ddd);
+          border-radius: 2px;
+        }
+        #fullscreen {
+          border: 1px solid var(--border-color, #ddd);
+          border-radius: 2px;
+          color: var(--primary-text-color, #000);
+          padding: .5em;
+        }
+        #controlsContainer,
+        #color,
+        #fullscreen {
+          background-color: var(--table-header-background-color, #fafafa);
+        }
+        #color:hover,
+        #fullscreen:hover {
+          background-color: var(--header-background-color, #eeeeee);
+        }
+        #imageDiff {
+          display: block;
+          height: auto;
+          margin: auto;
+          max-width: 50em;
+        }
+        #modeContainer {
+          box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+          display: block;
+          margin: 1em 0em;
+          width: 50em;
+        }
+      `
+    ];
+  }
+
+  render() {
+    return html`
+      <div id="modeContainer">
+        <div id="diffContainer">
+          <h2>Loading...</h2>
+          <img id="imageDiff" src=${this._diffImageSrc || ''}>
+        </div>
+        <div id="controlsContainer">
+          <div>${this._difference}% changed</div>
+          <label class="toggle">
+            <input
+                id="ignoreColorsToggle"
+                type="checkbox"
+                .checked=${this._ignoreColors}
+                @click=${this._handleIgnoreColorsToggle}>
+            Ignore colors
+          </label>
+          <label class="toggle">
+            <input
+                id="transparentToggle"
+                type="checkbox"
+                .checked=${this._transparent}
+                @click=${this._handleTransparentToggle}>
+            Transparent
+          </label>
+          <input
+              id="color"
+              type="color"
+              .value=${this._colorValue}
+              @change=${this._handleColorChange}>
+          <button
+              id="fullscreen"
+              @click=${this._handleFullScreen}>
+            View full sized
+          </button>
+        </div>
+      </div>
+    `;
   }
 
   static get properties() {
     return {
-      baseImage: Object,
-      revisionImage: Object,
-      _colorValue: {
-        type: String,
-        observer: '_handleColorChange',
-        value: '#00ffff',
-      },
-      _difference: {
-        type: Number,
-        value: 0,
-      },
-      _ignoreColors: {
-        type: Boolean,
-        value: false,
-      },
-      _transparent: {
-        type: Boolean,
-        value: false,
-      },
-      loading: {
-        type: Boolean,
-        value: false,
-        reflectToAttribute: true,
-      },
+      baseImage: {type: Object},
+      revisionImage: {type: Object},
+      _colorValue: {type: String},
+      _difference: {type: Number},
+      _ignoreColors: {type: Boolean},
+      _transparent: {type: Boolean},
+      _diffImageSrc: {type: String},
+      loading: {type: Boolean, reflect: true},
     };
   }
 
-  static get observers() {
-    return ['_handleImageDiff(baseImage, revisionImage)'];
+  constructor() {
+    super();
+    this._colorValue = '#00ffff';
+    this._difference = 0;
+    this._ignoreColors = false;
+    this._transparent = false;
+    this._diffImageSrc = '';
+    this.loading = false;
+  }
+
+  updated(changedProperties) {
+    if (changedProperties.has('baseImage') || changedProperties.has('revisionImage')) {
+      this._handleImageDiff(this.baseImage, this.revisionImage);
+    }
   }
 
   connectedCallback() {
@@ -76,8 +176,7 @@ class ResembleDiffMode extends Polymer.Element {
   }
 
   _setImageDiffSrc(src) {
-    this.$.imageDiff.removeAttribute('src');
-    this.$.imageDiff.setAttribute('src', src);
+    this._diffImageSrc = src;
   }
 
   _setDifferenceValue(percentage) {
@@ -138,17 +237,18 @@ class ResembleDiffMode extends Polymer.Element {
     this.loading = false;
   }
 
-  _handleIgnoreColorsToggle() {
-    this._ignoreColors = !this._ignoreColors;
+  _handleIgnoreColorsToggle(e) {
+    this._ignoreColors = e.target.checked;
     this.reload();
   }
 
-  _handleTransparentToggle() {
-    this._transparent = !this._transparent;
+  _handleTransparentToggle(e) {
+    this._transparent = e.target.checked;
     this.reload();
   }
 
-  _handleColorChange() {
+  _handleColorChange(e) {
+    this._colorValue = e.target.value;
     this.reload();
   }
 
@@ -165,7 +265,10 @@ class ResembleDiffMode extends Polymer.Element {
 
   _handleFullScreen() {
     const w = window.open('about:blank', '_blank');
-    w.document.body.appendChild(this.$.imageDiff.cloneNode(true));
+    const imageDiff = this.shadowRoot.getElementById('imageDiff');
+    if (imageDiff) {
+      w.document.body.appendChild(imageDiff.cloneNode(true));
+    }
   }
 }
 
