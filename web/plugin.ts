@@ -15,9 +15,18 @@
  * limitations under the License.
  */
 
-import 'resemblejs/resemble.js'; // eslint-disable-line
-import './gr-image-diff-tool/gr-image-diff-tool.js';
+import 'resemblejs/resemble.js';
+import './gr-image-diff-tool/gr-image-diff-tool';
+import {PluginApi} from '@gerritcodereview/typescript-api/plugin';
 
-Gerrit.install(plugin => {
+declare global {
+  interface Window {
+    Gerrit: {
+      install: (callback: (plugin: PluginApi) => void) => void;
+    };
+  }
+}
+
+window.Gerrit.install((plugin: PluginApi) => {
   plugin.registerCustomComponent('image-diff', 'gr-image-diff-tool');
 });

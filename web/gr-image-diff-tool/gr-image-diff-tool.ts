@@ -15,21 +15,20 @@
  * limitations under the License.
  */
 
-import {html, css, LitElement} from 'lit';
-import '../gr-opacity-diff-mode/gr-opacity-diff-mode.js';
-import '../gr-resemble-diff-mode/gr-resemble-diff-mode.js';
+import {html, css, LitElement, PropertyValues} from 'lit';
+import {customElement, property, state} from 'lit/decorators.js';
+import {ImageInfo} from '../gr-opacity-diff-mode/gr-opacity-diff-mode';
+import '../gr-opacity-diff-mode/gr-opacity-diff-mode';
+import '../gr-resemble-diff-mode/gr-resemble-diff-mode';
 
 const DiffModes = {
   OPACITY: 'opacity',
   RESEMBLE: 'resemble',
 };
 
-class ImageDiffTool extends LitElement {
-  static get is() {
-    return 'gr-image-diff-tool';
-  }
-
-  static get styles() {
+@customElement('gr-image-diff-tool')
+export class ImageDiffTool extends LitElement {
+  static override get styles() {
     return [
       css`
         :host {
@@ -42,11 +41,11 @@ class ImageDiffTool extends LitElement {
           border-bottom: 1px solid var(--border-color, #ddd);
           border-top: 1px solid var(--border-color, #ddd);
           display: inline-flex;
-          padding: .5em;
+          padding: 0.5em;
           width: 100%;
         }
         h3 {
-          padding: 0 .5em;
+          padding: 0 0.5em;
         }
         #dropdown {
           background-color: var(--view-background-color);
@@ -56,7 +55,7 @@ class ImageDiffTool extends LitElement {
           font-size: var(--font-size-normal);
           height: 2em;
           margin-left: 1em;
-          padding: 0 .15em;
+          padding: 0 0.15em;
         }
         .diffmode {
           align-items: center;
@@ -67,58 +66,75 @@ class ImageDiffTool extends LitElement {
     ];
   }
 
-  render() {
+  @property({type: Object})
+  baseImage?: ImageInfo;
+
+  @property({type: Object})
+  revisionImage?: ImageInfo;
+
+  @property({type: Boolean, reflect: true})
+  override hidden = false;
+
+  @state()
+  private _showResembleMode = false;
+
+  @state()
+  private _showOpacityMode = false;
+
+  @state()
+  private _observeMode = '';
+
+  override render() {
     return html`
       <div id="header">
         <h3>Image diff</h3>
-        <select .value=${this._observeMode} @change=${this._handleSelectChange} id="dropdown">
-          <option value="resemble" title="Scale the images to the same size and compute a diff with highlights">Highlight differences</option>
-          <option value="opacity" title="Overlay the new image over the old and use an opacity control to view the differences">Onion skin</option>
+        <select
+          .value=${this._observeMode}
+          @change=${this._handleSelectChange}
+          id="dropdown"
+        >
+          <option
+            value="resemble"
+            title="Scale the images to the same size and compute a diff with highlights"
+            >Mito differences</option
+          >
+          <option
+            value="opacity"
+            title="Overlay the new image over the old and use an opacity control to view the differences"
+            >Onion skin</option
+          >
         </select>
       </div>
       <div class="diffmode">
-        ${this._showResembleMode ? html`
-          <gr-resemble-diff-mode
-              .baseImage=${this.baseImage}
-              .revisionImage=${this.revisionImage}></gr-resemble-diff-mode>
-        ` : ''}
+        ${this._showResembleMode
+          ? html`
+              <gr-resemble-diff-mode
+                .baseImage=${this.baseImage}
+                .revisionImage=${this.revisionImage}
+              ></gr-resemble-diff-mode>
+            `
+          : ''}
       </div>
       <div class="diffmode">
-        ${this._showOpacityMode ? html`
-          <gr-opacity-diff-mode
-              .baseImage=${this.baseImage}
-              .revisionImage=${this.revisionImage}></gr-opacity-diff-mode>
-        ` : ''}
+        ${this._showOpacityMode
+          ? html`
+              <gr-opacity-diff-mode
+                .baseImage=${this.baseImage}
+                .revisionImage=${this.revisionImage}
+              ></gr-opacity-diff-mode>
+            `
+          : ''}
       </div>
     `;
   }
 
-  static get properties() {
-    return {
-      baseImage: {type: Object},
-      revisionImage: {type: Object},
-      hidden: {type: Boolean, reflect: true},
-      _showResembleMode: {type: Boolean},
-      _showOpacityMode: {type: Boolean},
-      _observeMode: {type: String},
-    };
-  }
-
-  constructor() {
-    super();
-    this.hidden = false;
-    this._showResembleMode = false;
-    this._showOpacityMode = false;
-    this._observeMode = '';
-  }
-
-  updated(changedProperties) {
+  override updated(changedProperties: PropertyValues) {
     if (changedProperties.has('_observeMode')) {
       this._handleSelect(this._observeMode);
     }
   }
 
-  connectedCallback() {
+  override connectedCallback() {
     super.connectedCallback();
     if (!this.baseImage || !this.revisionImage) {
       // No need to show the diff tool if there are no images.
@@ -130,32 +146,32 @@ class ImageDiffTool extends LitElement {
       : this._displayResembleMode();
   }
 
-  _getMode() {
+  private _getMode() {
     return window.localStorage.getItem('image-diff-mode');
   }
 
-  _setMode(mode) {
+  private _setMode(mode: string) {
     window.localStorage.setItem('image-diff-mode', mode);
   }
 
-  _handleSelectChange(e) {
-    this._observeMode = e.target.value;
+  private _handleSelectChange(e: Event) {
+    this._observeMode = (e.target as HTMLSelectElement).value;
   }
 
-  _handleSelect(mode) {
+  private _handleSelect(mode: string) {
     mode === DiffModes.OPACITY
       ? this._displayOpacityMode()
       : this._displayResembleMode();
   }
 
-  _displayResembleMode() {
+  private _displayResembleMode() {
     this._observeMode = DiffModes.RESEMBLE;
     this._showResembleMode = true;
     this._showOpacityMode = false;
     this._setMode(DiffModes.RESEMBLE);
   }
 
-  _displayOpacityMode() {
+  private _displayOpacityMode() {
     this._observeMode = DiffModes.OPACITY;
     this._showResembleMode = false;
     this._showOpacityMode = true;
@@ -163,4 +179,8 @@ class ImageDiffTool extends LitElement {
   }
 }
 
-customElements.define(ImageDiffTool.is, ImageDiffTool);
+declare global {
+  interface HTMLElementTagNameMap {
+    'gr-image-diff-tool': ImageDiffTool;
+  }
+}
