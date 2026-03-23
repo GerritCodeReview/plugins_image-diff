@@ -14,10 +14,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import '@gerritcodereview/typescript-api/gerrit';
+import 'resemblejs/resemble.js';
+import './gr-image-diff-tool/gr-image-diff-tool';
 
-import 'resemblejs/resemble.js'; // eslint-disable-line
-import './gr-image-diff-tool/gr-image-diff-tool.js';
-
-Gerrit.install(plugin => {
+window.Gerrit?.install(plugin => {
   plugin.registerCustomComponent('image-diff', 'gr-image-diff-tool');
 });
