@@ -15,21 +15,24 @@
  * limitations under the License.
  */
 
-import {html, css, LitElement} from 'lit';
+import {html, css, LitElement, PropertyValues} from 'lit';
+import {customElement, property, state} from 'lit/decorators.js';
 
-class OpacityDiffMode extends LitElement {
-  static get is() {
-    return 'gr-opacity-diff-mode';
-  }
+export interface ImageInfo {
+  type: string;
+  body: string;
+}
 
-  static get styles() {
+@customElement('gr-opacity-diff-mode')
+export class OpacityDiffMode extends LitElement {
+  static override get styles() {
     return [
       css`
         :host {
           display: block;
         }
         .wrapper {
-          box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
           margin: 1em 0;
         }
         img {
@@ -55,17 +58,17 @@ class OpacityDiffMode extends LitElement {
         #controlsBox {
           display: flex;
           justify-content: space-between;
-          margin: 0 .5em;
+          margin: 0 0.5em;
           min-width: 32em;
           width: 100%;
         }
         label {
           align-items: center;
           display: flex;
-          padding: 1em .5em;
+          padding: 1em 0.5em;
         }
         input {
-          margin: .5em;
+          margin: 0.5em;
         }
         #opacitySlider {
           width: 10em;
@@ -74,45 +77,73 @@ class OpacityDiffMode extends LitElement {
     ];
   }
 
-  render() {
+  @property({type: Object})
+  baseImage?: ImageInfo;
+
+  @property({type: Object})
+  revisionImage?: ImageInfo;
+
+  @property({type: Number})
+  opacityValue = 0.5;
+
+  @state()
+  private _maxHeight = 0;
+
+  @state()
+  private _maxWidth = 0;
+
+  @state()
+  private _scaledWidth: number | null = null;
+
+  @state()
+  private _scaledHeight: number | null = null;
+
+  override render() {
     return html`
-      <div class="wrapper" style="
+      <div
+        class="wrapper"
+        style="
           --my-opacity-value: ${this.opacityValue};
           --img-width: ${this._scaledWidth ? this._scaledWidth + 'px' : 'initial'};
           --img-height: ${this._scaledHeight ? this._scaledHeight + 'px' : 'initial'};
           --div-width: ${this._maxWidth ? this._maxWidth + 'px' : 'initial'};
           --div-height: ${this._maxHeight ? this._maxHeight + 'px' : 'initial'};
-      ">
+      "
+      >
         <div id="imageDiffContainer">
           <img
-              @load=${this._onImageLoad}
-              id="imageBase"
-              src=${this.computeSrcString(this.baseImage)} />
+            @load=${this._onImageLoad}
+            id="imageBase"
+            src=${this.computeSrcString(this.baseImage)}
+          />
           <img
-              @load=${this._onImageLoad}
-              data-opacity=${this.opacityValue}
-              id="imageRevision"
-              src=${this.computeSrcString(this.revisionImage)} />
+            @load=${this._onImageLoad}
+            data-opacity=${this.opacityValue}
+            id="imageRevision"
+            src=${this.computeSrcString(this.revisionImage)}
+          />
         </div>
         <div id="controlsContainer">
           <div id="controlsBox">
             <label>
               <input
-                  id="scaleSizesToggle"
-                  @click=${this.handleScaleSizesToggle}
-                  type="checkbox">
+                id="scaleSizesToggle"
+                @click=${this.handleScaleSizesToggle}
+                type="checkbox"
+              />
               Scale to same size
             </label>
             <label>
               Revision image opacity
               <input
-                  id="opacitySlider"
-                  max="1.0"
-                  min="0.0"
-                  @input=${this.handleOpacityChange}
-                  step=".01"
-                  type="range"
-                  .value=${this.opacityValue || '0.5'}/>
+                id="opacitySlider"
+                max="1.0"
+                min="0.0"
+                @input=${this.handleOpacityChange}
+                step=".01"
+                type="range"
+                .value=${String(this.opacityValue || 0.5)}
+              />
             </label>
           </div>
         </div>
@@ -120,54 +151,38 @@ class OpacityDiffMode extends LitElement {
     `;
   }
 
-  static get properties() {
-    return {
-      baseImage: {type: Object},
-      revisionImage: {type: Object},
-      opacityValue: {type: Number},
-      _maxHeight: {type: Number},
-      _maxWidth: {type: Number},
-      _scaledWidth: {type: Number},
-      _scaledHeight: {type: Number},
-    };
-  }
-
-  constructor() {
-    super();
-    this._maxHeight = 0;
-    this._maxWidth = 0;
-    this.opacityValue = 0.5;
-  }
-
-  updated(changedProperties) {
-    if (changedProperties.has('baseImage') || changedProperties.has('revisionImage')) {
+  override updated(changedProperties: PropertyValues) {
+    if (
+      changedProperties.has('baseImage') ||
+      changedProperties.has('revisionImage')
+    ) {
       this._handleImageChange();
     }
   }
 
-  _onImageLoad(e) {
-    const target = e.target;
+  private _onImageLoad(e: Event) {
+    const target = e.target as HTMLImageElement;
     this._maxHeight = Math.max(this._maxHeight, target.naturalHeight);
     this._maxWidth = Math.max(this._maxWidth, target.naturalWidth);
   }
 
-  _handleImageChange() {
+  private _handleImageChange() {
     if (this.baseImage === undefined || this.revisionImage === undefined) return;
     this.handleOpacityChange();
   }
 
-  handleOpacityChange(e) {
-    const value = e ? e.target.value : this.opacityValue;
+  handleOpacityChange(e?: Event) {
+    const value = e ? (e.target as HTMLInputElement).value : this.opacityValue;
     this.opacityValue = Number(value);
   }
 
-  computeSrcString(image) {
+  computeSrcString(image?: ImageInfo) {
     if (!image) return '';
-    return 'data:' + image['type'] + ';base64, ' + image['body'];
+    return 'data:' + image.type + ';base64, ' + image.body;
   }
 
-  handleScaleSizesToggle(e) {
-    const isChecked = e ? e.target.checked : false;
+  handleScaleSizesToggle(e?: Event) {
+    const isChecked = e ? (e.target as HTMLInputElement).checked : false;
     if (isChecked) {
       this._scaledWidth = this._maxWidth;
       this._scaledHeight = this._maxHeight;
@@ -178,4 +193,8 @@ class OpacityDiffMode extends LitElement {
   }
 }
 
-customElements.define(OpacityDiffMode.is, OpacityDiffMode);
+declare global {
+  interface HTMLElementTagNameMap {
+    'gr-opacity-diff-mode': OpacityDiffMode;
+  }
+}
