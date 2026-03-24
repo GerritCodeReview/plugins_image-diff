@@ -18,6 +18,24 @@
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ace008d5_6340d8fd",
+        "filename": "web/gr-image-diff-tool/gr-image-diff-tool.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1085182
+      },
+      "writtenOn": "2026-03-24T16:18:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "10a4e540_0a24b049",
+      "revId": "636664a3afb886ba547ae6a8925e00880c2d9f00",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "020e8763_5c1f88c1",
@@ -31,6 +49,24 @@
       "writtenOn": "2026-03-24T12:28:06Z",
       "side": 1,
       "message": "Drop _ for everything that is private. Same for below.",
+      "revId": "636664a3afb886ba547ae6a8925e00880c2d9f00",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "997d352a_de686e81",
+        "filename": "web/gr-image-diff-tool/gr-image-diff-tool.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1085182
+      },
+      "writtenOn": "2026-03-24T16:18:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "020e8763_5c1f88c1",
       "revId": "636664a3afb886ba547ae6a8925e00880c2d9f00",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     },
@@ -52,6 +88,24 @@
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "165d9d1e_adb25cbe",
+        "filename": "web/gr-image-diff-tool/gr-image-diff-tool_test.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1085182
+      },
+      "writtenOn": "2026-03-24T16:18:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "59171634_a7e71664",
+      "revId": "636664a3afb886ba547ae6a8925e00880c2d9f00",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f2585412_4c2ec578",
@@ -65,6 +119,24 @@
       "writtenOn": "2026-03-24T12:28:06Z",
       "side": 1,
       "message": "Should be 2026",
+      "revId": "636664a3afb886ba547ae6a8925e00880c2d9f00",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "00381227_8c5b5f84",
+        "filename": "web/gr-opacity-diff-mode/gr-opacity-diff-mode.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1085182
+      },
+      "writtenOn": "2026-03-24T16:18:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f2585412_4c2ec578",
       "revId": "636664a3afb886ba547ae6a8925e00880c2d9f00",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     },
@@ -86,6 +158,24 @@
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e2a2b922_04e89dbe",
+        "filename": "web/gr-opacity-diff-mode/gr-opacity-diff-mode.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1085182
+      },
+      "writtenOn": "2026-03-24T16:18:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "375a77a7_9bac3385",
+      "revId": "636664a3afb886ba547ae6a8925e00880c2d9f00",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "59d69b1d_107045e8",
@@ -99,6 +189,24 @@
       "writtenOn": "2026-03-24T12:28:06Z",
       "side": 1,
       "message": "Should be 2026",
+      "revId": "636664a3afb886ba547ae6a8925e00880c2d9f00",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "182106a1_896c79f2",
+        "filename": "web/gr-opacity-diff-mode/gr-opacity-diff-mode_test.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1085182
+      },
+      "writtenOn": "2026-03-24T16:18:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "59d69b1d_107045e8",
       "revId": "636664a3afb886ba547ae6a8925e00880c2d9f00",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     },
@@ -120,6 +228,24 @@
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9745d10d_85c631c4",
+        "filename": "web/gr-resemble-diff-mode/gr-resemble-diff-mode.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1085182
+      },
+      "writtenOn": "2026-03-24T16:18:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c428486f_d1355927",
+      "revId": "636664a3afb886ba547ae6a8925e00880c2d9f00",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "061f8911_f4f1ee5b",
@@ -137,6 +263,24 @@
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "35d709b9_6d4f0054",
+        "filename": "web/gr-resemble-diff-mode/gr-resemble-diff-mode.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 1085182
+      },
+      "writtenOn": "2026-03-24T16:18:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "061f8911_f4f1ee5b",
+      "revId": "636664a3afb886ba547ae6a8925e00880c2d9f00",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a64c94f0_1c6d8c94",
@@ -150,6 +294,24 @@
       "writtenOn": "2026-03-24T12:28:06Z",
       "side": 1,
       "message": "Should be 2026",
+      "revId": "636664a3afb886ba547ae6a8925e00880c2d9f00",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "38ec5a29_009e971c",
+        "filename": "web/gr-resemble-diff-mode/gr-resemble-diff-mode_test.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1085182
+      },
+      "writtenOn": "2026-03-24T16:18:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a64c94f0_1c6d8c94",
       "revId": "636664a3afb886ba547ae6a8925e00880c2d9f00",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
