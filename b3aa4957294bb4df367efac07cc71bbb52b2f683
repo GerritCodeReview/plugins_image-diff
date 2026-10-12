@@ -18,6 +18,24 @@
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e9dda789_9580fcdb",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1029953
+      },
+      "writtenOn": "2026-10-12T15:03:30Z",
+      "side": 1,
+      "message": "Thanks, done.",
+      "parentUuid": "ed6c1be6_bf3519ef",
+      "revId": "b3aa4957294bb4df367efac07cc71bbb52b2f683",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "713e2a59_db95f0eb",
@@ -31,6 +49,30 @@
       "writtenOn": "2026-10-12T15:01:19Z",
       "side": 1,
       "message": "Remove this line. Please remove this compiler override from the test target too. //tools/node_tools:tsc-bin no longer exists, so building image-diff-ts-tests fails during analysis.",
+      "range": {
+        "startLine": 39,
+        "startChar": 0,
+        "endLine": 39,
+        "endChar": 39
+      },
+      "revId": "b3aa4957294bb4df367efac07cc71bbb52b2f683",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "745036ff_d2b874f5",
+        "filename": "web/BUILD",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1029953
+      },
+      "writtenOn": "2026-10-12T15:03:30Z",
+      "side": 1,
+      "message": "Thanks, done.",
+      "parentUuid": "713e2a59_db95f0eb",
       "range": {
         "startLine": 39,
         "startChar": 0,
