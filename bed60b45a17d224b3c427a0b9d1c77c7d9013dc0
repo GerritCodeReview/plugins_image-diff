@@ -1,12 +1,12 @@
 {
   "checks": {
     "zuul-check:plugins_image-diff": {
-      "state": "SCHEDULED",
-      "message": "Change has been enqueued in check",
+      "state": "RUNNING",
+      "message": "Jobs have started running",
       "url": "https://ci.gerritcodereview.com/t/gerrit/status/change/642706,4",
       "started": "2026-10-12T15:48:29Z",
       "created": "2026-10-12T15:48:31Z",
-      "updated": "2026-10-12T15:48:31Z"
+      "updated": "2026-10-12T15:48:41Z"
     }
   }
 }
