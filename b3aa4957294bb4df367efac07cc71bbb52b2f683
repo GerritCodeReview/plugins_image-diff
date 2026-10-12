@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ed6c1be6_bf3519ef",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2026-10-12T15:01:19Z",
+      "side": 1,
+      "message": "You could explain:\n\nMigrate plugin and test builds to current Gerrit tooling\n\nThe frontend build still references legacy TypeScript rules, npm\nrepository labels and a compiler target that no longer exists in\nGerrit. It also imports polygerrit_plugin from Gerrit after that macro\nmoved to Bazlets.\n\nLoad polygerrit_plugin from Bazlets and use aspect_rules_ts for both\nproduction and test sources. Replace the old npm labels with Gerrit\u0027s\nlinked node_modules targets and remove the obsolete compiler overrides.\n\nUse the copied base tsconfig and set rootDir to the web directory,\nleaving output directory selection to the Bazel targets.",
+      "revId": "b3aa4957294bb4df367efac07cc71bbb52b2f683",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "713e2a59_db95f0eb",
+        "filename": "web/BUILD",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2026-10-12T15:01:19Z",
+      "side": 1,
+      "message": "Remove this line. Please remove this compiler override from the test target too. //tools/node_tools:tsc-bin no longer exists, so building image-diff-ts-tests fails during analysis.",
+      "range": {
+        "startLine": 39,
+        "startChar": 0,
+        "endLine": 39,
+        "endChar": 39
+      },
+      "revId": "b3aa4957294bb4df367efac07cc71bbb52b2f683",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}
