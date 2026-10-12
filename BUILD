@@ -1,4 +1,4 @@
-load("//tools/bzl:js.bzl", "polygerrit_plugin")
+load("@com_googlesource_gerrit_bazlets//js:defs.bzl", "polygerrit_plugin")
 
 polygerrit_plugin(
     name = "image-diff",
