@@ -5,7 +5,6 @@
       bazelisk_artifacts:
         - "bazel-bin/plugins/{{ gerrit_plugin }}/{{ gerrit_plugin }}.js"
       bazelisk_test_targets: ""
-    pre-run: playbooks/setup-package.yaml
 
 - project:
     description: |

@@ -1,7 +1,7 @@
 {
   "extends": "../../tsconfig-plugins-base.json",
   "compilerOptions": {
-    "outDir": "../../../.ts-out/plugins/image-diff" /* overridden by bazel */
+    "rootDir": "."
   },
   "include": [
     "**/*.ts"
